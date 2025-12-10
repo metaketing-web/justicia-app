@@ -1,0 +1,114 @@
+/* Styles personnalisés JUSTICIA avec dégradé */
+
+.text-justicia-gradient {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-justicia-gradient {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
+}
+
+.border-justicia-gradient {
+  border-image: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%) 1;
+  border-style: solid;
+}
+
+.hover\:bg-justicia-gradient:hover {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
+}
+
+.focus\:ring-justicia-purple:focus {
+  --tw-ring-color: #8B5CF6;
+}
+
+/* Boutons avec dégradé */
+.btn-justicia {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
+  color: white;
+  border: none;
+  border-radius: 9999px; /* Complètement arrondi */
+  transition: all 0.3s ease;
+}
+
+.btn-justicia:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #DB2777 50%, #EA580C 100%);
+  color: black !important; /* Texte noir au survol */
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Classes utilitaires pour boutons arrondis */
+.hover\:text-black:hover {
+  color: black !important;
+}
+
+.rounded-full-btn {
+  border-radius: 9999px;
+}
+
+/* Bordures avec dégradé */
+.border-justicia {
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%) 1;
+}
+
+/* Texte avec dégradé animé */
+.text-justicia-animated {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 25%, #F97316 50%, #EC4899 75%, #8B5CF6 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+
+
+/* Forcer le texte noir au survol des boutons avec gradient */
+button:hover .text-justicia-gradient {
+  background: black !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: black !important;
+  background-clip: unset !important;
+  color: black !important;
+}
+
+/* Forcer le texte blanc au survol des boutons de la sidebar */
+.group:hover .text-justicia-gradient {
+  background: white !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: white !important;
+  background-clip: unset !important;
+  color: white !important;
+}
+
+
+
+/* Classes personnalisées pour les boutons Sidebar */
+.sidebar-icon-gradient,
+.sidebar-text-gradient {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+/* Forcer le texte blanc au survol des boutons sidebar */
+.sidebar-btn-hover:hover .sidebar-icon-gradient,
+.sidebar-btn-hover:hover .sidebar-text-gradient {
+  background: white !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: white !important;
+  background-clip: unset !important;
+  color: white !important;
+}
+

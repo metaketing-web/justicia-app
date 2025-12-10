@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "title": "Base de Connaissances Juridiques - Côte d'Ivoire",
+    "source": "OHADA (Organisation pour l'Harmonisation en Afrique du Droit des Affaires)",
+    "sourceUrl": "https://loidici.biz",
+    "officialUrl": "https://www.ohada.com",
+    "lastUpdated": "2024-11-26",
+    "applicableCountries": [
+      "Côte d'Ivoire",
+      "Bénin",
+      "Burkina Faso",
+      "Cameroun",
+      "Centrafrique",
+      "Comores",
+      "Congo",
+      "Gabon",
+      "Guinée",
+      "Guinée-Bissau",
+      "Guinée Équatoriale",
+      "Mali",
+      "Niger",
+      "RD Congo",
+      "Sénégal",
+      "Tchad",
+      "Togo"
+    ]
+  },
+  "categories": [
+    {
+      "id": "societes_commerciales",
+      "title": "Les Sociétés Commerciales et le Groupement d'Intérêt Économique (GIE)",
+      "description": "Acte Uniforme Révisé relatif au Droit des Sociétés Commerciales et du Groupement d'Intérêt Économique adopté le 30 janvier 2014 à Ouagadougou",
+      "url": "https://loidici.biz/2018/09/06/les-societes-commerciales-et-le-groupement-dinteret-economique-gie/",
+      "keywords": ["société", "SARL", "SA", "SNC", "GIE", "associé", "capital", "fusion", "dissolution", "liquidation"],
+      "sections": [
+        {
+          "title": "PARTIE 1 : DISPOSITIONS GENERALES SUR LA SOCIETE COMMERCIALE",
+          "subsections": [
+            {
+              "title": "LIVRE 1 : CONSTITUTION DE LA SOCIETE COMMERCIALE",
+              "articles": "Art. 1-3",
+              "topics": ["Champs d'application", "Définition de la société", "Qualité d'associé", "Statuts", "Appel public à l'épargne", "Immatriculation", "Personnalité juridique"]
+            },
+            {
+              "title": "LIVRE 2 : FONCTIONNEMENT DE LA SOCIETE COMMERCIALE",
+              "topics": ["États financiers de synthèse annuels", "Affectation du résultat", "Procédure d'alerte"]
+            },
+            {
+              "title": "LIVRE 3 : ACTION EN RESPONSABILITE CIVILE CONTRE LES DIRIGEANTS SOCIAUX",
+              "topics": ["Responsabilité des dirigeants"]
+            },
+            {
+              "title": "LIVRE 4 : LIENS DE DROIT ENTRE LES SOCIETES",
+              "topics": ["Sociétés mères et filiales", "Participations"]
+            },
+            {
+              "title": "LIVRE 5 : TRANSFORMATION DE LA SOCIETE COMMERCIALE",
+              "articles": "Art. 181-188",
+              "topics": ["Transformation de société"]
+            },
+            {
+              "title": "LIVRE 6 : FUSION – SCISSION – APPORT PARTIEL D'ACTIFS",
+              "articles": "Art. 189-199",
+              "topics": ["Fusion", "Scission", "Apport partiel d'actifs"]
+            },
+            {
+              "title": "LIVRE 7 : DISSOLUTION – LIQUIDATION DE LA SOCIETE COMMERCIALE",
+              "topics": ["Dissolution", "Liquidation"]
+            },
+            {
+              "title": "LIVRE 8 : NULLITE DE LA SOCIETE ET DES ACTES SOCIAUX",
+              "articles": "Art. 242-256",
+              "topics": ["Nullité"]
+            },
+            {
+              "title": "LIVRE 9 : FORMALITES – PUBLICITES",
+              "topics": ["Formalités", "Publicités"]
+            },
+            {
+              "title": "LIVRE 10 : CAPITAL VARIABLE",
+              "articles": "Art. 269.1-269.7",
+              "topics": ["Capital variable"]
+            }
+          ]
+        },
+        {
+          "title": "PARTIE 2 : DISPOSITIONS PARTICULIERES AUX SOCIETES COMMERCIALES",
+          "subsections": [
+            {
+              "title": "LIVRE 1 : SOCIETE EN NOM COLLECTIF",
+              "topics": ["SNC", "Gérance"]
+            },
+            {
+              "title": "LIVRE 2 : SOCIETE EN COMMANDITE SIMPLE",
+              "topics": ["Commandite simple"]
+            },
+            {
+              "title": "LIVRE 3 : SOCIETE A RESPONSABILITE LIMITEE",
+              "topics": ["SARL", "Constitution", "Fonctionnement"]
+            },
+            {
+              "title": "LIVRE 4 : SOCIETE ANONYME",
+              "topics": ["SA", "Constitution", "Administration", "Direction", "Assemblées générales", "Modification du capital", "Fusion", "Scission", "Transformation", "Contrôle", "Responsabilité civile", "Valeurs mobilières"]
+            },
+            {
+              "title": "LIVRE 5 : SOCIETE EN PARTICIPATION",
+              "topics": ["Société en participation"]
+            },
+            {
+              "title": "LIVRE 6 : SOCIETE CREEE DE FAIT ET SOCIETE DE FAIT",
+              "articles": "Art. 864-868",
+              "topics": ["Société de fait"]
+            },
+            {
+              "title": "LIVRE 7 : GROUPEMENT D'INTERET ECONOMIQUE",
+              "topics": ["GIE"]
+            }
+          ]
+        },
+        {
+          "title": "PARTIE 3 : DISPOSITIONS PENALES",
+          "subsections": [
+            {
+              "title": "TITRE 4 : INFRACTIONS RELATIVES AUX MODIFICATIONS DU CAPITAL DES SOCIETES ANONYMES",
+              "topics": ["Infractions", "Sanctions pénales"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "droit_commercial_general",
+      "title": "Le Droit Commercial Général",
+      "description": "Acte Uniforme portant sur le Droit Commercial Général adopté le 15 décembre 2010 à Lomé",
+      "url": "https://loidici.biz/2018/09/08/le-droit-commercial-general/",
+      "keywords": ["commerçant", "entreprenant", "registre du commerce", "bail professionnel", "fonds de commerce", "vente commerciale", "intermédiaires"],
+      "sections": [
+        {
+          "title": "CHAPITRE PRELIMINAIRE : CHAMP D'APPLICATION",
+          "articles": "Art. 1"
+        },
+        {
+          "title": "LIVRE I : STATUT DU COMMERCANT ET DE L'ENTREPRENANT",
+          "subsections": [
+            {
+              "title": "TITRE I : STATUT DU COMMERÇANT",
+              "topics": ["Définition du commerçant", "Actes de commerce (Art. 2-5)", "Capacité d'exercer le commerce (Art. 6-12)", "Obligations comptables (Art. 13-15)"]
+            },
+            {
+              "title": "TITRE II : STATUT DE L'ENTREPRENANT",
+              "topics": ["Entreprenant"]
+            }
+          ]
+        },
+        {
+          "title": "LIVRE II : REGISTRE DU COMMERCE ET DU CREDIT MOBILIER",
+          "subsections": [
+            {
+              "title": "TITRE I : DISPOSITIONS COMMUNES",
+              "topics": ["Registre du commerce"]
+            },
+            {
+              "title": "TITRE II : L'IMMATRICULATION AU REGISTRE DU COMMERCE ET DU CREDIT MOBILIER",
+              "topics": ["Immatriculation"]
+            }
+          ]
+        },
+        {
+          "title": "LIVRE III : FICHIER NATIONAL",
+          "topics": ["Fichier national"]
+        },
+        {
+          "title": "LIVRE IV : FICHIER REGIONAL",
+          "topics": ["Fichier régional"]
+        },
+        {
+          "title": "LIVRE V : INFORMATISATION DU REGISTRE DU COMMERCE ET DU CRÉDIT MOBILIER, DU FICHIER NATIONAL ET DU FICHIER REGIONAL",
+          "topics": ["Informatisation"]
+        },
+        {
+          "title": "LIVRE VI : BAIL A USAGE PROFESSIONNEL ET FONDS DE COMMERCE",
+          "subsections": [
+            {
+              "title": "TITRE I : BAIL A USAGE PROFESSIONNEL",
+              "topics": ["Bail commercial", "Bail professionnel"]
+            },
+            {
+              "title": "TITRE II : FONDS DE COMMERCE",
+              "topics": ["Fonds de commerce", "Cession de fonds"]
+            }
+          ]
+        },
+        {
+          "title": "LIVRE VII : LES INTERMEDIAIRES DE COMMERCE",
+          "subsections": [
+            {
+              "title": "TITRE I : DISPOSITIONS COMMUNES",
+              "topics": ["Intermédiaires", "Agents commerciaux", "Courtiers"]
+            }
+          ]
+        },
+        {
+          "title": "LIVRE VIII : LA VENTE COMMERCIALE",
+          "subsections": [
+            {
+              "title": "TITRE I : CHAMP D'APPLICATION ET DISPOSITIONS GENERALES",
+              "topics": ["Vente commerciale"]
+            },
+            {
+              "title": "TITRE III : OBLIGATIONS DES PARTIES",
+              "topics": ["Obligations du vendeur", "Obligations de l'acheteur"]
+            },
+            {
+              "title": "TITRE IV : EFFETS DU CONTRAT",
+              "topics": ["Effets de la vente"]
+            },
+            {
+              "title": "TITRE V : INEXECUTION ET RESPONSABILITE",
+              "topics": ["Inexécution", "Responsabilité contractuelle"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suretes",
+      "title": "Les Sûretés",
+      "description": "Acte Uniforme du 17 avril 1997 portant organisation des sûretés adopté le 15 décembre 2010 à Lomé",
+      "url": "https://loidici.biz/2018/09/08/les-suretes/",
+      "keywords": ["cautionnement", "garantie", "hypothèque", "gage", "nantissement", "privilège", "sûreté"],
+      "sections": [
+        {
+          "title": "TITRE PRELIMINAIRE : DEFINITIONS ET DOMAINE D'APPLICATION DES SÛRETES – AGENTS DES SÛRETES",
+          "subsections": [
+            {
+              "title": "CHAP. 1 : DEFINITION ET DOMAINE D'APPLICATION DES SÛRETES",
+              "articles": "Art. 1-4",
+              "topics": ["Définition des sûretés", "Domaine d'application"]
+            },
+            {
+              "title": "CHAP. 2 : AGENTS DE SÛRETES",
+              "articles": "Art. 5-11",
+              "topics": ["Agents de sûretés"]
+            }
+          ]
+        },
+        {
+          "title": "TITRE PREMIER : SÛRETES PERSONNELLES",
+          "subsections": [
+            {
+              "title": "CHAP. 1 : CAUTIONNEMENT",
+              "articles": "Art. 12-38",
+              "topics": ["Cautionnement", "Caution", "Engagement de caution"]
+            },
+            {
+              "title": "CHAP. 2 : GARANTIE ET CONTRE-GARANTIE AUTONOMES",
+              "articles": "Art. 39-49",
+              "topics": ["Garantie autonome", "Contre-garantie"]
+            }
+          ]
+        },
+        {
+          "title": "TITRE 2 : SÛRETES MOBILIERES",
+          "subsections": [
+            {
+              "title": "CHAP. 1 : INSCRIPTION DES SÛRETES MOBILIERES AU REGISTRE DU COMMERCE ET DU CREDIT MOBILIER",
+              "articles": "Art. 50-66",
+              "topics": ["Inscription des sûretés", "RCCM"]
+            },
+            {
+              "title": "CHAP. 2 : DROIT DE RETENTION",
+              "articles": "Art. 67-70",
+              "topics": ["Droit de rétention"]
+            },
+            {
+              "title": "CHAP. 3 : PROPRIETE RETENUE OU CEDEE A TITRE DE GARANTIE",
+              "articles": "Art. 71-91",
+              "topics": ["Propriété-garantie", "Réserve de propriété"]
+            },
+            {
+              "title": "CHAP. 4 : GAGE DE MEUBLES CORPORELS",
+              "articles": "Art. 92-124",
+              "topics": ["Gage", "Gage avec dépossession", "Gage sans dépossession"]
+            },
+            {
+              "title": "CHAP. 5 : NANTISSEMENT DE MEUBLES INCORPORELS",
+              "articles": "Art. 125-178",
+              "topics": ["Nantissement", "Nantissement de créances", "Nantissement de fonds de commerce"]
+            },
+            {
+              "title": "CHAP. 6 : PRIVILEGES",
+              "articles": "Art. 179-189",
+              "topics": ["Privilèges", "Privilèges généraux", "Privilèges spéciaux"]
+            }
+          ]
+        },
+        {
+          "title": "TITRE 3 : HYPOTHEQUES",
+          "subsections": [
+            {
+              "title": "CHAP. 1 : DISPOSITIONS GENERALES",
+              "articles": "Art. 190-202",
+              "topics": ["Hypothèque", "Définition"]
+            },
+            {
+              "title": "CHAP. 2 : HYPOTHEQUES CONVENTIONNELLES",
+              "articles": "Art. 203-208",
+              "topics": ["Hypothèque conventionnelle"]
+            },
+            {
+              "title": "CHAP. 3 : HYPOTHEQUES FORCEES",
+              "articles": "Art. 209-221",
+              "topics": ["Hypothèque forcée", "Hypothèque judiciaire"]
+            },
+            {
+              "title": "CHAP. 4 : EFFETS DES HYPOTHEQUES",
+              "articles": "Art. 222-223",
+              "topics": ["Effets de l'hypothèque"]
+            }
+          ]
+        },
+        {
+          "title": "TITRE 4 : DISTRIBUTION DES DENIERS ET CLASSEMENT DES SÛRETES",
+          "articles": "Art. 224-226",
+          "topics": ["Distribution des deniers", "Classement des sûretés", "Rang des créanciers"]
+        },
+        {
+          "title": "TITRE V : DISPOSITIONS TRANSITOIRES ET FINALES",
+          "articles": "Art. 227-228",
+          "topics": ["Dispositions transitoires"]
+        }
+      ]
+    },
+    {
+      "id": "procedures_recouvrement",
+      "title": "Les Procédures Simplifiées de Recouvrement des Créances et des Voies d'Exécution",
+      "description": "Acte Uniforme du 10 avril 1998 portant organisation des voies d'exécution",
+      "url": "https://loidici.biz/2018/09/08/lorganisation-des-procedures-simplifiees-de-recouvrement-des-creances-et-des-voies-dexecution/",
+      "keywords": ["injonction de payer", "saisie", "recouvrement", "exécution", "créance", "huissier"],
+      "sections": [
+        {
+          "title": "LIVRE I : PROCEDURES SIMPLIFIEES DE RECOUVREMENT",
+          "subsections": [
+            {
+              "title": "TITRE I : INJONCTION DE PAYER",
+              "topics": ["Injonction de payer", "Conditions de l'exercice (Art. 1-2)", "Procédure (Art. 3-18)"]
+            },
+            {
+              "title": "TITRE II : PROCEDURE SIMPLIFIEE TENDANT A LA DELIVRANCE OU A LA RESTITUTION D'UN BIEN MEUBLE DETERMINE",
+              "topics": ["Délivrance de bien meuble", "Restitution"]
+            }
+          ]
+        },
+        {
+          "title": "LIVRE II : VOIES D'EXECUTION",
+          "subsections": [
+            {
+              "title": "TITRE II : LES SAISIES CONSERVATOIRES",
+              "topics": ["Saisie conservatoire", "Mesures conservatoires"]
+            },
+            {
+              "title": "TITRE III : LA SAISIE-VENTE",
+              "topics": ["Saisie-vente", "Vente forcée"]
+            },
+            {
+              "title": "TITRE IV : LA SAISIE-ATTRIBUTION DES CREANCES",
+              "topics": ["Saisie-attribution", "Saisie de créances"]
+            },
+            {
+              "title": "TITRE V : SAISIE ET CESSION DES REMUNERATIONS",
+              "topics": ["Saisie sur salaire", "Cession de rémunération"]
+            },
+            {
+              "title": "TITRE VI : LA SAISIE APPREHENSION ET LA SAISIE REVENDICATION DES BIENS MEUBLES CORPORELS",
+              "topics": ["Saisie-appréhension", "Saisie-revendication"]
+            },
+            {
+              "title": "TITRE VII : DISPOSITIONS PARTICULIERES A LA SAISIE DES DROITS D'ASSOCIES ET DES VALEURS MOBILIERES",
+              "topics": ["Saisie de droits sociaux", "Saisie de valeurs mobilières"]
+            },
+            {
+              "title": "TITRE VIII : LA SAISIE IMMOBILIERE",
+              "topics": ["Saisie immobilière", "Vente forcée d'immeuble"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "commonQuestions": [
+    {
+      "question": "Comment créer une SARL en Côte d'Ivoire ?",
+      "category": "societes_commerciales",
+      "reference": "LIVRE 3 : SOCIETE A RESPONSABILITE LIMITEE - TITRE 1 : CONSTITUTION"
+    },
+    {
+      "question": "Quelles sont les conditions pour être commerçant ?",
+      "category": "droit_commercial_general",
+      "reference": "LIVRE I - TITRE I : STATUT DU COMMERÇANT - CHAP. 2 : CAPACITE D'EXERCER LE COMMERCE (Art. 6-12)"
+    },
+    {
+      "question": "Comment fonctionne le cautionnement ?",
+      "category": "suretes",
+      "reference": "TITRE PREMIER : SÛRETES PERSONNELLES - CHAP. 1 : CAUTIONNEMENT (Art. 12-38)"
+    },
+    {
+      "question": "Comment faire une injonction de payer ?",
+      "category": "procedures_recouvrement",
+      "reference": "LIVRE I - TITRE I : INJONCTION DE PAYER (Art. 1-18)"
+    },
+    {
+      "question": "Qu'est-ce qu'une hypothèque ?",
+      "category": "suretes",
+      "reference": "TITRE 3 : HYPOTHEQUES - CHAP. 1 : DISPOSITIONS GENERALES (Art. 190-202)"
+    },
+    {
+      "question": "Comment dissoudre une société ?",
+      "category": "societes_commerciales",
+      "reference": "LIVRE 7 : DISSOLUTION – LIQUIDATION DE LA SOCIETE COMMERCIALE"
+    },
+    {
+      "question": "Qu'est-ce qu'un fonds de commerce ?",
+      "category": "droit_commercial_general",
+      "reference": "LIVRE VI - TITRE II : FONDS DE COMMERCE"
+    },
+    {
+      "question": "Comment faire une saisie immobilière ?",
+      "category": "procedures_recouvrement",
+      "reference": "LIVRE II - TITRE VIII : LA SAISIE IMMOBILIERE"
+    }
+  ]
+}

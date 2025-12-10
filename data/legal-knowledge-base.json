@@ -1,0 +1,146 @@
+{
+  "name": "Base de Connaissances Juridique - Côte d'Ivoire",
+  "version": "1.0.0",
+  "lastUpdated": "2025-11-26",
+  "sources": [
+    {
+      "name": "LOIDICI.BIZ",
+      "url": "https://loidici.biz",
+      "description": "Site officiel des lois et décrets de la République de Côte d'Ivoire",
+      "access": "gratuit"
+    }
+  ],
+  "categories": [
+    {
+      "id": "societes-commerciales",
+      "number": "01",
+      "title": "LES SOCIETES COMMERCIALES ET GIE",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["société", "SARL", "SAS", "GIE", "commercial", "entreprise"],
+      "description": "Textes relatifs aux sociétés commerciales et groupements d'intérêt économique"
+    },
+    {
+      "id": "droit-commercial",
+      "number": "02",
+      "title": "LE DROIT COMMERCIAL GENERAL",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["commerce", "commerçant", "actes de commerce", "registre"],
+      "description": "Dispositions générales du droit commercial"
+    },
+    {
+      "id": "suretes",
+      "number": "03",
+      "title": "LES SÛRETES",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["garantie", "hypothèque", "nantissement", "cautionnement", "sûreté"],
+      "description": "Textes sur les sûretés et garanties"
+    },
+    {
+      "id": "recouvrement",
+      "number": "04",
+      "title": "LES PROCEDURES SIMPLIFIEES DE RECOUVREMENT DES CREANCES ET DES VOIES D'EXECUTION",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["recouvrement", "créance", "exécution", "huissier", "saisie"],
+      "description": "Procédures de recouvrement et d'exécution forcée"
+    },
+    {
+      "id": "procedures-collectives",
+      "number": "05",
+      "title": "L'ORGANISATION DES PROCEDURES COLLECTIVES D'APUREMENT DU PASSIF",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["faillite", "redressement", "liquidation", "cessation de paiement"],
+      "description": "Procédures collectives et traitement des entreprises en difficulté"
+    },
+    {
+      "id": "cooperatives",
+      "number": "06",
+      "title": "LE DROIT DES SOCIETES COOPERATIVES",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["coopérative", "mutuelle", "association"],
+      "description": "Régime juridique des sociétés coopératives"
+    },
+    {
+      "id": "arbitrage",
+      "number": "07",
+      "title": "LE DROIT ARBITRAL",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["arbitrage", "arbitre", "sentence arbitrale", "CCJA"],
+      "description": "Dispositions relatives à l'arbitrage commercial"
+    },
+    {
+      "id": "transport",
+      "number": "08",
+      "title": "LES CONTRATS DE TRANSPORT DE MARCHANDISES",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["transport", "marchandise", "transporteur", "CCAG", "livraison"],
+      "description": "Contrats et obligations en matière de transport"
+    },
+    {
+      "id": "mediation",
+      "number": "09",
+      "title": "LA MEDIATION",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["médiation", "médiateur", "règlement amiable", "conciliation"],
+      "description": "Procédures de médiation et règlement alternatif des litiges"
+    },
+    {
+      "id": "infractions-ohada",
+      "number": "10",
+      "title": "LA REPRESSION DES INFRACTIONS PREVUES PAR LES ACTES UNIFORMES DU TRAITE RELATIF A L'HARMONISATION DU DROIT DES AFFAIRES EN AFRIQUE",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["OHADA", "infraction", "sanction", "pénal", "répression"],
+      "description": "Sanctions pénales des infractions au droit OHADA"
+    },
+    {
+      "id": "societes-civiles",
+      "number": "11",
+      "title": "LES SOCIETES CIVILES PROFESSIONNELLES",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["SCP", "profession libérale", "avocat", "notaire"],
+      "description": "Régime des sociétés civiles professionnelles"
+    },
+    {
+      "id": "societes-etat",
+      "number": "12",
+      "title": "LES SOCIETES D'ETAT",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["société d'État", "public", "participation publique"],
+      "description": "Sociétés à capitaux publics"
+    },
+    {
+      "id": "epn",
+      "number": "13",
+      "title": "LES ETABLISSEMENTS PUBLICS NATIONAUX (EPN)",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["EPN", "établissement public", "administration"],
+      "description": "Statut et fonctionnement des établissements publics"
+    },
+    {
+      "id": "participation-financiere",
+      "number": "14",
+      "title": "LES SOCIETES A PARTICIPATION FINANCIERE PUBLIQUE",
+      "url": "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
+      "keywords": ["participation", "public-privé", "PPP"],
+      "description": "Sociétés mixtes à participation financière publique"
+    }
+  ],
+  "commonQueries": {
+    "CCAG": {
+      "category": "transport",
+      "reference": "Cahier des Clauses Administratives Générales",
+      "suggestion": "Pour l'article 39 du CCAG, consultez la section sur les contrats de transport de marchandises sur loidici.biz"
+    },
+    "article 39": {
+      "category": "transport",
+      "suggestion": "L'article 39 fait généralement référence aux clauses administratives. Consultez le CCAG sur loidici.biz pour le texte complet."
+    },
+    "société SARL": {
+      "category": "societes-commerciales",
+      "suggestion": "Consultez la section 'LES SOCIETES COMMERCIALES ET GIE' pour les dispositions relatives aux SARL"
+    },
+    "faillite": {
+      "category": "procedures-collectives",
+      "suggestion": "Voir 'L'ORGANISATION DES PROCEDURES COLLECTIVES D'APUREMENT DU PASSIF'"
+    }
+  }
+}

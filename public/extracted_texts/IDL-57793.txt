@@ -1,0 +1,1762 @@
+International Development Research Centre
+Centre de recherches pour le développement internationalL’emplois des jeunes
+en Côte d’Ivoire 
+Une étude diagnostique
+Clément K. Kouakou et Adébo T. Koba
+L’emploi des jeunes en Côte d’Ivoire : une étude diagnostique
+Clément K. Kouakou et Adébo T. Koba 
+2015
+Ce document d’orientation fait partie d’une série d’études préparées à la demande   du Centre
+de recherche pour le développement international et de la Fondation MasterCard, pour faire
+ressortir le défi de taille que représente l’emploi des jeunes en Afrique subsaharienne. Les
+travaux visent à contribuer à de nouveaux domaines de recherche qui pourront constituer
+une base de données susceptibles d’orienter vers des solutions pratiques et pertinentes
+pour l’élaboration de politiques.  
+Les opinions émises dans ce document sont celles des auteurs et ne reflètent pas
+ nécessairement celles du Centre de recherches pour le développement international 
+et de la Fondation MasterCard. 
+À propos des auteurs
+Le professeur Clément Kouadio Kouakou est enseignant-chercheur à l’UFR des sciences
+économiques et de gestion (UFR-SEG) de l’Université Félix-Houphouët-Boigny de Cocody, 
+à Abidjan, et directeur par intérim du Centre de recherches microéconomiques du dévelop-
+pement (CREMIDE), laboratoire de recherche de l’UFR-SEG. Ses travaux de recherche ont
+ essentiellement porté sur l’insertion des jeunes, les politiques d’emploi et leur évaluation.  
+Économiste du travail, Themrise Khan possède de nombreuses expériences professionnelles
+dans l’analyse socio-économique et l’élaboration des politiques publiques, plus spécifique-
+ment les politiques d’emploi des jeunes, de lutte contre le travail des enfants, d’employabilité,
+d’analyse du marché du travail et d’entrepreneuriat. Il est actuellement consultant sur les
+politiques et programmes publics d’emploi des jeunes pour des organisations du système
+des Nations Unies (BIT) et Think Tanks.
+À propos du Centre de recherches pour le développement international 
+S’inscrivant dans l’action du Canada en matière d’aﬀaires étrangères et de développement,
+le Centre de recherches pour le développement international (CRDI) investit dans le savoir,
+l’innovation et les solutions visant à améliorer les conditions de vie et les moyens de subsis-
+tance dans les pays en développement. En réunissant les bons partenaires autour d’occasions
+à saisir qui sont porteuses d’impact, le CRDI aide à former les chefs de file d’aujourd’hui et de
+demain et à susciter des changements positifs à vaste échelle. Pour plus de renseignements,
+veuillez visiter notre site : www.crdi.ca.
+À propos de la Fondation MasterCard 
+La Fondation MasterCard collabore avec des organisations visionnaires afin d’assurer à des
+personnes vivant dans la pauvreté, principalement en Afrique subsaharienne, un meilleuraccès à l’éducation, à la formation professionnelle et à des services financiers. En tant quel’une des plus importantes fondations privées, ses actions sont guidées par sa mission defaire progresser l’apprentissage et de favoriser l’inclusion financière pour créer un mondesolidaire et équitable. Basée à Toronto, au Canada, son indépendance a été établie par MasterCard Worldwide lors de la création de la Fondation en 2006. Pour de plus amples informations sur la Fondation, veuillez consulter le site www.mastercardfdn.org.
+Contact
+Centre de recherches pour le développement internationalCP 8500, Ottawa ON Canada K1G 3H9Tél. : +1 613-236-6163Courriel: sig@idrc.cawww.idrc.ca 
+PHOTO COUvERTURE : DFID/GAvIN HOUTHEUSEN
+Table des matières
+Sigles et acronymes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ii
+Sommaire  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1. Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.1.  Contexte socio-économique de la Côte d’Ivoire . . . . . . . . . . . . . . . . . . . . . . . 5
+1.2.  Justifications et objectifs de l’étude  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+1.3.  Méthodologie d’analyse  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.4.  Plan de l’étude  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2. Que savons-nous de l’emploi des jeunes en Côte d’Ivoire?  . . . . . . . . . . . . . . . 9
+2.1.  Structure et dynamique de la population jeune . . . . . . . . . . . . . . . . . . . . . . . 10
+2.2.  Situation et profil de l’emploi des jeunes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2.3.  L’adéquation formation-emploi  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122.4.  Programmes et projets d’insertion des jeunes  . . . . . . . . . . . . . . . . . . . . . . . . 13
+3. Qui sont les intervenants responsables de l’emploi des jeunes?  . . . . . . . . . . 15
+3.1.  Dispositif institutionnel pour l’emploi des jeunes  . . . . . . . . . . . . . . . . . . . . . 16
+La présidence de la République, la primature et l’Assemblée nationale  . . . . 16
+Les ministères  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Les agences techniques  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Les structures de financement  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Les structures d’appui, le secteur privé et les organisations 
+professionnelles et syndicales  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Les collectivités territoriales  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Les acteurs de la société civile et les partenaires au développement  . . . . . . 20
+L ’organe de coordination : la Commission nationale de l’emploi (CNE)  . . . . 21
+3.2.  Coordination des institutions chargées de l’emploi des jeunes  . . . . . . . . 21
+4. État des connaissances et des lacunes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.1.  Données et études sur l’emploi des jeunes  . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Les données sur l’emploi des jeunes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Les études sur l’emploi des jeunes en Côte d’Ivoire  . . . . . . . . . . . . . . . . . . . . . . . 23
+4.2.  Connaissances sur l’emploi des jeunes : lacunes et besoins potentiels 
+des principaux acteurs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Structure et dynamique de la population jeune  . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Adéquation formation-emploi et chômage des jeunes  . . . . . . . . . . . . . . . . . . 26
+Eﬃcacité des programmes d’emploi pour les jeunes  . . . . . . . . . . . . . . . . . . . . . 27
+Niches et opportunités d’emploi non explorées  . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Quelles opportunités de recherche et pour qui?  . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Quelles opportunités de synergies entre programmes pairs?  . . . . . . . . . . . . . 31
+4.3.  Capacités et expertises locales de recherche . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+5. Conclusion  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Bibliographie  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+iiL’EMPLOI DES JEUNES EN CÔTE D’IVOIRESigles et acronymes
+ACBF African Capacity Building Foundation
+ADDR Autorité pour le désarmement, la démobilisa-
+tion et la réintégration
+AEJ Agence pour l’emploi des jeunes
+AFD Agence française de développement
+AGEFOP Agence nationale de la formation professionnelle
+AGEPE Agence d’études et de promotion de l’emploi
+AGEROUTE Agence de gestion des routes
+ANADER Agence nationale de développement rural
+APO Accord politique de Ouagadougou
+AUPC Assistance d’urgence post conflit
+BAD Banque africaine de développement
+BEP Brevet d’études professionnelles
+BIT Bureau international du travail
+BNI Banque nationale d’investissement
+BTS Brevet de technicien supérieur
+C2D Contrat de désendettement et 
+de développement
+CAP Certificat d’aptitude professionnelle
+CAPEC Cellule d’analyse de la politique économique 
+du CIRES
+CCI-CI Chambre de commerce et d’industrie de Côte d’Ivoire
+CEPE Certificat d’études primaires élémentaires
+CEPICI Centre de promotion des investissements 
+en Côte d’Ivoire
+CGECI Confédération générale des entreprises 
+de Côte d’Ivoire
+CIRES Centre ivoirien de recherches économiques et sociales
+CLIJ Comités locaux d’insertion des jeunes 
+CNE Commission nationale de l’emploi
+CNM-CI Chambre nationale des métiers de Côte d’Ivoire
+CNPS Caisse nationale de prévoyance socialeCRDI Centre de recherches pour le développement
+international
+CREMIDE Centre de recherches microéconomiques du développement
+DDR/RRR Désarmement, démobilisation, réinsertion / 
+Réhabilitation, réinstallation, réinsertion
+DESS Diplôme d’études supérieures spécialisées
+DGE Direction générale de l’emploi
+DGI Direction générale des impôts
+DPPH Direction pour la promotion des personnes handicapées
+DSRP Document de stratégie de réduction 
+de la pauvreté
+DUT Diplôme universitaire technique
+EEMCI Enquête nationale sur l’emploi auprès 
+des ménages en Côte d’Ivoire
+EMN Entreprises multinationales
+ENSEA École nationale supérieure de statistique 
+et d’économie appliquée
+ENSETE Enquête nationale sur la situation de l’emploi et du travail des enfants
+ENV Enquête sur le niveau de vie
+EPIC Établissement public à caractère industriel 
+et commercial 
+FAHCI Fédération des associations des handicapés 
+de Côte d’Ivoire
+FDAPE Fonds de diversification agricole et 
+de promotion des exportations 
+FDFP Fonds de développement de la formation professionnelle
+FENUJECI Fédération nationale des unions de jeunesse communale de Côte d'Ivoire
+FESACI Fédération des syndicats autonomes 
+de Côte d'Ivoire
+FIA Projet de formation initiale et d’apprentissage
+FIAC Fonds d’intervention pour l’action culturelle 
+FIAIJA Fonds d’installation et d’appui aux initiatives des jeunes agriculteurs 
+SIGLES ET ACRONYMES iiiFIDEN Fonds ivoirien pour le développement 
+des entreprises nationales
+FIPME Fédération ivoirienne des petites et 
+moyennes entreprises 
+FNJ Fonds national de la jeunesse
+FNS Fonds national de solidarité pour la promotion de l’emploi jeune
+FPAE Fonds de promotion et d’aide à l’emploi 
+FPC Formation professionnelle continue
+FSE-THIMO Fonds de soutien à l’emploi par les travaux 
+d’utilité publique à haute intensité de main-d’œuvre 
+GERME Gérer mieux son entreprise
+INIE Institut ivoirien de l’entreprise
+INS Institut national de la statistique
+NTIC Nouvelles technologies de l’information et de la communication
+OIT Organisation internationale du travail 
+OMOCI Oﬃce de la main-d’œuvre de Côte d’Ivoire 
+ONFP Oﬃce national de la formation professionnelle
+ONUDI Organisation des Nations Unies pour 
+le développement industriel
+PAAPHFP Projet d’appui et d’accès des personnes handi-capées à la formation professionnelle
+PAE Programme d’aide à l’embauche
+PAFPA Projet d’appui à la formation de la population active
+PAJD Programme d’absorption des jeunes 
+déscolarisés
+PAMT Politiques actives du marché du travail
+PAPC Projet d’assistance post-conflit
+PAS Programme d’ajustement structurel
+PATEC Programme d’appui au traitement économiquedu chômage
+PCME Programme de création de micro-entreprises
+PEJEDEC Projet emploi jeune et développement des compétencesPFA Projet de formation par apprentissage
+PFIJ Programme de formation et d’insertion 
+professionnelle des jeunes 
+PFS Plateforme de services
+PIJR Programme d’insertion des jeunes ruraux 
+PMERP Programme de maintien dans l’emploi et 
+de reconversion professionnelle 
+PND Programme national de développement
+PNDE Plan national de développement de l’emploi
+PNE Politique nationale de l’emploi
+PNRRC Programme national de réinsertion et 
+de réhabilitation communautaire
+PNUD Programme des Nations Unies pour le développement
+PPTE Pays pauvre très endetté
+PRISE Projet d’insertion socio-économique
+PRODIGE Programme pilote de développement 
+des initiatives génératrices d’emploi
+PSCE Programme spécial de création d’emploi
+PSCN Programme du service civique national
+PSIF Programme spécial d’insertion des femmes 
+RSE Responsabilité sociale de l’entreprise
+THIMO Travaux à haute intensité de main-d’œuvre 
+UCPE Unité de coordination des programmes 
+d’emploi
+UFR-SEG Unité de formation et de recherche en sciences économiques et de gestion
+UGTCI Union générale des travailleurs de Côte d’Ivoire
+VAE Valorisation des acquis par l’expérience
+
+Sommaire
+1Plus d’une décennie de crise politique et militaire en Côte d’Ivoire
+a grandement contribué à la détérioration des conditions 
+de vie, en particulier chez les couches vulnérables de la popu-
+lation, dont les jeunes. Depuis la sortie de crise en avril 2011, 
+le gouvernement ivoirien a placé la lutte contre le chômage 
+au cœur de ses préoccupations. La création d’emplois, surtouten faveur des jeunes, figure au premier plan dans l’action
+ gouvernementale. Le gouvernement ivoirien a mis en œuvre
+certaines initiatives de promotion de l’emploi des jeunes.D’autres projets sont en cours depuis la création d’un ministèredédié à l’emploi des jeunes et d’une Agence pour l’emploi des jeunes (AEJ) en 2015.
+Cependant, pour donner à ces politiques de soutien à l’emploi
+une orientation pertinente, une bonne connaissance des besoinsdes jeunes, sur la base d’informations fiables et actualisées,s’avère primordiale. Or, plusieurs aspects de l’emploi des jeunes
+restent encore peu connus ou mal connus des décideurs poli-tiques. Pour répondre à cette lacune dans les connaissances, la recherche fondamentale ou appliquée peut être mobilisée.La présente étude vise à fournir une évaluation éclairée de 
+l’espace de recherche utile et pratique sur l’emploi des jeunes
+en Côte d’Ivoire, afin de soutenir les décisions politiques.
+La population jeune de Côte d’Ivoire
+La population ivoirienne connaît un accroissement soutenu,avec une forte proportion de jeunes. On estime en eﬀet que
+plus de 79,34 % de la population a moins de 35 ans. Cetteétude retient de la jeunesse une définition large (14-35 ans) et
+une définition restreinte (14-24 ans). Au sens large, les jeunesreprésentent plus de 60 % de la population en âge de travailler.Durant la crise politique et militaire, ils ont payé le lourd tribut.Cette couche de la population a servi d’armée de réserve dansles diﬀérentes crises politiques et militaires. Plusieurs milliersde jeunes ont participé aux combats.
+Que savons-nous de l’emploi des jeunes? 
+La situation de l’emploi des jeunes reste encore très peu connue. Les statistiques récentes montrent que les jeunesreprésentent la population la plus touchée par le chômage, le sous-emploi et la précarité de l’emploi. C’est le secteurinformel, en particulier les emplois domestiques, qui occupe la majorité des jeunes. Le secteur privé formel, lui, n’oﬀre qu’une faible proportion des emplois. Si la Côte d’Ivoire
+présente un taux de
+ chômage relativement peu
+élevé, celui-ci cacheraittoutefois de fortes propor-tions de sous-emplois et
+d’emplois précaires. Parailleurs, le chômage estessentiellement urbain,
+surtout de longue durée, 
+et il aﬀecte davantage les
+jeunes diplômés. Cette situa-tion est la résultante d’uneforte inadéquation entre la formation et l’emploi. Pendant que de nombreux jeunes diplômés sont au chômage
+ou à la recherche d’un premier emploi qu’ils ne trouvent pas,
+les entreprises, elles, sont à la recherche de personnel qualifié,
+justement dans les mêmes secteurs professionnels, qu’elles ne trouvent pas non plus. Selon les entreprises interrogées, les jeunes n’ont pas les qualifications requises pour occuper
+des postes en leur sein. Elles attribuent ce manque de compé-
+tence à la faiblesse du système éducatif ivoirien. 
+Les politiques de promotion de l’emploi  
+Avec la généralisation du chômage des jeunes, diﬀérents pro-grammes ont été mis en œuvre. Ces programmes sont contenus
+dans les diﬀérents plans nationaux de l’emploi. On peut dis-
+tinguer trois grandes catégories de programmes et de projets :
+les programmes destinés à la formation des demandeurs d’emploi, les programmes destinés à la prospection et au
+placement des demandeurs d’emploi, ainsi que les programmes
+destinés au financement des micro et petites entreprises. 
+Les diﬀérentes cibles de ces programmes sont les diplômés
+demandeurs de premier emploi, les jeunes sans qualification,les ex-groupes d’autodéfense, les jeunes ex-combattants, 
+les jeunes handicapés, les groupements des jeunes ruraux, 
+les jeunes déscolarisés. 
+Le Plan national de développement (PND 2012-2015) 
+est aujourd’hui le cadre de référence de l’action publique 
+en Côte d’Ivoire. Son objectif principal est de faire de la Côte
+d’Ivoire un pays émergent à l’horizon 2020.
+KY CHUNG / UN
+Qui sont les intervenants responsables 
+de l’emploi des jeunes? 
+Pour assurer l’eﬃcacité de sa politique d’emploi, le gouverne-
+ment a mis à contribution les acteurs clés œuvrant dans le
+domaine de la promotion de l’emploi. Ces acteurs – les inter-venants des secteurs public et parapublic, le secteur privé, les
+acteurs de la société civile et les partenaires au développement– travaillent en étroite collaboration pour une meilleure canali-
+sation des actions à mener. 
+Les acteurs des secteurs public et parapublic sont pour la
+plupart des établissements publics et parapublics nationaux
+spécialisés dans des domaines liés à la formation, au renforce-
+ment de capacité, à l’assistance et au conseil en recrutement,
+ainsi qu’à la production d’informations fiables sur le marché du travail. À ces diﬀérents acteurs pourraient en être associés
+d’autres, dont le rôle est secondaire, mais qui sont susceptiblesd’influencer la politique de l’emploi des jeunes. 
+Une mutation profonde est en cours depuis le début de
+l’année 2015 en vue de réorganiser le dispositif institutionnel
+d’insertion des jeunes. Ainsi, une Agence pour l'emploi des
+jeunes (AEJ) a été créée en 2015, qui fonctionnera comme unguichet unique de l’emploi pour les jeunes. Dans le nouveau
+dispositif d’insertion des jeunes, trois autres structures tech-
+niques devraient soutenir l’AEJ dans sa mission : l’Agence
+nationale de la formation professionnelle (AGEFOP), l’Unité de coordination des programmes d’emploi (UCPE) et la Plateforme de services (PFS).
+Par ailleurs, par l’intermédiaire des cabinets de formation et
+de placement et des diﬀérentes organisations professionnelles,des structures d’appui (Direction des impôts, la CNPS et
+ l’AGEROUTE) et des partenaires au développement (BIT, laBanque mondiale, la BAD, la coopération française, la coopéra-tion japonaise, etc.), le secteur privé participe à la promotion
+de l’emploi des jeunes. Toutefois, en plus de l’instabilité institu-tionnelle, la collaboration de l’ensemble de ces acteurs n’estpas toujours parfaite, même si des volontés d’aboutir au dia-
+logue social dans la promotion des politiques d’emploi existent.
+Les diﬃcultés de collaboration existent tant dans la formulationque dans la mise en œuvre eﬀective des politiques.
+2L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+ANOUK DELAFORTRIE/EC-ECHO
+Ce que nous savons sur l’emploi des jeunes 
+et ce que nous ne savons pas
+La particularité de la situation des jeunes nécessite des actions
+spécifiques des gouvernants. Mais cela n’est possible que si lasituation de la population jeune est maîtrisée avec certitude.
+Or beaucoup d’incertitudes concernant les jeunes restent 
+à élucider. 
+Les données sur l’emploi des jeunes sont disparates, non
+régulières et non disponibles. Et lorsque les informations
+ existent, elles sont limitées. Elles restent également statiques et donc incapables d’aider à analyser la transition des jeunessur le marché du travail. Elles sont surtout incapables d’apporter
+des réponses à l’eﬃcacité des politiques d’emploi. Seulesquelques études commanditées par les autorités compétenteset les partenaires au développement sont disponibles, maisleur portée s’avère très restreinte pour comprendre le fonction-nement du marché du travail. Les études universitaires, égale-ment très limitées, sont souvent inutilisables par les structuresresponsables de l’emploi des jeunes. Plus spécifiquement, les
+caractéristiques des jeunes sont insuﬃsamment analysées, desétudes sur leur trajectoire professionnelle sont inexistantes, 
+de même que des recherches sur les filières porteuses. 
+Un programme de recherche 
+sur l’emploi des jeunes
+Pour renforcer la promotion de l’emploi des jeunes, la présente
+étude soulève des préoccupations qui pourraient se muer en
+pistes de recherche. Ces préoccupations concernent les lacunes
+dans les connaissances sur la structure et la dynamique de lapopulation jeune, sur l’inadéquation formation-emploi et lechômage des jeunes, sur l’eﬃcacité des programmes d’emploipour les jeunes, ainsi que sur les niches et opportunités d’emploi
+non explorées.
+Concernant la structure et la dynamique de la population
+jeune, une piste de recherche consisterait à analyser les carac-
+téristiques et le fonctionnement du marché du travail des
+jeunes. Sur le plan de l’adéquation formation-emploi, il serait
+bon d’étudier les sources de cette inadéquation et ses con-séquences sur la trajectoire professionnelle des jeunes.
+En ce qui concerne l’eﬃcacité des programmes d’emploi, 
+les recherches pourront s’orienter dans le sens d’une évalua-tion des diﬀérents programmes d’insertion professionnelle,avec les instruments adéquats sur le plan micro-économiqueet sur le plan macro-économique. On pourrait en outre analyser
+l’oﬀre et la demande de services d’aide à l’emploi, et le coût
+d’opportunité des fonds publics et la gestion décentralisée des
+politiques d’emploi. 
+De nouvelles niches et opportunités d’emploi existent. Des
+études pourront rechercher les possibilités de création d’emplois
+dans les filières agricoles et dans les industries créatives, 
+en analysant la chaîne des valeurs de ces filières et industries,
+ainsi que ses répercussions sur l’emploi des jeunes. 
+Des structures de recherche disponibles
+Le diagnostic sur l’emploi des jeunes en Côte d’Ivoire atteste
+que la situation est plus que préoccupante. La non-pertinence
+de bien des décisions politiques est liée à l’absence quasi
+totale d’instruments d’aide à la prise de ces décisions. Les
+réponses à la crise de l’emploi chez les jeunes nécessitent un
+changement de paradigmes, soutenu par une batterie de con-
+naissances empiriques. Un programme de recherche appliquéeou fondamentale pourrait aider à combler toutes les lacunes et
+constituer un véritable instrument d’aide à la prise de décision
+des structures techniques (AEJ, AGEFOP , FDFP , PFS, ministère
+technique chargé de l’emploi des jeunes) et des structuresd’enseignement technique, de formation professionnelle et
+d’enseignement supérieur.
+Face à l’ampleur du problème de l’emploi des jeunes, la
+mobilisation de tous les acteurs publics et privés tout comme
+celle des partenaires au développement s’avère cruciale pourproposer une réponse à la hauteur des défis. Des structures de
+recherche existent dans le pays et sont compétentes pourréaliser un tel programme de recherche, en partenariat avec les
+responsables des programmes d’emploi. Ces recherches pour-raient enfin soutenir l’ensemble des actions visant à redonner
+du souﬄe à l’emploi des jeunes.
+Dans un contexte de mutualisation de ces eﬀorts, le CRDI
+pourra contribuer d’une manière significative à la valorisationde ce programme de recherche, gage de l’eﬃcacité des pro-
+grammes et des politiques basés sur l’évidence empirique en matière d’emploi des jeunes.
+SOMMAIRE 3
+
+1.1.Contexte socio-économique 
+de la Côte d’Ivoire 
+La Côte d’Ivoire est située en Afrique de l’Ouest. Elle couvre
+une superficie de 322 462 km² et partage ses frontières avec legolfe de Guinée au sud, le Ghana à l’est, le Libéria et la Guinée à l’ouest, le Mali et le Burkina Faso au nord. La population ivoi -
+rienne connaît un accroissement soutenu, avec un taux estimé à 3,3 % pour la période 1998-2008, et une population estimée à 22,6 millions en 2011. Cet accroissement naturel s’expliquepar le niveau élevé de la fécondité
+1, d’où l’extrême jeunesse 
+de la population, avec une forte représentation des jeunes de moins de 15 ans (43 %), la tranche des 15-34 ans représen-tant environ 36,40 %. On estime au total que plus de 79,34 %de la population a moins de 35 ans.
+Selon l’enquête Emploi 2013, la population en âge de tra-
+vailler représente 62,5 % de la population totale. De cette por-tion, 35,1 % et 63,2 % sont respectivement âgés de 15 à 24 ans
+et de 14 à 35 ans
+2. La population en âge de travailler est com-
+posée à 51,4 % d’hommes et à 48,6 % de femmes, et résidemajoritairement en milieu rural (53,5 % contre 25,1 % dans 
+les autres villes et 21,4 % à Abidjan).   Sur le plan économique, dès son accession à l’indépendance
+en 1960, la Côte d’Ivoire a opté pour une stratégie de dévelop-
+pement basée sur le capitalisme d’État, la promotion de
+ l’agriculture et l’ouverture sur l’extérieur. Cette stratégie de
+développement, qui accordait une primauté à l’État comme
+promoteur et régulateur de l’activité économique, fera de la
+Côte d’Ivoire un pays agricole avec une forte contribution du
+binôme café-cacao au PIB du pays depuis son indépendance. 
+Au cours des deux premières décennies après son indépen-
+dance, la Côte d’Ivoire a connu une période de stabilité politique
+et de croissance accélérée et stable qualifiée de « miracleivoirien », avec des taux de croissance dans les deux chiﬀres.
+Depuis 1980, cependant, la crise économique due à la forte
+dépendance des produits agricoles et à la détérioration descours des diﬀérents produits d’exportation a favorisé la mise 
+en place d’un Plan d’ajustement structurel (PAS) par le Fonds
+monétaire international (FMI) et la Banque mondiale (BM). Introduction1
+1En 1998, la fécondité se situait à 5,4 enfants par femme. 
+2Selon les lois ivoiriennes, l’âge minimum autorisé pour travailler est de 14 ans.
+NESTLE
+5% de la population en âge de travailler sur la population totale 62,5
+Tranche d’âge population en âge de travailler
+% de la population en âge de travailler  âgé de 15 à 24 ans 35,1
+% de la population en âge de travailler âgé de 14 à 35 ans 63,2
+Tranche d’âge population en âge de travailler
+Hommes 51,4 
+Femmes 48,6 
+Milieu rural 53,5
+Autres milieu urbains 25,1
+Abidjan 21,4Tableau 1. Caractéristiques sociodémographiques
+Source : AGEPE 2014  
+Malgré les diﬀérents programmes qui suivront la dévaluation
+du franc CFA intervenue en janvier 1994, les indicateurs de
+pauvreté ne se sont guère améliorés. L’analyse des profils de
+pauvreté indique une détérioration des conditions de vie desménages depuis les années 1990. Le taux de pauvreté est passé
+de 32 % en 1993 à 49 % en 2008, avec une forte prédominance
+dans les zones rurales (42 % en 1993 et 62 % en 2008) compara-
+tivement aux zones urbaines (19 % en 1993 et 29 % en 2008).  
+Cette situation est la résultante des crises sociopolitiques
+successives qui ont marqué le pays et sapé les bases de l’économie en le replongeant dans une phase de croissance
+négative du PIB réel. L’économie n’a renoué avec la croissance
+qu’à partir de 2004. Cette reprise s’est consolidée d’une part
+avec la conclusion d’un programme d’Assistance d’urgencepost-conflit (AUPC) du FMI et, d’autre part, avec l’apurementdes arriérés de paiement envers la Banque mondiale et legroupe de la BAD, après l’Accord politique de Ouagadougou(APO) en 2007. Cet environnement favorable a permis la réali-
+sation d’un taux de croissance de 1,6 % en 2007 et de 2,3 % 
+en 2008.
+L’amélioration du cadre macroéconomique et l’apaisement
+du climat social ont conduit à la conclusion d’un programme
+triennal appuyé par la Facilité élargie du crédit couvrant la période 2009-2011. La reprise eﬀective de la coopération financière et l’atteinte du point de décision de l’Initiative PPTEont permis d’enregistrer un taux de croissance du PIB réel de3,8 % en 2009, 8,9 % en 2012, 8,7 % en 2013 et plus de 9 % en 2014. Cependant, en termes de classification par rapport audéveloppement humain, la Côte d’Ivoire se retrouve en 2014au 171
+erang, alors qu’elle occupait le 169erang sur 183 pays
+en 2011. Aujourd’hui, le pays a besoin d’une croissance forte,soutenue et inclusive pour créer des emplois, satisfaire la fortedemande sociale et améliorer le bien-être des populations. Legouvernement ambitionne de ramener rapidement le pays surle sentier d’une croissance vigoureuse et soutenue avec la mise
+en œuvre d’un programme d’investissements ambitieux, mais
+réaliste. L’objectif déclaré dans le Plan national de développe-ment (PND 2012-2015) est de bâtir les fondements de l’émergence à l’horizon 2020.
+L’évolution du contexte macro-économique a eu des eﬀets
+néfastes sur l’emploi, en particulier sur l’emploi des jeunes. On a assisté à un accroissement du chômage et surtout à uneprécarité de l’emploi. En eﬀet, le taux de chômage a plus que
+doublé sur la période de la crise militaro-politique, passant de
+6,2 % en 2002 à 15,7 % en 2008, avant de fléchir en 2012 avec
+un taux de 9,4 %. 
+Le plus élevé est celui des jeunes et il aﬀecte particulière-
+ment les femmes, ces dernières présentant plus de diﬃcultés à s’insérer dans le marché du travail. De plus, ceux qui travaillent
+sont pour la plupart engagés dans des activités peu rémunéra-trices et ne bénéficient d’aucune protection sociale. L’informali-
+sation croissante de l’emploi en est l’explication. En eﬀet, le
+dernier rapport de l’enquête sur l’emploi et le travail des
+enfants montre que parmi les secteurs d’activité, l’agriculture
+demeure la branche la plus pourvoyeuse d’emplois, avec 43,5 %des emplois. Elle est suivie par les services (26,4 %) et le com-
+merce (17,6 %). La part de l’industrie dans l’ensemble des emploisn’est que de 12,5 %, alors que 88,7 % des emplois sont fournis
+par les entreprises agricoles traditionnelles (42,4 %) et lesentreprises informelles non agricoles (46,3 %). Seulement 9 %
+des emplois se trouvent dans le secteur formel privé et public,
+dont 3,3 % des emplois dans des entreprises privées formelles.
+Ce sombre tableau explique pourquoi la question de l’emploides jeunes constitue actuellement une priorité nationale.Source : INS, 200880
+60
+40
+20
+0
+National Zones rurales Zones urbainesFigure 1. Taux de pauvreté selon le milieu de résidence
+Année 1993 Année 2008Taux de pauvreté /parenleft.cap% de pop./parenright.cap
+Source : INS, 2008; AGEPE, 201218
+1614
+12
+10
+8
+6
+42
+0Figure 2. Évolution du taux de chômage
+AnnéeTaux de Chômage /parenleft.cap% de pop./parenright.cap
+2002 2008 2012
+Taux de chômage
+6L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+1.2. Justifications et objectifs de l’étude
+Depuis la fin de la crise postélectorale, l’emploi des jeunes est
+l’un des défis que s’est donnés l’État de Côte d’Ivoire. Cespréoccupations du gouvernement sont fortement soutenuespar les partenaires au développement, dont la Banque mondiale
+et les institutions d’appui technique (BIT, CRDI, ACBF, PNUD,etc.). Dans ce cadre, diﬀérentes initiatives de promotion de
+l’emploi des jeunes ont été mises sur pied. D’autres sont en
+cours de consolidation, comme la création d’une agence unique
+d’insertion/emploi des jeunes et d’un ministère dédié à l’insertion
+des jeunes. L’ampleur de ces actions est liée d’une part à la
+détérioration de la situation des couches vulnérables, dont lesjeunes, après plus d’une décennie de crise politique et militaire
+et, d’autre part, à des évènements antérieurs dont les jeunes
+ont souvent été victimes. On peut citer le dysfonctionnementdu système éducatif relatif aux grèves intempestives et inter-mittentes (des enseignants, élèves et étudiants, du personnel
+administratif et technique) depuis l’avènement du multipar-tisme. Le qualificatif de « génération perdue » a été très souventutilisé pour caractériser les diﬀérentes cohortes de jeunes victimes de ces situations.  
+Les diﬀérentes crises depuis le coup d’État de 1999 ont mis
+en veilleuse l’essentiel du dispositif d’insertion des jeunes, alorsque la Côte d’Ivoire avant ce bouleversement politique étaitune des références en matière de politique d’emploi des jeunes.En eﬀet, face à la montée du chômage des jeunes après la criseéconomique de la décennie 1980-1990, la Côte d’Ivoire a préparéun Plan national de l’Emploi en 1991 et un deuxième en 1995.Ces deux plans contenaient de vastes programmes d’insertiondes jeunes.L’objectif principal de cette étude est de fournir une évalua-
+tion éclairée de l’espace de recherche utile et pratique sur
+ l’emploi des jeunes en Côte d’Ivoire.
+De façon spécifique, il s’agira de : 
+• faire un profilage avec un accent sur les caractéristiques
+socioéconomiques des jeunes en Côte d’Ivoire;
+• recenser les initiatives au profit des jeunes (exécutées, 
+en cours d’exécution, en gestation);
+• faire la cartographie des programmes qui favorisent 
+l’emploi des jeunes en analysant les intervenants politiques
+et techniques, le profil des programmes et des acteurs, 
+la réceptivité des responsables de politiques publiques 
+par rapport aux résultats de la recherche; 
+• faire ressortir, sur la base des connaissances actuelles et 
+des programmes en cours, la plus-value ou la valeur ajoutée
+d’un éventuel programme de recherche sur l’emploi 
+des jeunes en Côte d’Ivoire, en :
+– faisant l’inventaire de la recherche sur l’emploi 
+des jeunes, 
+– soulignant les lacunes dans les connaissances quant 
+aux besoins et aux aspirations des jeunes, 
+– montrant comment le programme de recherche peut
+apporter une valeur ajoutée sur les performances des
+programmes d’insertion (recommandation claire capitalisable par le politique),
+– suggérant des priorités éventuelles pour le programme
+de recherche, 
+– répertoriant le potentiel de recherche ou l’expertise
+nationale en termes de capacité à conduire des analysesrigoureuses sur les besoins des jeunes sur le marché 
+du travail, 
+– suggérant des modalités pour impliquer les principaux
+acteurs, pour que la recherche puisse répondre aux
+attentes pratiques,
+– suggérant des stratégies pour développer des synergies
+entre le programme de recherche et les autres pro-grammes de recherche (exemple des programmes de recherche financés par le BIT, l’ACBF ou la 
+Banque mondiale).Source : À partir des données de l’ENSETE 2013 (AGEPE, 2014)Figure 3. Taux d’emploi créé par secteur d’activité
+50
+45
+40
+35
+3025
+20
+15
+10
+5
+0Pourcentage d’emploi
+Secteur d'activitéEntreprises
+informalles
+non
+agrricolesEntreprises
+agricoles
+tradition-
+nelles EmploiAgriculture Services Commerce Industrie
+INTRODUCTION 7
+1.3. Méthodologie d’analyse
+Pour atteindre les objectifs de cette étude, la démarche
+méthodologique a consisté d’abord à faire une importanterevue de la littérature sur les diﬃcultés d’insertion des jeunesen Côte d’Ivoire, puis à eﬀectuer une recherche documentairesur les projets et programmes, pour ensuite analyser les docu-ments collectés. 
+L ’analyse de l’oﬀre et de la demande de travail des jeunes en
+Côte d’Ivoire a été réalisée en consultant les rapports d’étude,les résultats de l’enquête emploi à Abidjan 2008 et 2013, les
+annuaires statistiques de l’Observatoire de l’emploi de l’AGEPE,les statistiques fournies par les enquêtes auprès des ménages
+de 2002 et 2008 de l’INS, ainsi que les résultats de l’enquête 1-2-3 2002. Cela permet d’exposer le contexte de la situation
+des jeunes. Ces diﬀérents documents ont été complétés parla revue de littérature sur l’emploi des jeunes en Côte d’Ivoireet dans les pays en développement (rapports  d’études, documents universitaires [mémoire de master et thèses de doctorat], actes de colloques, etc.). 
+Pour identifier les projets et programmes déjà exécutés ou
+en cours d’exécution, les rapports d’activités des diﬀérentes
+structures responsables de l’emploi
+3et les études d’évaluation
+des diﬀérents programmes ont aussi été exploités, lorsqu’ils
+étaient accessibles. De même, les rapports d’études des acteurs
+multilatéraux ont été consultés. Ces diﬀérents documents permettent de cerner le profil de chaque acteur et son degréd’intervention dans le processus d’insertion des jeunes. 
+Enfin, pour établir la cartographie de l’emploi des jeunes,
+des études de référence sur le rôle des principaux acteurs de la politique d’emploi ont été utilisées. La prise en compte de 
+la dynamique des politiques d’emploi des jeunes à travers lesdiﬀérents plans nationaux de l’emploi et l’intensité de leur exécution permet de situer l’emploi des jeunes dans les dif-férents cycles électoraux. Cela permet de situer la sensibilité du politique par rapport aux recommandations des analystes
+nationaux, des experts techniques multilatéraux et universitaires. Pour établir comment le programme peut générer une
+valeur ajoutée en termes de besoins de connaissances nou-
+velles sur les stratégies de facilitation à l’insertion profession-nelle des jeunes, nous avons analysé les diﬀérents plans
+nationaux portant sur l’emploi, tels que le Plan national dedéveloppement (PND 2012-2015), la Déclaration générale de
+politique d’emploi du gouvernement (DGPE) du 7 octobre 2011
+et la Politique nationale de l’emploi (PNE) de janvier 2012, les
+programmes et projets de coopérations bilatéraux et multi-
+latéraux sur l’emploi des jeunes, les études d’évaluation des
+ diﬀérents programmes d’emploi pour les jeunes comman-
+ditées par les gestionnaires des programmes, les partenaires
+techniques (BIT, CRDI, ACBF, etc.), les chercheurs, enseignants
+chercheurs et autres analystes, de même que la littérature 
+sur les institutions du marché du travail.
+1.4. Plan de l’étude
+L’étude comprend trois grandes sections. La première présenteun état des lieux de l’emploi des jeunes en Côte d’Ivoire, en
+analysant la structure et la dynamique de la population jeune,
+l’adéquation formation-emploi et les programmes et projets
+d’insertion des jeunes. La deuxième section fait la cartographie
+des acteurs impliqués dans la promotion de l’emploi desjeunes. La troisième section décrit l’état des connaissances etcerne les lacunes qui pourraient motiver la mise en place d’unprogramme de recherche sur l’emploi des jeunes, puis répertorie
+le potentiel de recherche ou la capacité nationale de recherche
+à même de gérer un programme de recherche empirique
+ utilisable par les décideurs. 
+3On peut citer l’Agence d’études et de promotion de l’emploi (AGEPE), l’Agence
+nationale de la formation professionnelle (AGEFOP), le Fonds de développement  de
+la formation professionnelle (FDFP), la Plateforme de services (PFS), la Directiongénérale de l’emploi (DGE) et l’Unité de coordination des programmes d’emploi (UCPE).
+8L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+Selon la définition standard des Nations Unies, également
+ utilisée par le BIT, on entend par jeunesse le groupe d’âge
+allant de 15 à 19 ans (adolescents) et de 20 à 24 ans (jeunes
+adultes). Cette définition varie largement d’un pays à l’autre, 
+en fonction de facteurs socioculturels, institutionnels,économiques et politiques. 
+En Côte d’Ivoire, en parcourant les diﬀérents rapports et
+documents administratifs, plusieurs définitions de la jeunesseémergent. L’article 12 du Code électoral de la Fédérationnationale des unions de jeunesse communale de Côte d’Ivoire(FENUJECI) mentionne que les électeurs doivent être âgés de
+16 à 35 ans. On en déduit donc que la jeunesse se définitcomme l’ensemble des individus inclus dans cette tranched’âge. Le ministère de la Promotion de la jeunesse et du Service civique donne la même définition dans sa politique
+nationale de la jeunesse (2011-2015). 
+Cependant, cette catégorisation évolue selon l’âge
+ d’admission à l’emploi, de sorte que la catégorie jeune n’est
+pas clairement spécifiée, comme en témoigne la diversité des bornes dans les diﬀérents programmes ou projets de
+ promotion de l’emploi : 
+• Programme spécial de création d’emploi (PSCE) : 18-30 ans,• Projet emploi jeune et développement des compétences
+(PEJEDEC) : 18-30 ans, 
+• Programme d’aide à l’embauche (PAE) : 18-35 ans,• Plateforme de services (PFS) : 14-40 ans,
+• Programme d’insertion des jeunes ruraux (PIJR) : 18-45 ans.
+Sur le sujet, beaucoup d’études tablent sur une définition
+intermédiaire. Celle du BIT semble restreinte, alors que d’autres,
+dans le cadre de certains programmes, sont trop larges. Les définitions intermédiaires se réfèrent aux intervalles d’âge 
+de 15 à 29 ans (Lachaud [1996], Kouakou [2006], BIT [2015]) ou
+de 15 à 34 ans (INS, 1998). 
+Dans le cadre de cette étude qui porte sur la Côte d’Ivoire,
+on peut définir la population jeune conformément à l’âge d’entrée sur le marché du travail, qui se situe à 14 ans, et à la
+définition du ministère ivoirien de la Jeunesse, dont la borne
+supérieure est de 35 ans. Seront donc considérées commejeunes les personnes âgées de 14 à 35 ans. 
+Cette partie du rapport pose le diagnostic de la situation 
+de l’emploi des jeunes et fait le point sur la transition desjeunes dans ses diﬀérentes composantes de l’école à la vie
+active, avant d’analyser le marché du travail des jeunes et les
+politiques mises en œuvre en matière de soutien à l’emploi.
+Dans chacune des sections, nous dégagerons les insuﬃsancesde l’analyse et les pistes potentielles à explorer.Dans le cadre de cette étude, sont considérées comme jeunes
+les personnes de 14 à 35 ans.Que savons-nous de l’emploi des jeunes en Côte d’Ivoire?2
+ABDUL FATAI / UN
+9
+2.1.Structure et dynamique 
+de la population jeune
+On peut décomposer la population jeune en deux tranches
+d’âge. Nous distinguons ainsi les jeunes au sens strict (14-24 ans)
+et les jeunes au sens large (14-35 ans). Nous analyserons ensuite
+l’évolution de ces deux groupes d’âge de la jeunesse ivoirienne,
+de même que quelques caractéristiques en matière d’éducationet de formation.   
+Le tableau ci-dessous montre l’évolution des diﬀérents
+groupes
+4d’âge de la population en âge de travailler en 2008 
+et 2013.
+Le tableau montre que la structure de la population active
+ivoirienne n’est pas fondamentalement modifiée. Au sens strict,
+la jeunesse représente le tiers de la population ivoirienne en âge
+de travailler. Au sens large, elle constitue 61,6 % de la population
+en âge de travailler. La diﬀérence constatée entre les enquêtes2008 et 2013 relève tout simplement des deux bornes del’inter valle d’âge comprenant la jeunesse. Le rapport de 2008analyse la structure de la population active avec un découpagediﬀérent de celui de l’ENSETE 2013. Si les acteurs de ces étudessont les mêmes, les initiateurs sont diﬀérents. Il en est de même
+de la logique. 
+Durant la crise politique et militaire, les jeunes ont payé un
+lourd tribut. Acteurs essentiels, plusieurs milliers de jeunes ontparticipé aux combats. On estime le nombre d’ex-combattantsà environ 74 000. Conscient que la paix sociale et le développe-
+ment économique sont tributaires du désarmement, de la
+démobilisation et de la réintégration de ces ex-combattants, legouvernement a adopté le 2 août 2012 une politique nationalede DDR. De même, l’Autorité pour le désarmement, la démobili  -
+sation et la réintégration (ADDR) a été créée par décret n
+o2012-787 du 8 août 2012, pour mettre en œuvre un
+ programme dont l’un des objectifs opérationnels est le
+désarmement, la démobilisation, y compris la resocialisation, la réinsertion et la réintégration des ex-combattants dans le tissu
+socio-économique. Au 27 juin 2015, selon les autorités del’ADDR, plus de 57 000 ex-combattants ont été démobilisés,dont plusieurs milliers ont été eﬀectivement réinsérés. 
+2.2. Situation et profil de l’emploi des jeunes
+En Côte d’Ivoire comme partout ailleurs en Afrique de l’Ouest,les jeunes sont diversement désavantagés sur le marché du
+travail en fonction de l’âge, de l’origine nationale ou ethnique,du milieu socio-économique, de l’instruction, de l’éducation,
+des qualifications, de la migration, du VIH/sida, des handicaps
+et d’autres caractéristiques individuelles. Et ce, sous fond d’insuﬃsance de protection sociale, accentuant les diﬃcultésdes jeunes quant à l’insertion, l’auto-emploi et l’entrepreneuriat.
+Les statistiques récentes montrent que les jeunes représentent
+la population la plus touchée par le chômage, le sous-emploi
+et la précarité de l’emploi. Le profil démographique de la Côted’Ivoire a évalué l’âge moyen des chômeurs à 27 ans, soit 5 ans
+de plus que la moyenne d’âge de la population totale. En outre,
+près des trois quarts de ces chômeurs ont moins de 30 ans
+(77,5 % chez les femmes contre 70,5 % chez les hommes). Les
+chômeurs en Côte d’Ivoire sont pour la plupart des jeunesdiplômés à la recherche d’un premier emploi. En eﬀet, des diﬀérentes enquêtes
+6, il ressort que les personnes sans instruction
+ont des taux de chômage inférieurs à celles ayant des niveauxde diplômes élevés
+7. On note également une précarité de
+ l’emploi des jeunes (35,8 % des jeunes ont un salaire inférieurau SMIG
+8). 
+Selon les données de l’AGEPE-EEMCI 2012, 53,1 % des emplois
+dans le secteur privé formel sont occupés par les jeunes de 
+14 à 35 ans. Les femmes représentent 26,4 % des emplois dans
+ce secteur. Notons que la part du secteur privé formel dans la
+population active occupée est très faible. En eﬀet, le secteur
+privé formel n’oﬀre que 4,9 % des emplois contre 89,4 % dans le
+secteur informel et 3,9 % dans le secteur public et parapublic. 
+Dans le secteur public et parapublic, les jeunes de 14 à 35 ans
+représentent 40 % des actifs occupés, tandis que les femmesreprésentent 24,1 %.
+10L’EMPLOI DES JEUNES EN CÔTE D’IVOIREGroupe d’âge 20085 2013
+14-24 ans 34,3 35,1
+25-35 ans 27,3 28,1
+Plus de 35 ans 38,4 36,8Tableau 2. Évolution de la population active par groupe d’âge
+4Il aurait été souhaitable de donner la répartition de chaque groupe d’âge par sexe
+et par zone d’habitation, mais les diﬀérents rapports sur l’emploi ne fournissent pas
+ces informations. 
+5Données selon l’ENV 2008 avec des tranches de la jeunesse définies comme lesgroupes d’âge 15-24 ans et 25-34 ans.
+6En 2008, cette situation est manifeste à Abidjan. Les personnes sans instruction ontun taux de chômage de 8,7 %. Ce taux est de 21 % pour celles ayant achevé le cycleprimaire, 29 % pour celles du secondaire et 35,5 % pour celles du supérieur. 7Le taux de chômage est de 9,6 % pour les 14-24 ans et de 5,9 % pour les 25-35 ans.
+Il faut noter que le taux de chômage est plus élevé parmi les diplômés du secon -
+daire (9 %) et du supérieur (12,2 %); 52 % de l’ensemble des chômeurs sont faible-
+ment instruits et ont au plus le niveau primaire, alors que 13 % des chômeurs ont
+fait des études supérieures. De même, 43,9 % des chômeurs se trouvent à Abidjan
+et 53,4 % des chômeurs sont des femmes. Les 14-35 ans constituent près des trois
+quarts des chômeurs, dont 70 % sont de longue durée.
+8Depuis 2013, le SMIG en Côte d’Ivoire est passé de 36 607 FCFA à 60 000 FCFA.Source : Rapport ENSETE 2013, rapport ENV 2008
+Les jeunes représentent la population la plus touchée par 
+le chômage, le sous-emploi et la précarité de l’emploi.
+QUE SAVONS-NOUS DE L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE? 11Le secteur informel occupe la majorité des jeunes de 
+14-24 ans avec 91,1 % d’entre eux qui s’y trouvent. Les jeunes
+de 14-35 ans représentent 58,9 % des actifs occupés dans l’économie informelle, tandis que la proportion des femmes yest de 44 %. Il est aussi important de savoir que les emploisdomestiques (services aux ménages) sont occupés à 51,6 % pardes femmes et à 77 % par des jeunes 14-35 ans. Cela démontrela nécessité de comprendre en profondeur les mécanismes de
+formalisation et d’intervention, ainsi que les eﬀets du secteurprivé informel sur le marché du travail des jeunes.
+Les jeunes au sens large sont plus sévèrement frappés par
+le chômage, avec des taux de 9,7 % et 15 % respectivementpour les jeunes hommes et les jeunes femmes, dont la vulnéra-bilité de l’emploi avoisine les 65 %. Cela implique l’attentionparticulière dont devraient bénéficier les questions de vulnéra-
+bilité et de protection sociale des jeunes femmes et hommesactifs sur le marché de l’emploi.En février 2014, le taux de chômage national est estimé 
+à 5,3 %. Cependant, en tenant compte des travailleurs
+rémunérés en dessous du SMIG, ce chiﬀre atteint 9,4 %, puis 
+25 % en incluant les sous-emplois. Celui des jeunes a sensible-
+ment diminué, passant à 9,6 % pour la tranche 14-24 ans et 
+5,9 % pour la tranche 25-35 ans. Mais ces taux sensiblement
+moins élevés cachent de fortes disparités. Les données mon-trent que le chômage est essentiellement urbain avec une
+forte contribution des jeunes, car plus des trois quarts deschômeurs sont âgés de 14 à 35 ans. Il est surtout de longue
+durée (7 chômeurs sur 10). 
+Les taux souvent élevés de l’emploi cacheraient de forts
+taux de sous-emplois visibles et invisibles. Le sous-emploi visible
+aﬀecte 22,4 % des actifs de 14-24 ans et 23,8 % des actifs ayantune formation de niveau supérieur. Vu la situation de pauvretéélevée de la population active face à un taux de chômage
+ relativement faible, il semble évident que le sous-emploi décrit
+le mieux la situation des jeunes sur le marché du travail.
+Le sous-emploi décrit le mieux la situation des jeunes 
+sur le marché du travail. Indicateurs Tranche d’âge de jeunes
+15-24 ans 15-35 ans
+Taux de jeunes au chômage 13,8 % 12,2 %
+Dont 
+• Taux de chômage des jeunes hommes 9,7 % 
+• Taux de chômage des jeunes femmes 15,0 % 
+Taux de jeunes chômeurs découragés 39,13 % 36,1 %
+Taux de jeunes n’étant ni en éducation, 21,2 % 21,7 %
+ni en formation, ni en emploi 
+(catégorie des NEET)
+Taux d’insertion des jeunes dans
+l’économie formelle n/a 53,1 %
+Dont 
+• Taux d’insertion des femmes 26,4 %
+Taux d’insertion des jeunes dans 
+l’économie informelle 91,1 % 58,9 %
+Dont 
+• Taux d’insertion des jeunes femmes 44 %Tableau 3.Récapitulatif des données de base concernant 
+la situation des jeunes vis/hyphen.capà/hyphen.capvis de l’emploi 
+Source : AGEPE, à partir des données de l’EEMCI 2012
+GUILLAUME DJE
+2.3. L’adéquation formation-emploi
+L’inadéquation entre la formation et l’emploi a été unanime-
+ment décriée depuis la publication du rapport du BIT9sur 
+« le syndrome du diplôme et le chômage des diplômés ». 
+Tous les rapports sur l’adéquation entre le diplôme et l’emploides structures techniques
+10et universitaires11n’ont cessé
+ d’actualiser cette information. 
+Au regard de la durée moyenne de chômage des jeunes
+demandeurs de premier emploi, qui est de 4,4 ans, l’adéquation
+formation-emploi et l’employabilité des demandeurs d’emploiconstituent des défis à relever. La faible qualification, l’orienta-tion du système de formation par l’oﬀre et non par la demande,
+et donc des formations initiales jugées trop théoriques, sont
+des facteurs qui limitent l’employabilité des demandeurs d’emploi, plus particulièrement des jeunes. Une enquête
+auprès des entreprises multinationales installées en Côte
+d’Ivoire
+12indique clairement l’inadéquation de la compétence
+des jeunes. Pendant que de nombreux jeunes diplômés sont
+au chômage ou à la recherche d’un premier emploi qu’ils ne
+trouvent pas, les entreprises, elles, recherchent du personnelqualifié, justement dans les mêmes secteurs professionnels,
+qu’elles ne trouvent pas non plus. Selon les entreprises inter-rogées, les jeunes n’ont pas les qualifications requises pouroccuper des postes en leur sein. Elles attribuent ce manque 
+de compétence à la faiblesse du système éducatif ivoirien. En eﬀet, l’amélioration de l’employabilité des jeunes passe parune bonne compréhension des diﬀérents systèmes de forma-tion et d’apprentissage pour une action eﬃcace des politiques.En Côte d’Ivoire, on pourrait distinguer six systèmes de forma-tion, dont l’eﬃcacité n’est jamais mesurée avec les instruments adéquats :
+• la formation formelle structurée et méthodique;
+• léducation informelle non organisée;
+• le système national de formation, validé et agréé 
+par le gouvernement;• l’apprentissage formel, où l’acquisition de compétences 
+se fait aux côtés d’un artisan expérimenté, en suivant 
+en parallèle un enseignement de type scolaire;
+• l’apprentissage informel basé sur des normes et 
+traditions locales;
+• l’apprentissage traditionnel avec une transmission des 
+connaissances des parents ou d’un clan vers les enfants. 
+La formation par l’apprentissage ouvre des perspectives aux
+jeunes défavorisés, mais elle dresse aussi des obstacles sur leur
+chemin. L ’apprentissage informel peut déboucher sur l’exploita-
+tion d’une main-d’œuvre bon marché ou se borner à transmet-tre des compétences existantes sans en conférer de nouvelles.En eﬀet, si certaines conditions ne sont pas remplies, l’appren-
+tissage est potentiellement synonyme d’exploitation, comme
+le révèle toute la littérature sur le travail des enfants.
+Par ailleurs, les écoles de formation font preuve d’un réel
+engagement envers la promotion et l’amélioration de l’emploides jeunes en Côte d’Ivoire, mais elles déplorent l’absence de
+dialogue allant dans ce sens, tant avec le gouvernementqu’avec les entreprises multinationales et autres partenaires
+sociaux. Il est important de noter que le seul dialogue avec lesécoles de formation s’eﬀectue avec les petites et moyennesentreprises ou les organisations professionnelles représentantces dernières. Ces écoles sont très sollicitées par les entrepriseslocales où sont placés de nombreux stagiaires. 
+Quant à l’implication des grandes entreprises locales et des
+multinationales dans l’intégration et l’insertion des jeunesdiplômés, elle est timide, voire inexistante pour certaines,
+compte tenu de l’inadéquation entre la formation et l’emploitrès souvent évoquée. Cette situation pourrait être à la base
+des diﬃcultés d’insertion des jeunes.
+9BIT (1982), « Le Syndrome du diplôme et le chômage des diplômés, réflexions de
+synthèse », Le Syndrome du diplôme et le chômage des diplômés : rapport, volume 5,
+Jobs and Skills Programme for Africa. 
+10Voir BIT, AGEPE, INS.11Kouakou (2006, 2011, 2012), Kouadio (2004), Domaurod (2004). GRATIER (2007), 
+« Employabilité des jeunes en Côte d’Ivoire, Mémoire de DEA-PTCI ». 
+12Cette enquête a été réalisée par l’OIT auprès de 27 entreprises multinationales
+installées en Côte d’Ivoire, dont 11 dans l’agro-industrie, 8 dans le secteur bancaire,
+4 dans le secteur minier et 4 dans le secteur des télécommunications. Les jeunes diplômés n’ont pas les qualiﬁcations requises 
+pour répondre aux besoins des employeurs.
+12L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+2.4.Programmes et projets d’insertion 
+des jeunes
+Les politiques, programmes et projets de soutien à l’emploi 
+des jeunes mis en œuvre sont fondés sur la situation dedéséquilibre observée sur le marché du travail. En Côte
+d’Ivoire, la politique de l’emploi des jeunes a été influencée par les diﬀérentes phases de l’évolution économique du pays.Au cours des deux premières décennies de l’indépendance
+ivoirienne, l’économie a été caractérisée par une croissancesoutenue et bénéfique pour l’emploi moderne. La troisièmedécennie a été marquée par une récession économique,
+entraînant des licenciements massifs avec l’application desProgrammes d’ajustement structurel (PAS). Pour faire face auxeﬀets négatifs des PAS, le gouvernement a instauré desmesures de soutien à l’emploi des jeunes. Sur cette période, la politique de retour à la terre a été mise en œuvre en 1985
+pour résorber le chômage des jeunes diplômés en concur-
+rence défavorable face à leurs aînés plus expérimentés sur lemarché du travail. Cette politique a connu un échec prévisible,compte tenu de son incohérence par rapport à la théorieéconomique du développement. 
+Avec la généralisation du chômage et face aux PAS qui 
+n’ont pas donné les résultats escomptés, les mesures de sou-
+tien à l’emploi se sont renforcées et diversifiées sur la période
+1991-1999, avec la conception d’un Plan national de l’emploien 1991, révisé en 1995. Ces plans nationaux sont basés surdes programmes spécifiques de création d’emplois, tels que leProgramme d’aide à l’embauche (PAE), le Programme spéciald’insertion des femmes (PSIF), le Programme d’insertion desjeunes ruraux (PIJR) et le Programme de création des micro -entreprises. Ces programmes ont tous été arrêtés ou suspendus par manque de financement. 
+Une dernière phase, de 2000 à 2011, est caractérisée par
+une série de crises politiques et militaires et par un environ-nement défavorable à la création d’emplois. Devant cette situation, le gouvernement a mis en place en 2003 un Fonds
+national de solidarité pour la promotion d’emplois pour lesjeunes, une plateforme de services, composée de l’AGEPE, del’AGEFOP , du FDFP et du FNS, pour renforcer la formation etl’insertion des jeunes. En outre, on a procédé à la réactivationdu projet pour les travaux d’utilité publique à haute intensitéde main-d’œuvre (THIMO) pour la création d’emplois tempo-raires pour les jeunes et les femmes. On a également élaboré
+en 2006 un Plan national de développement de l’emploi 2006-2008, qui n’a pu être mis en œuvre. Par ailleurs, dans le
+cadre du programme Pays pour la promotion du travail décent
+(PPTD 2008-2013), la Côte d’Ivoire a instauré plusieurs actionspour la promotion d’emplois décents pour les jeunes. Ce sont
+entre autres :
+• la mise en place des programmes Démobilisation-
+désarmement-réinsertion / Réhabilitation-réinstallation-
+réinsertion (DDR/RRR) destinés aux ex-combattants et 
+à des groupes à risque; 
+• la mise en place du Programme pilote de développement
+des initiatives génératrices d’emplois (PRODIGE), visant 
+à financer des activités génératrices de revenus pour 
+les jeunes et les femmes; 
+• la réactivation du Programme d’aide à l’embauche (PAE)
+pour l’emploi des jeunes diplômés et du programme de
+Travaux à haute intensité de main-d’œuvre (THIMO); 
+• la mise en œuvre du Projet d’appui au traitement
+économique du chômage (PATEC); 
+• le retour du Programme du service civique national (PSCN); 
+• le financement des projets jeunes par le Fonds national de
+solidarité pour la promotion d’emplois pour les jeunes (FNS)visant à garantir l’accès au crédit des jeunes entrepreneurs
+et d’entreprises créatrices d’emplois jeunes, mais dissous en2012 et remplacé par le Fonds national de la jeunesse (FNJ).
+• la création et la mise en œuvre, grâce à un financement de
+la Banque mondiale, du Projet emploi jeune et développe-ment des compétences (PEJEDEC), dont l’objectif estd’améliorer l’accès à l’emploi et le développement des compétences professionnelles des jeunes, hommes et
+femmes de tout niveau de qualification, âgés de 18 à 30 ans,
+en situation de non-emploi ou de sous-emploi; 
+• la mise en place du projet C2D, avec un financement 
+de l’AFD en 2013;
+• l’adoption de mesures fiscales en 2009 pour soutenir 
+l’emploi (article 10 de l’annexe fiscale 2009).
+QUE SAVONS-NOUS DE L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE? 13
+En se référant aux objectifs des programmes, on peut dis-
+tinguer trois grandes catégories de programmes et projets : 
+• les programmes destinés à la formation des demandeurs
+d’emploi,
+• les programmes destinés à la prospection et au placement
+des demandeurs d’emploi,
+• les programmes destinés au financement des micro et
+petites entreprises.
+Pour tenir compte du problème de ciblage des bénéficiaires,
+les structures responsables de la promotion de l’emploi pour
+les jeunes ont élaboré des programmes et projets en segmen-tant et en constituant des sous-groupes au sein de la popula-
+tion des jeunes : diplômés demandeurs de premier emploi,
+jeunes sans qualifications, ex-groupes d’autodéfense, jeunesex-combattants, jeunes handicapés, groupement des jeunesruraux, jeunes déscolarisés, jeunes âgés de 14 à 26 ans,femmes, etc.
+En 2009, ces programmes ont généré dans leur ensemble 
+6 106 emplois directs dans divers domaines comme l’agricul-ture, les TIC, les infrastructures, les industries chimiques et du bois. La dernière crise a porté un coup fatal à toutes 
+ces initiatives. 
+Ces programmes pour la plupart découleraient d’une
+ certaine manière des Politiques actives du marché du travail
+(PAMT) pour aider les chômeurs à retrouver un emploi. En eﬀet, les PAMT comprennent les services de placement, l’administration des prestations de chômage et les programmesdu marché du travail, tels que la formation et la création d’emplois. Mais en Côte d’Ivoire, la non-modernisation desinstitutions du marché du travail constituerait un frein majeuraux politiques et programmes d’emploi en faveur des jeunes,qu’ils soient actifs ou passifs.Le Plan national de développement (PND 2012-2015) est
+aujourd’hui le cadre de référence de l’action publique en Côte
+d’Ivoire. Son objectif principal est de faire de la Côte d’Ivoire un pays émergent à l’horizon 2020. Grâce au PND, les autorités
+ivoiriennes s’attendent à trois eﬀets en matière d’emploi. Il y a
+d’abord l’amélioration de la gouvernance du secteur de l’emploi
+et du travail, notamment le cadre institutionnel et juridique.Ensuite, la facilitation pour les jeunes de l’accès à l’emploi à travers la planification de l’emploi public, la mise en place 
+de mesures incitatives à la création d’emplois, la promotion 
+de Travaux à haute intensité de main-d’œuvre (THIMO) dans 
+la réalisation des investissements publics et le développement
+de l’insertion par l’entrepreneuriat.
+Enfin, le troisième eﬀet attendu du PND est l’amélioration
+de la productivité du travail. Pour ce faire, la Côte d’Ivoirecompte sur le renforcement du capital humain dans le secteur
+urbain informel et rural; sur la promotion de la formation
+ continue dans le secteur formel, celle de la santé-sécurité dutravail et l’instauration du dialogue social; sur le renforcement
+de la lutte contre le travail et la traite des enfants.
+Au titre de mesures inhérentes à la création d’emplois, le
+gouvernement ivoirien envisage la mise en place d’un système
+de veille sur les profils demandés par les entreprises, l’élaborationdu répertoire des métiers et des compétences, la réalisation de
+l’adéquation formation-emploi et la prise de mesures d’incitationà l’embauche des demandeurs de premier emploi.
+Quant à l’insertion par l’entrepreneuriat, elle nécessite,
+selon le gouvernement ivoirien, l’introduction d’un module
+entrepreneuriat dans le secteur éducation/formation, la pro-
+motion de modèles de réussite d’entreprises et d’auto-emploi,ainsi que l’appui à la création d’entreprises par les jeunes, lesfemmes et les personnes handicapées.La non-modernisation des institutions du marché du travail
+constituerait un frein majeur aux politiques et programmes
+d’emploi en faveur des jeunes.
+14L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+Depuis la sortie de crise en avril 2011, le gouvernement
+ivoirien a placé la lutte contre le chômage au cœur de ses
+préoccupations. La création d’emplois, surtout en faveur desjeunes, figure au premier plan dans l’action gouvernementale.
+Pour ce faire, le pays s’est doté d’une Politique nationale de
+l’emploi (PNE) depuis le mois de juin 2012. La PNE vise lesobjectifs suivants :
+• accroître les opportunités d’emploi par des mesures
+ d’incitation à la création d’entreprises à « haute intensité 
+de main-d’œuvre » et à l’auto-emploi, et par la promotiondes métiers agricoles et de l’agro-industrie;
+• assurer le meilleur accès possible à l’emploi par la formation
+des jeunes sans qualifications, par la promotion de stagesrémunérés pour les jeunes diplômés qualifiés et la mise 
+en œuvre de programmes d’insertion à l’emploi;
+• préserver l’emploi autant que possible par des mesures et
+mécanismes institutionnels, conventionnels, économiques
+et financiers de sauvegarde de l’emploi et de prévention du chômage; 
+• consolider et améliorer l’emploi informel et rural par des
+mesures d’appui à la transformation et à la modernisation; 
+• développer une capacité nationale de gouvernance de
+l’emploi et du marché du travail, notamment par la coordi-nation des mesures incitatives pour l’emploi et la création
+d’un observatoire autonome du marché du travail.
+Pour atteindre ces objectifs, la PNE compte s’appuyer sur 
+les trois stratégies suivantes : i) stimuler la création économique,
+ii) investir dans l’accumulation du capital humain et iii) rationaliser la gouvernance de l’emploi.
+Ces trois axes stratégiques seront matérialisés par les princi-
+pales actions ci-après :
+• mieux prendre en compte l’emploi dans les politiques
+ transversales et dans les politiques sectorielles 
+de développement,
+• accompagner les activités privées créatrices d’emplois, • renforcer l’action directe de promotion de l’emploi,
+• accroître l’oﬀre de formation et l’adapter aux besoins 
+du marché du travail,
+• renforcer le système administratif et judiciaire pour 
+le contrôle de l’application de la législation du travail,
+• développer le dispositif de protection sociale,
+• dynamiser le marché du travail,• sécuriser l’emploi,
+• renforcer la coordination et la synergie entre les institutions
+responsables des questions de l’emploi.
+L’objectif de cette section est de faire le diagnostic du
+ dispositif institutionnel de la promotion de l’emploi des jeunes
+en Côte d’Ivoire. De façon spécifique, il s’agit d’identifier les dif-
+férents acteurs qui interviennent dans la conception et la mise
+en œuvre des politiques de l’emploi et analyser les formes decollaboration existant entre eux dans l’exécution des diﬀérents
+axes stratégiques visant l’emploi des jeunes.Qui sont les intervenants responsables de l’emploi des jeunes?3
+15
+DENIS CARRASCOSA
+3.1.Dispositif institutionnel pour 
+l’emploi des jeunes 
+La transversalité des interventions en faveur de l’emploi
+requiert non seulement l’implication de tous les acteurs de la
+vie économique, mais aussi une synergie entre les diﬀérentsacteurs. Ainsi, pour assurer l’eﬃcacité de sa politique d’emploi,le gouvernement a mis à contribution les acteurs clés œuvrantdans le domaine de la promotion de l’emploi. Il s’agit desacteurs des secteurs publics et parapublics, du secteur privé,de la société civile et des partenaires au développement, quitravaillent en étroite collaboration pour une meilleure
+ canalisation des actions à mener.
+Les acteurs des secteurs public et parapublic sont pour la
+plupart des établissements publics et parapublics nationauxspécialisés dans des domaines précis, comme le décrit le
+tableau ci-dessous. Ces domaines de spécialisation se rappor-tent à la formation, au renforcement de capacité, à l’assistanceet au conseil en recrutement, ainsi qu’à la production d’infor-mations fiables sur le marché du travail.À ces diﬀérents acteurs pourraient en être associés d’autres,
+dont le rôle est secondaire, mais qui pourraient influencer lapolitique de l’emploi des jeunes. Il s’agit de la présidence de 
+la République, de la primature et de l’Assemblée nationale. 
+Nous analyserons ces acteurs en les regroupant par types :
+la présidence de la République, la primature et l’Assembléenationale; les ministères; les agences techniques; les structures
+de financement; les structures d’appui, le secteur privé et lesorganisations professionnelles; les collectivités territoriales; 
+la société civile et les partenaires au développement travaillant
+en étroite collaboration pour une meilleure canalisation des
+actions à mener; la Commission nationale de l’emploi. 
+La présidence de la République, la primature et 
+l’Assemblée nationale
+Trois programmes sont gérés directement par la primature,
+compte tenu de leur caractère sensible. Ils visent les jeunes  ex-combattants et membres des groupes d’autodéfense, considérés comme des jeunes à risque. Il s’agit : 
+• du PNRRC : contribuer à la restauration et à la consolidation
+de la paix; contribuer à la réduction des risques de reprise
+des hostilités par la réinsertion socio-économique des 
+ex-combattants, des ex-miliciens et des jeunes à risques;
+contribuer à la réhabilitation communautaire par le ren-forcement de la capacité des populations à reprendre leurs
+activités économiques et par la réhabilitation des infra-
+structures communautaires et des services de base;
+• du PSCN : oﬀrir une formation civique et professionnelle 
+à environ 40 000 jeunes en vue de favoriser leur réinsertion
+économique et sociale; 
+• du PAPC : améliorer les opportunités de réinsertion
+économique et l’accès aux services sociaux des commu-
+nautés et des individus aﬀectés par le conflit. 
+Vu la priorité accordée à l’emploi des jeunes, la présidence
+de la République a mis en place un conseil pour l’emploi desjeunes. Ce conseil est dirigé par le conseiller spécial du président
+de la République pour l’emploi des jeunes, assisté du conseiller
+jeunesse du président de la République. Cependant, l’implication
+de ce conseil dans la conception et l’exécution des programmes
+est marginale. Aucun document administratif ne s’y réfère.Mais parce qu’ils influencent les décisions du chef de l’État, on peut les considérer comme des acteurs de la politiqued’emploi pour les jeunes. 
+16L’EMPLOI DES JEUNES EN CÔTE D’IVOIREStructures Actions
+Direction générale de l’emploi Orientation, définition, coordination
+(DGE) et évaluation de la politique 
+nationale de l’emploi
+Agence d’études et Intermédiation de l’emploi et  
+de promotion de l’emploi observation du marché (AGEPE) du travail
+Agence nationale de Ingénierie de la formation 
+la formation professionnelle professionnelle
+(AGEFOP) continue et de l’apprentissage
+Fonds de développement de Financement de la formation 
+la formation professionnelle professionnelle continue et  (FDFP) de l’apprentissage
+Plateforme de services (PFS) Mutualisation des services 
+AGEPE-FDFP-AGEFOP pour l’accompagnement technique et financier à l’insertion des jeunes en entreprise et dans l’auto-emploi
+Institut ivoirien de l’entreprise Promotion de l’entrepreneuriat et  (INIE) encadrement des promoteurs de micro,
+petites et moyennes entreprises
+Agence de gestion des routes Exécution de programmes à haute (AGEROUTE) intensité de main-d’œuvre
+Ministères techniques Appui technique et financier à la 
+promotion d’emploi pour les jeunes et les femmesTableau 4.Acteurs publics et parapublics intervenant 
+sur le marché de l’emploi en Côte d’Ivoire
+Source : Politique nationale de l’emploi, 2012
+L’Assemblée nationale dispose également d’une Commission
+des aﬀaires sociales et de l’emploi. Cette commission ne joue
+pas un rôle particulier dans le fonctionnement des programmesd’emploi pour les jeunes, mais elle pourrait au besoin se saisir decertains dossiers si on n’en perçoit pas bien la portée. En eﬀet,
+l’Assemblée nationale ivoirienne dispose de six commissions,dont une Commission des aﬀaires économiques et financièreset une Commission des aﬀaires sociales et culturelles (éducation,
+jeunesse, travail, aﬀaires sociales, etc.). Ces interventions nesont toutefois pas actives en matière de créations d’emplois
+pour les jeunes. 
+Les ministères
+Trois ministères interviennent directement dans la conduite dela politique d’emploi pour les jeunes : il s’agit du ministère d’État,
+ministère de l’Emploi, des Aﬀaires sociales et de la Formationprofessionnelle, ainsi que du ministère de l’Économie et 
+des Finances. 
+Le ministère de l’Emploi, des Aﬀaires sociales et de la
+ Formation professionnelle était le ministère technique chargé
+des questions de travail et d’emploi. Il assure à terme la mise en œuvre et le suivi de la politique du gouvernement en matière d’emploi. Il a l’initiative et la responsabilité de l’application, du contrôle et de l’évaluation de la politiquenationale en matière d’emploi. Pour exercer ses attributions, il dispose entre autres d’une direction générale de l’emploi
+(DGE), qui est chargée de la conception et du suivi des poli-tiques nationales d’emploi. La DGE a participé à l’exécution 
+du projet PRODIGE en partenariat avec l’AGEPE, en accompa-
+gnant 1 500 jeunes hommes et femmes résidant dans 7 localités
+des régions du Moyen Cavally et des Montagnes à se prendreen charge par la réalisation de microprojets économiques. 
+En outre, ce ministère assure la mise en œuvre et le suivi de la politique du gouvernement en matière d’enseignement et
+de formation professionnelle. Comme tel, il est responsable de la mise en œuvre, de la planification et de l’évaluation desstratégies et programmes de formation professionnelle. 
+Sa direction de l’enseignement technique et professionnel est chargée de la mise en œuvre des actions de formation professionnelle continue, en collaboration avec l’AGEFOP . Ce  ministère se charge également de l’aide à l’insertion professionnelle, par l’intermédiaire de la Direction de l’entrepreneuriat et de l’inspection professionnelle. La création d’un ministère délégué auprès du président 
+de la République chargé de la promotion de la jeunesse et de
+l’emploi des jeunes, dont l’organisation est en cours, devrait
+modifier les attributions du ministère de l’Emploi, des Aﬀaires
+sociales et de la Formation professionnelle.
+Le ministère de l’Économie et des Finances n’est pas
+directement concerné par les questions d’emploi, mais il est
+impliqué dans la gestion financière de toutes les actions
+définies par l’État. En liaison avec les diﬀérents départementsministériels intéressés, le ministère de l’Économie a l’initiative
+et la responsabilité du suivi et de l’exécution du budget 
+de l’État.
+Les agences techniques
+Une mutation profonde est en cours depuis le début de 
+l’année 2015 en vue de réorganiser le dispositif institutionneld’insertion des jeunes. Ainsi, une Agence pour l’emploi des
+jeunes (AEJ) a été créée par décret le 24 juin 2015. L’AEJ, dont 
+la mission et l’organisation n’ont pas encore clairement été
+dévoilées, fonctionnera comme un guichet unique de l’emploi
+pour les jeunes et hériterait de certaines structures qui
+dépendaient jusque-là d’autres ministères. Il s’agit :
+• de l’Agence d’études et de promotion de l’emploi (AGEPE); 
+• du Fonds de soutien à l’emploi par des travaux d’utilité
+publique à haute intensité de main-d’œuvre qui relevaient
+tous du ministère d’État et du ministère de l’Emploi, desAﬀaires sociales et de la Formation professionnelle;
+• du Fonds de développement de l’agriculture villageoise
+(FDHEV);
+• du Fonds de garantie crédits des projets BAD 
+du développement rural;
+• du Fonds pour les petites et moyennes entreprises agricoles,
+qui relevait du ministère de l’Agriculture, ainsi que du Fonds
+d’appui au développement de l’artisanat;
+• du Fonds ivoirien pour le développement des entreprises
+nationales (FIDEN), qui relevait du ministère de l’Entrepre-
+neuriat national et de la Promotion des PME et de l’artisanat;
+• du Fonds national de la jeunesse et du Fonds d’insertion des
+jeunes diplômés et de réinsertion des déflatés des secteurs
+public et privé, qui relevaient tous deux du ministère
+délégué auprès du président de la République chargé de 
+la promotion de la jeunesse et de l’emploi des jeunes.
+QUI SONT LES INTERVENANTS RESPONSABLES DE L’EMPLOI DES JEUNES? 17
+L’agence sera dirigée par un conseil d’orientation com-
+prenant le public, le privé et les représentants des partenaires
+au développement. L’agence s’appuiera dès le départ sur un
+prêt de 29 milliards FCFA conclu le 6 mai 2015 entre l’Association
+internationale de développement (AID) et l’État de Côte d’Ivoire,
+en vue de financer le projet d’urgence de création d’emploispour les jeunes et de développement des compétences.
+Dans le nouveau dispositif d’insertion des jeunes, trois autres
+structures techniques devraient soutenir l’AEJ dans sa mission.Il s’agit de l’Agence nationale de la formation professionnelle(AGEFOP), l’Unité de coordination des programmes d’emploi(UCPE) et la Plateforme de services (PFS).
+L’AGEFOP est un organisme de prospection, d’élaboration et
+de gestion des projets de formation technique et professionnelle
+créé par décret n
+o92-316 du 15 mai 1992, sous la tutelle
+administrative et technique du ministère de l’Enseignementtechnique et de la Formation professionnelle et sous la tutellefinancière du ministère de l’Économie et des Finances. L ’Agence
+a pour mission d’eﬀectuer la prospection et l’analyse desbesoins de formation professionnelle, d’élaborer des projets de formation professionnelle selon les besoins exprimés ou
+détectés, de gérer et de coordonner les projets de formationprofessionnelle dont elle a la responsabilité. Il s’agit d’actionsponctuelles de formations continues, de formations quali-fiantes, en référence à des projets et programmes intégrés.Sous ce rapport, l’AGEFOP est chargée de l’élaboration de
+ projets et de la mise en œuvre de subventions et de plans definancement relatifs aux projets de formation professionnelle.Son département de l’ingénierie technico-pédagogique
+traduit en termes de projets de formation les besoins cernéspar le département Marketing et prospection, les soumet à l’organisme demandeur pour leur prise en compte et leur
+financement, programme leur exécution en liaison avec la
+direction chargée de l’enseignement professionnel et 
+technique et en assure le suivi et l’évaluation. 
+L’AGEFOP gère quatre projets d’insertion des jeunes : 
+• le Projet de formation par apprentissage (PFA), créé 
+par décret n
+o96/286 du 3 avril 1996, dans le cadre du
+ Programme d’absorption des jeunes déscolarisés (PAJD), 
+a pour mission de lutter contre le chômage des jeunes déscolarisés n’ayant aucune qualification professionnellequi leur permette de s’insérer dans le tissu économique. Ce projet national vise à favoriser l’insertion socioprofes-sionnelle de milliers de jeunes déscolarisés, par l’apprentis-sage d’un métier, dans un système d’alternance entre travailpratique en atelier et formation théorique. L’objectif est depermettre aux jeunes d’acquérir une formation qualifiantedans les métiers de leur choix afin de favoriser leur insertion
+socioprofessionnelle et de développer la notion de l’auto-
+emploi, et d’aider les jeunes formés à s’installer dans lesecteur des microentreprises et de l’artisanat. Le public
+cible du projet est constitué de jeunes Ivoiriens déscolariséset de ceux déjà en situation d’apprentissage dans un atelierou en entreprise;
+• le projet de formation par alternance destiné aux jeunes
+déscolarisés, dont l’objectif est de favoriser l’insertion socio-
+professionnelle de ces jeunes par l’apprentissage d’un
+métier dans un système d’alternance entre formationthéorique et stages pratiques en entreprise; 
+• le Projet d’appui et d’accès des personnes handicapées à la
+formation professionnelle (PAAPHFP), destiné aux jeunes
+handicapés : l’objectif de ce projet est, d’une part, de
+favoriser l’accès des personnes handicapées à la formation
+technique et professionnelle et, d’autre part, de favoriser
+l’auto-emploi des personnes handicapées par le biais de la formation en entrepreneuriat; 
+• le projet GERME, ciblant les jeunes entrepreneurs : son
+objectif est de renforcer la capacité des entrepreneurs.
+L ’UCPE a été créée en 2012. Cette structure gère les programmesd’emploi soutenus par les bailleurs de fonds internationaux 
+au profit des jeunes. L’UCPE gère trois projets : 
+• le Projet emploi jeune et développement des compétences
+(PEJEDEC), financé par l’IDA (Banque mondiale), en collabo-
+ration avec l’AGEPE et des structures publiques et privées.
+Les objectifs tournent autour de trois points : 
+1) opportunités d’emplois temporaires au profit des jeunes,2) développement des compétences et aide à l’emploi au profit des jeunes et 3) renforcement de la capacité 
+institutionnelle; 
+• le Projet d’insertion socio-économique (PRISE) des popula-
+tions vulnérables à l’ouest de la Côte d’Ivoire : former 7 000 personnes et les accompagner dans leur installation;
+• le Projet C2D : emploi au profit des jeunes diplômés,
+financé par l’AFD. 
+Créée au départ pour coordonner les politiques d’emplois
+des jeunes, la Plateforme de services (PFS) est devenue
+autonome depuis 2012. Elle a pour objectif de permettre à une
+population composée en majorité de jeunes d’acquérir lesaptitudes et les qualifications nécessaires à leur insertion dansdes emplois décents. 
+18L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+Les structures de financement
+Après la dissolution du FNJ, il ne reste plus que le FDFP comme
+fonds de financement intervenant dans le dispositif d’insertiondes jeunes. Cette structure a été créée par la loi n
+o91-997 
+du 27 décembre 1991 et organisée par le décret no92-05 
+du 8 janvier 1992. Le FDFP est placé sous la tutelle du ministrechargé de l’Économie et des Finances. Doté de la personnalitémorale, ce fonds assure, grâce à la taxe additionnelle pour laformation professionnelle continue, le financement des actions
+de formation continue destinées aux salariés des entreprises et
+les études ayant trait à la planification générale de la formationprofessionnelle continue. Il assure par ailleurs, grâce à la taxe
+d’apprentissage, le financement des actions de formation pro-fessionnelle initiale et d’apprentissage et les études ayant traità la planification générale de la formation professionnelle ettechnique. Destiné aux jeunes, le FDFP exécute le projet de formation initiale et d’apprentissage (FIA) qui participe à la formation par alternance des jeunes de 14 à 26 ans en vue de répondre à un besoin en matière d’emploi exprimé par 
+les entreprises.
+Les structures d’appui, le secteur privé et les organisations
+professionnelles et syndicales
+Les structures d’appui sont des organismes qui ont une
+ influence décisive sur la réussite des programmes d’emploiparce qu’elles sont appelées à participer, au moins indirecte-ment, au financement de ces programmes ou à leurencadrement. On distingue : 
+• la Direction générale des impôts (DGI), sollicitée en tant
+qu’administration fiscale chargée de la gestion des recettes
+fiscales de l’État. Son concours est attendu pour la mise enœuvre des mesures incitatives d’ordre fiscal contenues dansle Plan national de l’emploi et reprises par le plan de relance.
+Il s’agit des mesures d’exonération ou de dégrèvement
+ fiscaux, consenties à l’endroit des entreprises, par emploicréé pour chaque salarié ivoirien. Il faut noter également
+qu’il existe déjà une politique de défiscalisation exécutéepar le fisc en vue d’inciter les employeurs à embaucher destravailleurs ivoiriens. Ces mesures sont contenues dans le
+Code général des impôts. Il s’agit principalement du crédit
+d’impôt – emploi prévu par l’article 84 bis du Code général
+des impôts. Selon ces textes, les personnes physiques ou
+morales passibles de l’impôt sur les bénéfices peuvent
+bénéficier d’un crédit d’impôt annuel de 100 000 francs paremploi net créé par l’embauche de personnes de nationalité
+ivoirienne en quête d’emploi. Les contribuables relevant de
+l’impôt synthétique bénéficient de crédit d’impôt imputésur les cotisations d’impôt sur salaire exigible au cours de
+l’année de son obtention;
+• La Caisse nationale de prévoyance sociale (CNPS) a pour
+but, conformément à l’article premier de la loi n
+o99-477 
+du 02-08-1999 portant modification du Code de prévoyance
+sociale, de fournir des prestations à l’eﬀet de pallier les conséquences financières de certains risques ou de
+ certaines situations, en matière d’accident de travail et de
+maladies professionnelles, de maternité, de retraite, d’inva-
+lidité, de décès et d’allocations familiales. L’essentiel de la
+charge financière de ces prestations étant couvert princi-palement par les cotisations des employeurs, la CNPS est
+appelée à opérer des réductions de charges dues à titre de
+cotisations sociales au profit des entreprises qui collaborent
+à la mise en œuvre des programmes d’emplois. Comme laDGI, la CNPS est donc sollicitée à participer au financement
+des programmes par l’octroi de privilèges d’ordre fiscal ou
+social aux entreprises;
+• l’AGEROUTE intervient dans l’exécution des Travaux à haute
+intensité de main d’œuvre (THIMO), en partenariat avec laDirection générale de l’emploi et l’ex-AGEPE. 
+Le secteur privé est normalement le principal créateur
+d’emploi dans une économie vertueuse. Son rôle dans la
+recherche d’eﬃcacité des politiques incitatives de création
+d’emplois des jeunes doit être maîtrisé avec un suivi et une
+évaluation des mesures prises par le gouvernement. 
+Cette catégorie d’acteurs importants du dispositif de pro-
+motion de l’emploi des jeunes intervient par l’intermédiaire du Centre de promotion des investissements en Côte d’Ivoire(CEPICI), des cabinets privés de formation et de placement, etdes organisations professionnelles telles que la Confédérationgénérale des entreprises de Côte d’Ivoire (CGECI), la Chambre
+QUI SONT LES INTERVENANTS RESPONSABLES DE L’EMPLOI DES JEUNES? 19
+ANOUK DELAFORTRIE / EC-ECHO
+20L’EMPLOI DES JEUNES EN CÔTE D’IVOIREde commerce et d’industrie de Côte d’Ivoire (CCI-CI), la Chambre
+des métiers de Côte d’Ivoire (CMCI) et la Chambre d’agriculture.
+Leurs diﬀérentes actions portent sur l’intermédiation et la créa-tion de programmes directs de formation et d’insertion. Cettecatégorie d’acteurs joue un rôle important dans le développe-ment des compétences et l’employabilité des jeunes.
+Malgré leur rôle inhibitif des eﬀorts de promotion de l’emploi
+des jeunes au profit de l’amélioration des conditions de vie etde travail des travailleurs déjà en poste, les syndicats sont despartenaires eﬃcaces dans les négociations collectives, car ils
+inscrivent la promotion de l’emploi des jeunes dans leur plate-
+forme revendicative et encouragent les programmes de forma-tion du personnel dans les entreprises et les organisations. Lesplus représentatifs sont l’Union générale des travailleurs de
+Côte d’Ivoire (UGTCI), la Fédération des syndicats autonomesde Côte d’Ivoire (FESACI) et la Confédération des syndicatslibres de Côte d’Ivoire, dite « Dignité ».
+Un dialogue social entre ces partenaires réels faciliterait la
+réussite inclusive des diﬀérents programmes multisectorielsd’emploi des jeunes.
+Les collectivités territoriales
+La décentralisation est un moyen de rapprocher la prise de
+décision du lieu où se posent les problèmes et où se trouventles personnes concernées. Toutefois, la décentralisationsoulève un certain nombre de diﬃcultés qui concernent à la
+fois le degré de souplesse qu’elle peut en pratique générer
+dans la gestion des politiques et les moyens de garantir
+ l’obligation de rendre compte au public (la responsabilité). Il peut être préférable de s’employer à établir un lien entre les
+autorités du marché du travail à l’échelle régionale et nationale,et les acteurs intervenant localement dans le développementéconomique et les activités d’intégration sociale. 
+En Côte d’Ivoire, la politique de l’emploi reste centralisée
+dans les diﬀérents programmes de l’emploi énoncés plus haut.Deux acteurs interviennent localement. En matière d’adéqua-
+tion formation-emploi, les diﬀérents acteurs techniques sont
+représentés au niveau local. Sur le plan de l’insertion profes-sionnelle proprement dite, la Plateforme de service, devenueautonome en 2012, intervient fortement dans les collectivitéslocales par le financement d’activités génératrices de revenuset le renforcement des capacités des acteurs du système localde production. Cependant, ces activités restent concentrées et gouvernées depuis la capitale économique ivoirienne. Les collectivités territoriales bénéficient néanmoins d’appuis
+financiers de l’État et d’organismes extérieurs dans le cadre de
+la mise en œuvre de la politique d’aménagement du territoire
+et de la décentralisation. Elles interviennent fortement dansl’exécution des THIMO. Des microstructures interviennent parl’intermédiaire d’associations comme le Mérite international 
+de la jeunesse dans certaines communes d’Abidjan, telles que Port-Bouët, Treichville, Attécoubé, etc.
+Les acteurs de la société civile et les partenaires 
+au développement 
+Ces acteurs travaillent en étroite collaboration pour une
+meilleure canalisation des actions à mener. Ils concourent à lacréation et à la mise en place de projets et programmes d’accèsà l’emploi pour les couches sociales défavorisées, les couches
+vulnérables et les groupes les plus touchés par le chômage. 
+À ce titre, plusieurs partenaires au développement intervien-
+nent dans le dispositif d’insertion. On pourrait citer le BIT, la
+Banque mondiale, la BAD, la coopération française, le PNUD, 
+la coopération allemande, la coopération japonaise etplusieurs autres représentations diplomatiques. 
+Le tableau ci-dessous fait état de l’intervention des parte-
+naires au développement dans la promotion de l’emploi desjeunes sur la période 2012-2015.
+Programme CibleCoûtPartenairesEffectif
+(FCFA) cible
+PEJEDEC 15-30 ans 25 milliards IDA/Banque 27 500
+mondiale
+C2D emploi 15-35 ans 9 milliards C2D/AFD 18 242
+C2D emploi Jeunes 1,2 milliard C2D/AFD 1 000
+/SCAED à risquePRISE Population 1,35 milliard Japon 8 000
+vulnérable (JSDF)Tableau 5.Partenaires au développement intervenant 
+dans le financement des programmes 
+Sources : Ministère d’État, Ministère de l’Emploi et des Affaires sociales et
+de la Formation professionnelle, Tableau de bord emploi, mai 2014.
+13Dans bien des pays comme la France, l’Allemagne, l’Espagne, l’Irlande, la réduction
+des charges sociales patronales est utilisée comme mesure de la politique de pro-motion de l’emploi au profit des couches défavorisées (jeunes, femmes, personneshandicapées, personnes âgées de plus de 50 ans, chômeurs de longue durée). 
+Voir Michel ROCARD (1996). Les moyens d’en sortir, Paris, Seuil. 
+QUI SONT LES INTERVENANTS RESPONSABLES DE L’EMPLOI DES JEUNES? 21L ’organe de coordination : la Commission nationale 
+de l’emploi (CNE)
+Dans le PNE, un ensemble de mesures d’ordre institutionnel,
+économique, financier et fiscal a été prévu. Au niveau institu-tionnel, la création d’une Commission nationale de l’emploi(CNE) est envisagée, regroupant les principaux acteurs etpartenaires du marché de l’emploi. Cette structure n’est 
+toutefois pas encore opérationnelle.
+3.2.Coordination des institutions chargées 
+de l’emploi des jeunes
+D’après les diﬀérents travaux réalisés (CIRES [1999], CAPEC [2012],AGEPE [2015]), la collaboration entre les diverses institutions
+du marché du travail n’est pas toujours parfaite. Les diﬃcultésde collaboration existent tant dans la formulation que dans lamise en œuvre eﬀective des politiques. En eﬀet, afin de luttereﬃcacement contre le chômage, l’AGEPE, le FDFP , l’AGEFOP , laPFS et le FNJ ont piloté des programmes d’emploi ou de forma-tion-emploi. La PFS résulte d’ailleurs de cette collaborationdepuis 2007. D’autres activités ont été réalisées à diﬀérentsniveaux de la mise en œuvre des politiques d’emploi. Ainsi,l’AGEPE soutient la PFS dans l’animation des acteurs locaux,dans l’orientation et le recrutement des acteurs. Au même titre
+que le FDFP , l’AGEFOP et le FNS, elle a contribué à la mise en
+place de cette structure. Pour le compte des autres structures
+responsables de l’emploi des jeunes, le FDFP a financé plusieurs
+projets de formation et même des études. La DGE a assuré lagestion concomitante des projets THIMO et PRODIGE avec
+l’AGEPE. Dans l’ensemble, compte tenu de leurs attributions,les diﬀérentes structures ont le devoir de travailler de façonconcertée. 
+On peut relever plusieurs actions de collaboration dans 
+l’exécution des programmes passés : • Dans l’exécution, certains organismes publics peuvent
+ influencer l’exécution et la réussite des programmes,
+puisqu’ils devraient participer directement ou indirecte-ment au financement desdits programmes. Il s’agit de laDGI pour les mesures d’exonération ou de dégrèvementsfiscaux, de la CNPS pour les réductions de charges socialespatronales
+13, du FDFP pour l’exonération de certaines taxes
+lui revenant de droit ou pour le financement des modulesde formation professionnelle qualifiante au niveau du PAE;• D’autres organismes comme la Direction générale de
+ l’inspection du travail sont appelés à prêter un concours
+précieux aux opérations de contrôle, en vue du placement
+des stagiaires PAE au sein des entreprises qui auront libérédes emplois occupés par des non-Ivoiriens. C’est précisément
+ce contrôle qui permet de déceler l’utilisation illicite de 
+la main-d’œuvre étrangère, au regard des nouvelles dispositions du décret n
+o96-287 du 3 avril 1996 relatif 
+au contrat de travail des personnes non ivoiriennes;
+• Les cabinets de formation jouent un rôle prépondérant dans
+la mise en œuvre des programmes. Ils interviennent sur le
+plan de la sélection des demandeurs de premier emploi, de
+leur formation et de leur placement. Dans l’exécution du
+PMERP , les cabinets de formation interviennent pour donner
+la formation requise par la reconversion professionnelle des
+travailleurs menacés de licenciement. Lorsque la formation 
+a pour finalité la création de microentreprises par les candi-
+dats, les cabinets de formation jouent le rôle de cabinets
+ d’études, en montant les dossiers de faisabilité économique
+des projets qui accompagnent les demandes de fonds sociaux. À ce stade, en principe, l’AGEFOP , organisme public
+de formation professionnelle, devrait intervenir en qualité
+de cabinet de formation. Mais dans les faits, l’AGEFOPn’a jamais été sollicitée dans le cadre des programmes del’AGEPE, même si elle est considérée comme partenaire de
+l’AGEPE. Les cabinets de formation interviennent égalementdans la formation des promoteurs, le suivi et le contrôle de
+l’exécution des projets d’auto-emploi au niveau du PCME.
+La CNE, qui n’est pas encore opérationnelle, devrait pouvoir
+faciliter la collaboration entre ces diﬀérentes structures afind’assurer une bonne coordination de la politique de l’emploi.En eﬀet, les obstacles à la mise en œuvre d’une politique del’emploi coordonnée sont liés à de nombreux facteurs, entre
+autres aux facteurs d’ordre administratif et institutionnel,économique, financier et fiscal, et à ceux liés à la gestion des
+ressources humaines. Sur le plan administratif, les études réali -
+sées soulignent l’insuﬃsance et l’imprécision des politiques, laconception des programmes en univers incertain, l’inadaptation
+du profil ou l’inaptitude de certains personnels et l’absence
+d’une véritable structure de communication. Sur le plan institutionnel, les mêmes études ont relevé un manque de coordination de la politique d’emploi. 
+Éparpillé entre plusieurs ministères, structures et fonds qui ont
+souvent du mal à coordonner leurs interventions sur le terrain,
+le service public de l’emploi court le risque d’être ineﬃcient,
+tant en matière de capacité d’intervention face aux attentes dela population en grande majorité jeune qu’en matière d’identifi-cation et de profilage des besoins des employeurs, de collectedes oﬀres d’emploi à pourvoir, de mobilisation des acteurs, etc.Cela aﬀaiblirait encore davantage un système d’information dumarché du travail quasi inexistant dans le pays. Mais les nouvelles
+réformes en cours sont l’occasion de redonner un essor à lacoordination des programmes de promotion de l’emploi des jeunes en Côte d’Ivoire.
+KAM OLGA
+22L’EMPLOI DES JEUNES EN CÔTE D’IVOIRE
+La spécificité de la situation des jeunes nécessite des actions
+spécifiques des gouvernants. Mais cela n’est possible que si la
+situation de la population jeune est maîtrisée avec certitude.Or beaucoup d’incertitudes restent à élucider. Aux besoins deconnaissances sur la situation des jeunes, on pourrait ajouterd’autres questionnements pouvant justifier un programme 
+de recherche sur l’emploi des jeunes. Cette section expose lesdonnées et les études sur l’emploi des jeunes, les perspectivesen termes d’analyses des programmes d’emploi déjà exposéeset les lacunes dans les connaissances sur l’emploi des jeunes.
+4.1. Données et études sur l’emploi des jeunes
+Les données sur l’emploi des jeunes
+Les données statistiques sur l’emploi sont assez disparates,souvent non régulières selon les sources, et pas toujoursdisponibles. Elles émanent de deux types d’enquêtes en Côte d’Ivoire : l’enquête sur le niveau de vie des ménages(ENV) et les enquêtes emploi de l’AGEPE, qui ne sont pas spécifiquement élargies aux questions d’emploi des jeunes.Réalisées par l’Institut national de la statistique, les ENV ont
+principalement pour objectif d’analyser la situation de la pau-vreté, mais elles comportent un volet emploi et éducationassez étoﬀé qui bénéficie de la contribution de l’AGEPE dans 
+la conception du questionnaire.
+Compte tenu de ces insuﬃsances, l’AGEPE avec l’appui de ses
+partenaires a entrepris depuis 2007 la réalisation d’enquêtes
+sur l’emploi, avec la tenue de trois enquêtes : 
+• une enquête sur l’insertion des BTS, licence et maîtrise 
+en 2007,
+• une enquête sur l’emploi en 2012, • une enquête sur l’emploi et le travail des enfants en 2013.
+Ces enquêtes, si elles ont amélioré la connaissance des
+ dysfonctionnements sur le marché du travail, restent tout de
+même limitées. Ces sources de données restent générales etne répondent pas à certaines préoccupations sur la probléma-tique de l’emploi des jeunes, à part l’enquête sur l’insertion de2007, qui n’a toutefois concerné que la seule ville d’Abidjan.
+Elles restent également statiques et donc incapables d’aider
+à analyser la transition des jeunes sur le marché du travail. Elles
+sont surtout incapables d’apporter des réponses à l’eﬃcacité
+des politiques d’emploi. En outre, elles sont réalisées à des
+intervalles de 4 à 6 ans, de sorte qu’il est impossible de cons-tituer une série chronologique qui aiderait à appréhender lemarché du travail au niveau macro-économique. 
+Cette lacune statistique rend diﬃcile la coordination de 
+la production et de l’utilisation des statistiques sur l’emploi 
+et les qualifications professionnelles.
+Les études sur l’emploi des jeunes en Côte d’Ivoire
+Les études réalisées sur l’emploi des jeunes sont peu nom-breuses. Elles se sont essentiellement limitées à l’oﬀre, en
+analysant la situation des jeunes sur le marché du travail. Elles
+montrent globalement la précarité de la situation des jeunes :fort taux de chômage et importante contribution au chômage
+national, faible rémunération. Les rapports et les études
+indiquent la forte contribution ou la représentation des jeunes
+dans les diﬀérents types d’emplois, dans les branches d’activités,
+par type d’emploi.État des connaissances et des lacunes 4
+SANOFI PASTEUR ET NORBERT DOMY
+23
+24L’EMPLOI DES JEUNES EN CÔTE D’IVOIRECependant, ces études restent superficielles et n’établissent
+aucune causalité. Cela ne permet pas de vérifier la robustessedes relations obtenues ni de conseiller avec précision les
+décideurs politiques. En eﬀet, si des analyses disparates sur l’oﬀre et la demande de travail des jeunes ont été menées pardes chercheurs au niveau universitaire (Kouakou, 2006
+14et
+201015), celles-ci restent sans eﬀets sur les décisions politiques
+en rapport avec l’emploi des jeunes. Les analyses réalisées oucommanditées par les structures responsables de l’emplois’avèrent également sommaires. On peut noter trois analyses
+ayant abordé l’emploi des jeunes de façon précise : 
+•Cadre institutionnel et réglementaire du marché du travail 
+en Côte d’Ivoire, 2011, commandité par la Direction générale
+de l’emploi et financé par le BIT;
+•Analyse du marché du travail en Côte d’Ivoire, BIT, 2010;
+•Entrepreneuriat et employabilité des jeunes en Côte d’Ivoire,BIT, 2009.
+Il découle de ces études que, devant l’ineﬃcacité des struc-
+tures publiques et privées de placement, et devant l’accroisse-
+ment du chômage des jeunes diplômés, avec des durées qui
+excédaient, dans près de 67,2 % des cas, 3 ans en 2008 à Abidjan,
+les jeunes à la recherche d’un emploi font désormais surtoutappel aux réseaux de connaissances dans leurs eﬀorts pour
+dénicher un emploi. Face au chômage et aux destructionsmassives d’emploi dans le secteur moderne de l’économie, le secteur informel s’est développé, le sous-emploi aussi. 
+En plus de l’inadéquation du système de formation aux
+besoins de l’économie, une étude du BIT relève d’autres
+ problèmes connexes à l’emploi : 
+• le déficit de capacité de diagnostic et de formulation 
+de la politique de l’emploi,
+• le déficit d’intégration et de coordination de la politique 
+de l’emploi en relation avec la recomposition des pôles 
+de décisions et d’initiatives,
+• l’absence d’une politique cohérente de financement 
+de l’emploi.De plus, la promotion de l’auto-emploi souﬀre des handicaps
+suivants : i) l’incompatibilité de la culture économique rentière
+avec l’éclosion et le développement de l’initiative privée; ii) la
+faible employabilité des jeunes et iii) une culture bien ancrée
+d’impunité lorsque les prêts ne sont pas recouvrés.
+La portée de ces études reste limitée, les données statis-
+tiques pour conduire une bonne étude étant parcellaires. 
+Il découle de ce sombre tableau un manque de transparence
+dans la conception, l’exécution et le suivi des programmesd’emploi pour les jeunes, dont l’ampleur s’intensifie avec des
+moyens diversifiés, mais peu de résultats satisfaisants. 
+Pour mieux appréhender la situation sur l’emploi des jeunes,
+l’OIT a réalisé, avec des partenaires nationaux, des activités de
+recherche sur l’emploi des jeunes. Ces activités sont contenues
+dans le projet Work4Youth (W4Y), en partenariat avec la Fondation MasterCard. Ce projet conçu pour une durée de 5 ans jusqu’au milieu de l’année 2016 a pour objectif de 
+« promouvoir des possibilités de travail décent pour les jeunes
+hommes et femmes à travers le savoir et l’action ». L’objectifimmédiat de ce partenariat est de produire plus et de meilleures
+informations sur le marché du travail spécifique aux jeunesdans les pays en développement, en se concentrant en parti -
+culier sur les chemins de transition de l’école vers la vie active.
+L’hypothèse est que les gouvernements et les partenaires
+ sociaux des 28 pays cibles du projet seront mieux préparés à concevoir des politiques et des initiatives eﬃcaces une foisqu’ils auront une connaissance détaillée :
+14Thèse de doctorat sur l’insertion professionnelle des jeunes et politique active
+d’emploi.15Oﬀre de travail des jeunes en Côte d’Ivoire.
+ANOUK DELAFORTRIE / ECHOLes études demeurent superﬁcielles et ne permettent pas 
+de conseiller avec précision les décideurs.
+ÉTAT DES CONNAISSANCES ET DES LACUNES 25• de ce que les jeunes attendent en matière de chemins 
+de transition et de qualité du travail,
+• de ce que les employeurs attendent des jeunes candidats,
+• des problèmes qui empêchent les deux parties – l’oﬀre et 
+la demande – de mieux se compléter,
+• des politiques et des programmes qui peuvent avoir 
+un impact réel.
+Dans son premier rapport, le BIT a ciblé huit pays où une
+enquête spécifique a été réalisée. La Côte d’Ivoire ne fait pas
+partie de ces pays. Or le cas ivoirien renferme plus de spéci-
+ficité. Le pays a connu plus d’une décennie de crise militaire et
+politique, dont la majeure partie des acteurs sont des jeunes
+(jeunes combattants). Les universités publiques, qui forment
+l’essentiel de la population de jeunes au niveau supérieur, ont
+été fermées pendant deux années scolaires, renforçant la pré-
+carité de la jeunesse. Beaucoup d’organisations internationaleset d’entreprises à caractère multinational ont été délocalisées,
+augmentant le chômage des jeunes, alors même que le rap-
+port du BIT sur la transition des jeunes mentionne bien que lafaible industrialisation est la cause de la faible employabilité
+des jeunes. Ce caractère spécifique de la situation ivoiriennemérite attention et inquiétude, mais surtout une analyseapprofondie, car dans un tel contexte beaucoup d’aspects
+restent méconnus. 
+Les programmes d’emploi pour les jeunes, pour leur part,
+ont fait l’objet de plusieurs analyses. Des études commanditéespar les structures de mise en œuvre et les partenaires audéveloppement ont été réalisées. On dénombre essentielle-
+ment deux études, dont une commanditée par l’ACBF en 2012et une autre par l’AGEPE en 2014. Ces études ont mis l’accent
+d’une part sur les atouts que constituent ces initiatives et,d’autre part, sur les contraintes et les limites auxquelles ellesdevront faire face. Une des recommandations de l’étude de
+2012 a été la création d’une agence unique d’insertion desjeunes. Cette recommandation a eu un écho favorable avec la création, en mai 2015, d’un ministère consacré à l’insertiondes jeunes et d’une agence pour l’insertion des jeunes. En outre, des esquisses d’analyse des eﬀets des programmessur les bénéficiaires ont eu lieu dans l’étude commanditée par l’AGEPE, ainsi que dans une étude réalisée par Kouakou en 2006 et 2011 sur l’évaluation des politiques d’insertion des jeunes appliquée au PAE et au PAJD. Ces études, dont l’audace est à apprécier, ont étalé des
+insuﬃsances énormes. La faible taille des échantillons utilisés
+pour l’évaluation des politiques d’emploi n’a pas favorisé des
+analyses désagrégées par programme.
+Un programme de recherche pourrait aider à explorer les
+lacunes dans les connaissances sur le marché du travail des
+jeunes, dont il convient d’exposer quelques aspects.
+4.2.Connaissances sur l’emploi des jeunes : 
+lacunes et besoins potentiels 
+des principaux acteurs 
+Structure et dynamique de la population jeune 
+Lorsqu’on s’intéresse à la jeunesse, de nombreuses préoccupa-
+tions demeurent sans réponse. La population jeune est cer-tainement surreprésentée dans les zones urbaines compte
+tenu du phénomène d’exode rural, mais le rapport de 2013 
+ne fournit pas de détails. Des données sur la distribution des jeunes dans le pays, selon les types de localités (urbaines,rurales), s’avèrent essentielles. Il serait important de connaître,selon le sexe et le niveau d’instruction, selon les secteurs et leszones géographiques, la structure et la distribution géo-graphique de la population jeune, les types d’emplois occupés,la durée moyenne dans l’emploi, la transition d’un emploi à un
+autre, les motivations, les facteurs déterminants. Parallèlement,le même type de données pourrait décrire de façon précise le chômage des jeunes, la durée moyenne du chômage et 
+la structure des jeunes inactifs. 
+Rappelons brièvement que le dispositif législatif/juridique
+de l’emploi des jeunes en Côte d’Ivoire n’est pas assez précis,
+pour ne pas dire quasi insuﬃsant. En eﬀet, la Côte d’Ivoire 
+n’a pas ratifié la Convention 122 de l’OIT sur les politiques
+d’emploi. De même, le Code du travail ne fait pas la promotion
+de l’emploi des jeunes; il joue plus un rôle de protection du travail que de promotion de l’emploi des jeunes. L’emploi desjeunes n’est pas non plus intégré dans les politiques comme
+une notion de « droit » pour tous, car il n’apparaît nulle partdans les négociations collectives et tripartites entre les acteurs
+et partenaires sociaux.Le caractère spéciﬁque de la situation ivoirienne mérite 
+une analyse approfondie.
+26L’EMPLOI DES JEUNES EN CÔTE D’IVOIREAdéquation formation-emploi et chômage des jeunes
+Malgré le constat alarmant d’une inadéquation entre la forma-
+tion et l’emploi, aucune analyse concrète ne s’est penchée sur
+les explications de ce phénomène. Les seuls argumentsdemeurent le taux de chômage
+16très élevé des diplômés par
+rapport à celui des moins diplômés ou des individus nondétenteurs de diplômes. On évoque même les insuﬃsances dela théorie du capital humain. N’y a-t-il pas d’autres explicationsà ce phénomène? Comment l’analyser plus sérieusement, endétecter les origines et les déterminants micro-économiqueset macro-économiques? Y aurait-il des canaux de transmis-sion? Dans le même temps, des analyses sur la trajectoire pro-
+fessionnelle des jeunes sont quasi inexistantes. Ces analyseslancées au départ par l’Oﬃce national de la formation profes-sionnelle (ONFP) n’ont pu se perpétuer après sa dissolution etsa désagrégation en deux structures : le Fonds de développe-ment de la formation professionnelle (FDFP) et l’Agencenationale de la formation professionnelle (AGEFOP).
+Depuis lors, aucune étude de trajectoire professionnelle des
+jeunes n’a été eﬀectuée. La seule étude réalisée dans le cadre
+d’une thèse de doctorat est celle de Kouakou (2006)
+17sur 
+ l’évaluation des politiques d’emploi. Ce travail, utilisant uneméthode quasi expérimentale et un calendrier de parcoursprofessionnel, a essayé d’analyser les transitions profession-nelles des jeunes dans les diﬀérents états professionnels. Mais l’analyse demeure insuﬃsante. Elle s’est appliquée à laseule ville d’Abidjan avec un faible échantillon qui, quoiquesignificatif, pourrait être étendu à l’échelle nationale ou à d’autres localités du pays pour plus de fiabilité et de
+robustesse. Aucune analyse dynamique n’est réalisée 
+par manque de données en panel. 
+Des perspectives d’analyse sont évoquées par l’AGEPE, mais
+leur mise en œuvre est encore au stade de projet, certaine-ment pour des raisons liées aux diﬃcultés de financement.Deux activités ont tout de même été réalisées. La première
+concerne l’état des lieux du dispositif de suivi des sortants des
+établissements de formation en août 2014. La deuxième, encours de réalisation par le cabinet CIPRODEC, étudie le devenir
+des diplômés de l’enseignement technique, de la formationprofessionnelle et de l’enseignement supérieur. Ces initiatives
+louables se limitent à des analyses statistiques simples. Cela 
+ne permet pas d’établir des causalités à même d’orienter avecun minimum de risque les décideurs politiques. 
+Conséquemment, l’analyse de l’adéquation formation-
+emploi reste entièrement à explorer avec une rigueur scienti -
+fique adéquate, afin d’en maîtriser les contours et de trouver
+des solutions appropriées. Une orientation dans le sens des
+ filières porteuses tant évoquées dans les discours politiques
+est à envisager. Tout comme l’adéquation formation-emploi, la
+recherche des filières porteuses est une perspective qui n’a pas
+encore été exploitée. Cette orientation est très pertinente vu la
+faible employabilité des jeunes découlant de l’inadéquation
+formation-emploi. En eﬀet, l’amélioration de l’employabilité
+des jeunes passe par une bonne compréhension des diﬀérents
+systèmes de formation et d’apprentissage pour une action eﬃcace des politiques, ainsi que par une analyse du partenariat
+unissant le secteur de l’éducation et de la formation avec lemonde du travail. Il faudrait mieux comprendre les causes et
+les eﬀets de la faiblesse d’accès aux emplois de qualité pour lajeunesse en Côte d’Ivoire et explorer des approches de solutions.
+On recense moins d’investigations sur les jeunes sans
+instruction, sans formation et sans travail (NEET), alors qu’ils
+forment la couche la plus vulnérable de la crise de l’emploi. Les
+diﬀérents manquements de l’oﬀre et le manque d’adéquation
+formation-emploi pourraient être appréhendés en étudiant les
+eﬀets et approches d’une implication accrue du secteur privé
+dans les dispositifs d’enseignement et de formation. Il s’agirait
+16Le chômage des jeunes en 2008 est de 24,2 % au sens strict et de 17,5 % pour la
+tranche 25-34 ans. En 2012, le taux de chômage croît avec le niveau de diplôme,jusqu’au diplôme de maîtrise (Enquête emploi 2012). En eﬀet, il est de 14,1 % pourles titulaires du CEPE et de 29,8 % pour ceux de la maîtrise, en passant par les titu-laires du BAC qui ont un taux de chômage de 19,8 %, les non-instruits ayant untaux de chômage de 6,4 %. En ce qui concerne les diplômes techniques, l’on noteque du CAP au BTS, le taux de chômage croît avec le niveau du diplôme, à l’excep-tion du diplôme de BEP , dont les titulaires ont un taux de chômage relativement
+faible (9,5 %). Le taux de chômage des titulaires du DUT (27,8 %) est plus faible que
+celui des titulaires du BTS (35,7 %), mais plus élevé que celui des ingénieurs (21,3 %).
+Il est de 23,9 % pour les titulaires du DESS et 42 % pour les titulaires de master pro-
+fessionnel. 
+17Insertion professionnelle des jeunes urbains et politique active d’emploi en Côte d’Ivoire ,
+Thèse de doctorat, Université de Cocody-Abidjan.L ’analyse de l’adéquation formation-emploi reste entièrement
+à explorer avec une rigueur scientiﬁque adéquate.CLARA SANCHIZ
+ÉTAT DES CONNAISSANCES ET DES LACUNES 27d’analyser comment aller vers une diversification et une profes-
+sionnalisation des cursus scolaires et de formation, afin de
+comprendre la source des inégalités d’accès à l’emploi et à l’éducation pour réussir à promouvoir l’équité. Il faudraitégalement déterminer les réponses appropriées aux besoinsde compétences des acteurs du secteur informel et du mondeagricole, qui représentent 90 % des actifs.
+L’analyse du chômage des jeunes et des facteurs détermi-
+nant sa durée peut s’opérer des deux côtés du marché. D’unepart, le chômage des diplômés est axé sur l’oﬀre de travail, oùla notion de chômage de luxe est souvent évoquée. D’autrepart, et la plupart du temps, les employeurs désapprouvent la qualité du capital humain, d’où l’analyse en termes dedemande de travail. Quel est le sens dominant dans le traite-
+ment du chômage des jeunes? Faut-il privilégier les contraintesd’oﬀre ou celles de demande de travail? Dans l’actuelle situation
+de crise de l’emploi, les deux sont à prendre en compte dansun dialogue social inclusif et permanent. Comment impliquer
+le secteur privé dans le rétablissement de l’adéquation forma-tion-emploi? Dans le même ordre d’idées, si on sait à peu prèscombien de jeunes arrivent chaque année sur le marché du
+travail, on ignore combien d’emplois sont eﬀectivement créés
+annuellement et leur répartition sectorielle, par niveau d’études
+et par statut de l’emploi (précaires, décents, temporaires). Il
+serait bon d’analyser les autres facteurs qui contraignent la
+demande de travail, mis à part l’inadéquation formation-emploi
+et, plus généralement, la capacité de création d’emplois 
+de l’économie.
+En outre, l’eﬃcacité des structures de gestion de l’emploi
+des jeunes pourrait être analysée.
+Eﬃcacité des programmes d’emploi pour les jeunes
+Des perspectives d’analyses pourraient soutenir l’exécution des programmes et renforcer leur eﬃcacité. 
+À la lumière des expériences passées, il serait opportun
+ d’évaluer le ciblage des acteurs dans l’exécution des programmes
+d’emploi. En eﬀet, les bénéficiaires ayant connu des succès nesont pas répertoriés. Il serait bon de déterminer leurs caracté -ristiques et d’étudier la pertinence d’axer ou non les eﬀorts surceux dont la propension à tirer profit des programmes estélevée. Sinon, face à une cible ayant des carences, il faudraitvoir comment mettre à niveau cette cible pour qu’elle répondemieux aux critères de sélection.L’analyse des programmes est beaucoup plus orientée vers
+l’oﬀre de services d’aide à l’insertion. Des études supplémen-
+taires s’avèrent importantes pour analyser la demande de ser-
+vices d’aide à l’emploi, voir dans quelle mesure les programmes
+répondent aux besoins des bénéficiaires et évaluer si les attentes
+des jeunes sont bien prises en compte dans les modalités
+ proposées. Des analyses des aspirations des jeunes, de leur
+dynamisme, de la vitesse de changement et de leur  variabilité
+permettraient d’adapter les stratégies, à l’aide  d’enquêteslégères. Par ailleurs, d’autres aspects mériteraient une attention
+particulière, soit la nature de l’interaction entre l’AGEPE et lesbénéficiaires de ses programmes, le mécanisme de rétro action
+entre les bénéficiaires et les structures de  promotion de l’emploi,
+ainsi que le type de rétroaction reçue des bénéficiaires.
+Quelles sont les dynamiques d’association et de participation
+des jeunes visant à surmonter les diﬃcultés liées à leur
+ orientation et à l’information? Le manque d’information dequalité conduit à des choix tardifs, non appropriés ou largementdisproportionnés par rapport aux possibilités oﬀertes. Les 
+services publics d’emploi sont généralement méconnus par 
+les jeunes. Les relations personnelles sont dominantes comme
+modalité de recherche d’emploi des chômeurs (68,7 %), davan-tage pour les demandeurs de premier emploi (70,6 %) et pour
+la ville d’Abidjan (73,2 %). De plus, seulement le tiers deschômeurs sollicitent les structures de promotion de l’emploi.
+La proportion des chômeurs qui ignorent l’existence de tels
+services est de 90,9 % en milieu rural contre 77,6 % dans les
+autres villes et 67,5 % à Abidjan. Comment construire un système d’information inclusif du marché de travail pour
+ rapprocher les jeunes potentiellement bénéficiaires, afin
+d’éviter l’asymétrie d’information sur le marché du travail?
+KAM OLGA
+28L’EMPLOI DES JEUNES EN CÔTE D’IVOIREDes données devraient être recueillies sur l’utilisation des
+fonds publics dans la promotion de l’emploi. Il serait pertinent
+de déterminer le coût moyen et le coût marginal d’un emploicréé, en tenant compte des emplois connexes, et de justifierl’inflation des coûts en comparaison avec d’autres expériences.Compte tenu des coûts élevés, une approche sur le modèle
+d’un partenariat public privé est-elle viable et applicable aux
+programmes et projets d’insertion des jeunes? Il serait intéres-
+sant de réaliser une recherche sur l’impact du Code du travail
+et des investissements sur la capacité des acteurs du secteur
+privé à créer plus d’emplois décents pour les jeunes.
+Concernant les programmes d’auto-emploi, l’évaluation
+opérée n’est pas rigoureuse. Il serait intéressant par exemplede faire une diﬀérenciation entre les jeunes diplômés et ceux
+déjà sur le terrain, avec ou sans diplôme. Cette orientation per-mettrait de cerner les secteurs porteurs ainsi que les acteursavec lesquels le succès serait plus probable. Les décideursseraient ainsi en mesure de peaufiner leurs stratégies. Demême, il faudrait déterminer dans quels secteurs les eﬀetsdirects et indirects sont les plus importants. Par ailleurs, uneanalyse en termes d’interaction entre l’auto-emploi et l’emploisalarié pourrait être pertinente. En eﬀet, de jeunes salariésambitionnent de s’installer à leur propre compte et peuventtirer profit de l’expérience d’autres jeunes. Cependant, ces
+ambitions sont souvent diﬃciles à réaliser. Or, du fait de leursituation, cette catégorie de jeunes est exclue des programmesd’emploi. Une recherche sur l’interaction entre l’emploi salariéet l’auto-emploi permettrait de guider les décideurs. On pour-rait aussi se pencher sur l’eﬃcacité des modes de financementdes programmes d’emploi pour les jeunes en comparant le
+financement par l’intermédiaire des incitations fiscales (crédit
+d’impôt) et le financement direct des actions avec des subven-tions publiques. Ces modes de financement peuvent avoir deseﬀets diﬀérents. Quelle initiative est plus pertinente dans letraitement des diﬃcultés d’insertion des jeunes?
+Dans le même ordre d’idée, l’impact des investissements
+directs étrangers sur l’emploi des jeunes et l’évaluation des
+eﬀets des programmes du Centre de promotion des investisse-ments en Côte d’Ivoire (CEPICI) en matière de création d’entre-
+prises pourrait être un indicateur fiable dans la contribution dusecteur privé formel à la création d’emplois. En eﬀet, le CEPICIest une structure publique qui facilite la création d’entreprises.Il accorde surtout des mesures incitatives aux jeunes entrepre-neurs et aux investissements à eﬀet multiplicateur sur l’emploiet la productivité. Sur le plan de la décentralisation, des interrogations peuvent
+être mentionnées. Le financement des activités génératrices de
+revenus est concentré et gouverné depuis la capitale
+économique ivoirienne. Une orientation de recherche serait decomparer l’eﬃcacité de la gestion décentralisée des politiquesd’emploi au niveau local et au niveau centralisé. Y a-t-il équité
+et eﬃcience dans l’allocation des fonds de soutien à l’emploi
+entre toutes les régions et toutes les communes de la région?
+Comment favoriser une véritable gestion décentralisée de la
+politique de l’emploi, à l’instar de certains pays développéscomme la France? Quelle est la distribution des bénéficiaires
+des politiques d’emploi par localité administrative? Quelle est
+l’eﬃcacité comparée des politiques d’emploi des jeunes parlocalité? Quelles explications pourrait-on apporter si la per-
+formance diverge d’une localité à une autre? Ces politiquestiennent-elles compte des potentialités des localités respec-
+tives? Les réponses à ces questions permettraient de trouver
+les solutions adéquates pour renforcer l’eﬃcacité des poli-
+tiques d’emploi au niveau local, afin d’éviter la migration desjeunes vers les grandes villes du pays à la recherche d’unmeilleur emploi, chose qui renforce le niveau de chômage et lapauvreté urbaine. Il a en eﬀet été démontré que le chômage
+augmente avec la taille de la localité
+18. De même, les questions
+de mobilité et de migration de la main-d’œuvre des jeunesintra secteurs et sur le marché du travail sont quasi inconnues.Aucune de ces préoccupations n’est abordée, ni dans les
+ documents de travail des principales structures de soutien à l’emploi des jeunes ni dans les recherches universitaires. 
+18En 2002, le taux de chômage à Abidjan, la plus grande ville du pays, était 
+de 15,91 % et celui de Bouaké, la deuxième ville, de 11,99 % contre un taux 
+de chômage urbain national de 12,26 %. Les autres villes de l’intérieur avaienttoutes des taux inférieurs à 7 %. 
+ABDUL FATAI / UN
+ÉTAT DES CONNAISSANCES ET DES LACUNES 29Niches et opportunités d’emploi non explorées
+L’urgence d’une meilleure compréhension des interactions
+entre les diﬀérents acteurs du marché du travail en Côte
+d’Ivoire oﬀre une opportunité inouïe pour la recherche
+empirique, avec l’existence croissante des données et des informations statistiques. 
+Les nouveaux secteurs de recherches-actions sur l’emploi
+des jeunes pourraient s’élargir aux niches existantes dans ledomaine agricole et dans les industries créatives (sports tradi-
+tionnels, musique, arts et créativité), dans lesquelles le paysdispose de réels avantages comparatifs. En outre, ces secteursclés énoncés dans le PND 2015 abritent beaucoup de jeunes.Une multitude d’acteurs y opèrent également et y tirentl’essentiel de leur revenu. La non-maîtrise des chaînes de
+valeurs de ces diﬀérents secteurs d’activité ne favorise pas les mises à jour nécessaires qui permettraient d’en tirer 
+le  maximum de profit, compte tenu des avantages. 
+La production de connaissances dans le secteur des emplois
+verts pour les jeunes est à saisir. En eﬀet, les opportunités quereprésentent les problématiques émergentes de l’environ-
+nement et de l’adaptation aux changements climatiques sontprometteuses et contribuent à résoudre aussi la question
+énergétique, frein à la productivité du tissu économique. 
+Par ailleurs, il faudrait également explorer les eﬀets négatifs
+du dysfonctionnement du marché de l’emploi et des politiquessur l’inclusion sociale, notamment en termes de genre. En eﬀet,
+les femmes font généralement face à une multitude de biais endéfaveur de leur entrée sur le marché du travail; ces biais sontd’ordre institutionnel, informationnel et financier. Ainsi, l’élimi-
+nation de la discrimination et des inégalités dans le marché 
+du travail constituent des thématiques de recherche à explorer
+afin de rendre eﬃcace la formulation des politiques et pro-grammes d’emplois pour les jeunes. De plus en plus, desétudes démontrent qu’éliminer la discrimination augmente le revenu national des pays et la productivité, la capacitéà innover et la rentabilité des entreprises. L’occurrence d’uneabsence prolongée avec la maternité vient réduire souvent laprobabilité pour les femmes de trouver un emploi. Plusieursrecherches opérationnelles peuvent être réalisées sur ce plan,
+afin de desserrer les goulots d’étranglement autour des
+femmes :
+• étude sur l’impact de la législation du travail et du Code 
+du travail sur les barrières possibles à l’entrée de certains
+segments du marché du travail pour les femmes et jeunes;
+• développement d’un système d’informations afin de rendre
+disponible l’information sur les segments du marché de
+l’emploi qui encouragent l’embauche des femmes (observa-
+toire de l’emploi, armée, police, service civique, secteurprivé résident, secteur privé non résident, organismes
+ internationaux, etc.);
+• comment organiser la filière des travailleuses domestiques
+afin d’accroître l’employabilité de cette catégorie de
+femmes très dépourvues en formation, sans qualifications
+et vivant généralement en dessous du seuil de pauvreté?
+• montrer par la recherche l’opportunité de mise en place d’un
+système d’information sexo-spécifique délocalisé sur l’emploides jeunes dans les régions grâce à la décentralisation.
+En Côte d’Ivoire, avec un secteur informel significatif, il
+serait opportun d’analyser la certification des compétences et
+la valorisation des acquis par l’expérience dans l’insertion desjeunes issus de la formation professionnelle, particulièrementles façons de valoriser certaines compétences obtenues sur le
+marché du travail à l’extérieur du système formel. En eﬀet, 
+au cours de leur apprentissage dans le secteur informel, une
+proportion importante de travailleurs non qualifiés dévelop-pent, à l’extérieur du système éducatif et de formation profes-
+sionnelle et technique, des compétences et des aptitudes
+recherchées sur le marché du travail. Une étude sur la valorisa-tion des acquis par l’expérience (VAE) serait un excellent moyend’oﬀrir des qualifications reconnues sur le marché à ces person-
+nes dont l’apprentissage s’est eﬀectué en dehors du système
+formel. Finalement, il pourrait être important de s’intéresser
+aux eﬀets du Code du travail sur les contrats d’insertion profes-
+sionnelle pour un jeune travailleur et les corrélations avecl’établissement d’un système de contrats de courte duréeen Côte d’Ivoire.Un domaine à développer : la production de connaissances
+dans le secteur des emplois verts.
+30L’EMPLOI DES JEUNES EN CÔTE D’IVOIREQuelles opportunités de recherche et pour qui?
+L’implication de plusieurs partenaires au développement et 
+la volonté aﬃchée des autorités ivoiriennes de trouver desréponses adéquates à la problématique de l’emploi des jeunes
+sont des arguments en faveur de la mise en place d’un pro-
+gramme de recherche sur l’emploi des jeunes. Un constat
+ s’impose : la non-pertinence de bien des décisions politiques
+est liée à l’absence quasi totale d’instruments d’aide à la prisede ces décisions. Les politiques sont souvent mises en œuvresans connaissances véritables des intervenants sur les struc-tures et la dynamique de la population jeune, sur les facteursobjectifs influençant l’adéquation formation-emploi et l’eﬃca -cité des politiques, et sur les niches et opportunités d’emploi.L’échec de nombreux programmes des structures techniquesen découle. Un programme de recherche appliquée ou fonda-
+mentale pourrait contribuer à combler toutes les lacunes etconstituer un véritable instrument d’aide à la prise de décisiondes structures techniques (AEJ, AGEFOP , FDFP , PFS, ministèrestechniques chargés de l’emploi des jeunes) et des structuresd’enseignement et de formation professionnelle. 
+Le ministère chargé des questions d’emploi pour les jeunes
+et l’AEJ devraient, en priorité, être les plus grands bénéficiairesde ce programme de recherche. Des études prévues n’ont pas
+pu être réalisées, telles que les études sur les filières porteuseset la trajectoire professionnelle des jeunes diplômés des éta blissements d’enseignement professionnel, des grandes
+écoles et des universités publiques. Ces études annoncées par  l’ex-AGEPE n’ont jamais été mises en œuvre. Lorsque certainstravaux sont eﬀectivement réalisés, il s’agit en fait d’états deslieux et non d’analyses mobilisant des instruments scienti -fiques adéquats, parce que l’implication des universitaires reste
+marginale ou parce que les données sont inadéquates. Mais sil’intervention des chercheurs reste limitée, c’est aussi parmanque d’accès aux données pertinentes dans leurs activitésuniversitaires, ce qui les contraint à une orientation d’analysedont les résultats ne sont pas utilisables par le politique. Lemanque de partenariat entre les unités de recherche universi-taires et les structures techniques expliquerait également ledéficit de valorisation des résultats de la recherche scientifique.Un programme de recherche qui mobiliserait des chercheurset des structures de recherche crédibles en partenariat avec les structures responsables des programmes d’emploi seraitd’une grande portée sur le plan de la complémentarité et 
+de l’objectivité des méthodes d’analyse. Cela renforcerait laposition des partenaires au développement par rapport à la
+gouvernance des programmes, dont les résultats s’avèrent 
+très souvent manipulés par les structures d’exécution.
+Finalement, un programme de recherche sur l’emploi des
+jeunes serait favorable à la qualité des décisions des structures
+techniques responsables de la politique d’insertion des jeunes
+que sont l’AEJ, le FDFP , l’AGEFOP , la PFS et, surtout, le ministère
+chargé de l’emploi des jeunes, dont le défi reste immense. Ce programme pourrait éventuellement contribuer à mieux
+comprendre l’inadéquation entre la formation et l’emploi, 
+et aiderait certainement les ministères responsables de
+ l’enseignement technique, de la formation professionnelle 
+et de l’enseignement supérieur à mieux réviser les curriculums 
+de formation. 
+Considérant les diﬀérents questionnements qui nécessitentdes réponses adéquates, le programme de recherche pourra 
+se structurer en sept grands thèmes de recherche : 
+• caractéristiques et fonctionnement du marché du travail
+des jeunes,
+• sources de l’inadéquation formation-emploi et ses con-
+séquences sur la trajectoire professionnelle des jeunes,
+• évaluation/audit des programmes et projets d’emploi 
+pour les jeunes, 
+• chaîne de valeur des filières agricoles et des industries
+récréatives/culturelles de création d’emplois pour les jeunes,
+• dialogue et inclusion sociale dans les politiques
+ multisectorielles de lutte contre le chômage et le sous-emploi des jeunes,
+• rôle des associations et réseaux de jeunesse dans 
+la recherche du premier emploi,
+• niches/secteurs de métiers et d’opportunités d’emploi 
+pour les jeunes. 
+Un programme de recherche sur l’emploi pourrait contribuer 
+à mieux comprendre l’inadéquation entre la formation et l’emploi, et aiderait certainement les décideurs 
+à mieux réviser les curriculums de formation.La non-pertinence de bien des décisions politiques est liée 
+à l’absence quasi totale d’instruments d’aide à la prise 
+de ces décisions.
+ÉTAT DES CONNAISSANCES ET DES LACUNES 31Quelles opportunités de synergies entre programmes pairs?
+Face à l’ampleur du problème de l’emploi des jeunes, la mobili-
+sation de tous les acteurs publics et privés tout comme des
+partenaires au développement s’avère cruciale pour proposer
+une réponse à la hauteur des défis. C’est dans cette optique
+que s’est inscrit le BIT en Côte d’Ivoire, où il appuie, depuis
+quelques années, les eﬀorts de mise en œuvre par le gou-vernement et les partenaires sociaux des principes de la Déclaration tripartite sur les entreprises multinationales (EMN)
+et la politique sociale. Il faut noter que cet instrument constitue
+l’outil le plus complet en matière de responsabilité sociale 
+de l’entreprise (RSE) jamais adopté àce jour par la commu-
+nauté internationale. 
+En ce qui concerne le plaidoyer pour l’emploi des jeunes, 
+le CRDI pourrait se joindre à l’OIT, qui a lancé un partenariatavec la Banque africaine de développement, la Commission de l’Union africaine et la Commission économique des Nations
+Unies pour l’Afrique (CEA), afin d’aborder conjointement l’emploi des jeunes aux niveaux régional et national.
+La Côte d’Ivoire s’inscrit dans l’initiative conjointe de ces
+institutions, en ce sens qu’elle prône l’approche systémiqueintégrée des politiques d’emploi dans un cadre micro etmacroéconomique. Les activités du BIT sur l’emploi des jeunesportent sur trois domaines principaux : l’assistance techniqueaux mandants tripartites, le plaidoyer, ainsi que le développe-ment des connaissances et la diﬀusion.
+Le CRDI peut renforcer sa coopération à la recherche-action
+en s’associant aux acteurs nationaux (p. ex. les mandants del’OIT) et aux partenaires techniques tels que le BIT, leader dusystème des Nations Unies en matière d’emploi et des normes
+internationales du travail (NIT). Le BIT conduit en eﬀet plusieurs
+recherches sur la connaissance du marché du travail et adopte
+une approche inclusive dans la production de la connaissance.Comme exemple de synergies, l’Organisation internationale 
+du travail (OIT) et l’Organisation des Nations Unies pour le
+développement industriel (ONUDI) ont entrepris un programme
+de recherches axées sur l’action portant sur l’optimisation de 
+la création d’emplois (directs et indirects) locaux à travers les
+sociétés multinationales, en se concentrant notamment surl’emploi des jeunes en Côte d’Ivoire. Ces études peuvent êtredavantage mutualisées avec d’autres programmes de rechercheet éventuellement avec ceux du CRDI, tant sur l’oﬀre que sur 
+la demande d’emplois pour les jeunes. Le BIT et le CRDI pour-raient mettre en œuvre des actions conjointes de recherche,tant sur l’impact des politiques que sur les acteurs du secteurprivé en Côte d’Ivoire, avec la participation des organisationsd’employeurs et de travailleurs. Des études conjointes peuventégalement être réalisées, dès lors que ces diﬀérentes étudesvisent le même objectif : soutenir les décisions publiques pour
+plus d’eﬃcacité. On relève tout de même que les programmes
+de recherche des diﬀérents partenaires n’ont pas tous la même
+vision : certains visent tout simplement une compilation d’in-
+formations déjà disponibles et la formulation de conclusions
+appropriées; d’autres programmes visent la recherche
+appliquée ou expérimentale.
+4.3.Capacités et expertises locales 
+de recherche
+Quatre grandes structures de recherche sont compétentes pour
+la réalisation d’études appliquées en sciences économiques et
+sociales, et capables de soutenir un programme de recherche
+sur l’emploi des jeunes en Côte d’Ivoire. 
+• le Centre de recherche micro-économique du développe-
+ment (CREMIDE),
+• le Centre ivoirien de recherches économiques et sociales
+(CIRES),
+• la Cellule d’analyse de la politique économique du CIRES
+(CAPEC),
+• l’École nationale supérieure de statistique et d’économie
+appliquée (ENSEA). 
+Ces quatre structures sont plus ou moins liées. Le CREMIDE,
+le CIRES et la CAPEC sont trois structures de recherche qui
+utilisent conjointement les enseignants-chercheurs de l’Unité
+de formation et de recherche en sciences économiques et de
+gestion (UFR-SEG). De même, la CAPEC est alimentée par les
+enseignants de  l’UFR-SEG et de l’ENSEA, et est considérée
+comme une structure technique du CIRES, dont le rôle consiste
+à soutenir la politique économique du gouvernement à partir
+d’études sectorielles et macro-économiques. Les animateurs de
+ces quatre structures se côtoient régulièrement et réalisent très
+souvent des études concertées. Le CREMIDE est une  structure
+de recherche directement dépendante de l’UFR-SEG. Il s’agit
+donc du laboratoire de recherche de l’UFR, contrairement à la
+CAPEC et au CIRES qui disposent d’une autonomie de  gestion.
+Cependant, les trois structures de recherche, à part l’ENSEA, sont
+toutes dépendantes de l’Université Félix-Houphouët-Boigny.
+Le CREMIDE, la plus récente des structures, dispose d’une
+cellule de recherche en économie du travail et d’une cellule surl’évaluation des politiques d’emploi. Ces deux cellules ont pourvocation de mener des réflexions poussées sur le fonction-nement du marché du travail. Elles sont animées par des
+ spécialistes d’économie du travail, avec des assistants de
+recherche ayant pour la plupart eﬀectué leur mémoire de master sur des questions liées au marché du travail. 
+Ces structures de recherche sont entièrement disponibles
+pour accompagner les programmes d’emploi et soutenir les
+décisions des autorités publiques dans la lutte contre le chômage. D’ailleurs, la plupart de ces structures réalisent déjàdes activités en collaboration avec les structures responsablesde l’emploi. Des séminaires sont régulièrement tenus parl’ensemble des structures de recherche pour partager les résultats de la recherche scientifique, et lorsque les structuresresponsables de l’emploi ont un centre d’intérêt dans lesétudes réalisées, elles sont automatiquement invitées. C’est lecas de la recherche sur l’évaluation des politiques d’emploi del’AGEPE, réalisée par des chercheurs du CREMIDE et comman-ditée par la CAPEC. L’atelier de validation de cette recherche a
+bénéficié de la participation eﬀective des diﬀérentes structureschargées de l’emploi des jeunes (AGEPE, FDFP , AGEFOP , DGE,
+PFS, INIE). Cela illustre la parfaite symbiose d’une part au seindes structures de recherche et, d’autre part, entre les structuresde recherche et les structures techniques responsables del’emploi des jeunes. 
+Un programme de recherche sur l’emploi des jeunes peut
+donc valablement être soutenu par les diﬀérents centres derecherche et piloté par l’un d’eux. De même, les résultats de larecherche peuvent aussi être valorisés par les diﬀérents centres de décision de la politique de l’emploi, comme cela se fait très
+souvent déjà, mais avec une autre vision. En eﬀet, les structuresde recherche ne sont pas souvent sollicitées par les centres de
+décision politique, d’abord par manque de financement de larecherche, mais aussi parce que les travaux réalisés sont taxésd’être trop théoriques et sans teneur qui puisse guider les
+décideurs politiques. C’est ainsi qu’en 1997 l’AGEPE a sollicité le
+CIRES afin de réaliser une étude sur l’évaluation du Programme
+d’aide à l’embauche (PAE), dans le but de redynamiser ce pro-
+gramme. Les résultats de l’étude n’ont toutefois pas pu êtrevalidés, la direction de la promotion de l’emploi de l’AGEPEjugeant la démarche analytique trop théorique et subjective. 
+JEAN-BAPTISTE DODANE
+32L’EMPLOI DES JEUNES EN CÔTE D’IVOIREUn programme de recherche sur l’emploi des jeunes 
+pourrait être soutenu par les différents centres de recherche 
+et piloté par l’un d’eux.
+33Le diagnostic du marché de l’emploi des jeunes en Côte d’Ivoire
+révèle que la situation est plus que préoccupante. Les réponses
+à la crise de l’emploi chez les jeunes nécessitent donc un
+apport de connaissances empiriques, marquées par une rupture par  rapport aux politiques et programmes déployés.En conséquence, des connaissances et mesures urgentes etinnovantes sont indispensables afin de faire face à la situationde l’emploi des jeunes. Également, des mesures d’accompa -
+gnement qui prendraient la forme de réformes structurellesdevraient être mises en œuvre afin de corriger les dysfonction-
+nements du marché du travail. Enfin, un plan d’action opéra-tionnel avec un mécanisme de dialogue inclusif devra êtreélaboré afin de faciliter la réalisation des propositions con-
+tenues dans cette étude diagnostique.
+L’ensemble des actions visant à redonner du souﬄe 
+à l’emploi des jeunes pourraient significativement êtresoutenues par un programme de recherche, permettant ainsi
+d’améliorer les connaissances sur les besoins des jeunes, dontles bénéficiaires potentiels sont les ministères chargés de la
+formation professionnelle et technique et de l’enseignementsupérieur et, surtout, les structures responsables de l’emploides jeunes, et en premier lieu l’Agence pour l’emploi des
+jeunes (AEJ) et le ministère dédié à l’emploi des jeunes. 
+Finalement, un programme de recherche sur l’emploi des
+jeunes en Côte d’Ivoire aurait une valeur ajoutée considérable
+sur la qualité des décisions visant à promouvoir l’emploi et la réduction de la pauvreté.Conclusion5
+ANOUK DELAFORTRIE / EC-ECHO
+34L’EMPLOI DES JEUNES EN CÔTE D’IVOIREBibliographie
+AGEPE (2014), « ENSETE 2013, Rapport final », Côte d’Ivoire, 
+août 2014.
+AGEPE (2013), « Situation de l’emploi en Côte d’Ivoire en 2012,
+Rapport de synthèse Rapport Enquête emploi 2012 »,
+ Observatoire de l’Emploi, des Métiers et de la Formation.
+AGEPE, juillet 2013, document de travail.
+BAD (2013), « Rapport d’évaluation – Appui à l’amélioration 
+de l’employabilité et de l’insertion des jeunes », document 
+de travail. 
+BIT (2015), Travail décent, Emploi des jeunes en Afrique de l’Ouest,
+quelles solutions? Périodique, Édition, 2015. 
+BIT (2011), « Cadre institutionnel et réglementaire du marché 
+du travail en Côte d’Ivoire », document de travail. 
+BIT (2011), « Promouvoir la création d’emplois pour les jeunes 
+dans les entreprises multinationales et leurs chaînes d’approvi-
+sionnement : Côte d’Ivoire », (Secteur de l’emploi) Rapport surl’Emploi, 2011, n
+o13, 55 p.
+BIT (2010), « Analyse du marché du travail en Côte d’Ivoire », 
+document de travail. 
+BIT (2009), « Entrepreneuriat et employabilité des jeunes 
+en Côte d’Ivoire », document de travail.
+BIT (1999), « Coordination des politiques d’emploi », document 
+de travail.
+BIT (1982), « Le syndrome du diplôme et le chômage des
+diplômés, réflexions de synthèse », Le syndrome du diplôme etle chômage des diplômés : rapport, volume 5, Jobs and SkillsProgramme for Africa.
+CAPEC (2012), « Évaluation des mesures en matière d’emploi 
+des jeunes en Côte d’Ivoire », document de travail.
+Côte d’Ivoire – Ministère du Travail (2009), « Programme par pays
+pour un travail décent (PPTD), 2008-2013 », OIT, Bureau sous-
+régional pour l’Afrique de l’Ouest, document de travail.
+Côte d’Ivoire – MEMEASFP (2014), Politiques et dispositifs d’insertion
+professionnelle et création d’emplois », Rapport Pays de l’ADEA 
+« Formation, insertion professionnelle et emploi des jeunes »,
+document de travail réalisé par Pierre Ange Désiré DANHO,économiste, directeur général de l’Emploi.
+DGE (2012), « Politique nationale de l’emploi », document de travail.
+DOMARAUD, Z. M. A. (2003), Le chômage de longue durée en Côte
+d’Ivoire – Analyse et politique, thèse de doctorat. 
+FMI (2012), « Rapport de mise en œuvre de la stratégie 
+de réduction de la pauvreté – Rapport d’avancement annuel »,
+document de travail.GRATIER, A. (2007), Employabilité des jeunes en Côte d’Ivoire,
+mémoire de DEA-PTCI, Université de Cocody, Abidjan.
+INS (2008), « Rapport de l’Enquête niveau de vie des ménages 
+en 2008 », rapport provisoire, document de travail.  
+INS (1999), « Enquête sur le niveau de vie des ménages (ENV98) 
+en Côte d’Ivoire, analyse de l’emploi », document de travail.
+KOUADIO, B. M. (2005), « Analyse de la pauvreté des chômeurs 
+de longue durée en Côte d’Ivoire », Économie appliquée, 
+tome LVIII, 2005, n
+o3, p. 105-127.
+KOUAKOU, K. C. (2012), « Urban youth labour supply and the
+employment policy in Côte d’Ivoire », AERC research paper
+240, Nairobi.
+KOUAKOU, K. C. (2011), « Politique active d’emploi et employabilité
+dans la ville d’Abidjan », Économie appliquée, tome LXV, no3.
+KOUAKOU, K. C. (2006), Insertion professionnelle des jeunes urbains
+et politique active d’emploi en Côte d’Ivoire, thèse de doctorat
+unique, Université de Cocody, Abidjan.
+LACHAUD, J.-P . (1996), « Le désengagement de l’État et les ajuste-
+ments sur le marché du travail en Afrique francophone »,
+Genève, Institut International d’Études sociales.
+MINISTÈRE DU PLAN (2012), « Programme national pour 
+le développement », PND 2012-2015, Côte d’Ivoire, document de travail.
+PNUD (2009), « Programme d’appui aux initiatives pour l’emploi
+des jeunes et la cohésion sociale en Côte d’Ivoire », Programme régional emploi des jeunes et cohésion sociale,
+Prodoc, document de travail.
+ROCARD, M. (1996), Les moyens d’en sortir, Paris, Seuil. 
+UNDAF (2012), « Plan cadre des Nations Unies pour l’aide au
+développement 2012-2015, UNDAF Révisé », Nations Unies
+Côte d’Ivoire, document de travail.
+Sites Internet
+Gouvernement de la Côte d’Ivoire : http://www.gouv.ci/
+actualite_1.php?recordID=3689 
+Institut national de la statistique : http://www.ins.ci/n/ 
+African Economic Outlook :
+http://www.africaneconomicoutlook.org/fileadmin/uploads/
+aeo/2015/CN_data/Cn_Long_FR/Côte_d_Ivoire_2015.pdf 
+ZUEHLKE, E. (2009), Population Reference Bureau : « L’emploi et 
+le sous-emploi des jeunes en Afrique sub-saharienne ».
+http://www.prb.org/FrenchContent/Articles/2009/
+EmploymentyouthSSAfrica.aspx

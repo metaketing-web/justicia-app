@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+/* ========================================
+   AMÉLIORATION DE LA TYPOGRAPHIE GLOBALE
+   ======================================== */
+
+/* Tailles de police de base augmentées */
+:root {
+  --font-size-xs: 0.8125rem;    /* 13px */
+  --font-size-sm: 0.9375rem;    /* 15px */
+  --font-size-base: 1.0625rem;  /* 17px - augmenté */
+  --font-size-lg: 1.1875rem;    /* 19px */
+  --font-size-xl: 1.375rem;     /* 22px */
+  --font-size-2xl: 1.625rem;    /* 26px */
+  --font-size-3xl: 2rem;        /* 32px */
+  
+  --line-height-tight: 1.3;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+  
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+}
+
+/* Amélioration de la lisibilité du texte */
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Amélioration de la scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}

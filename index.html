@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/justicia-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Justicia - Analyse Intelligente de Documents Juridiques</title>
+    <style>
+      /* CORRECTION DRASTIQUE POUR LES BOUTONS */
+      footer button,
+      .sidebar button,
+      button[class*="rounded-"] {
+        border-radius: 8px !important;
+        overflow: visible !important;
+      }
+      
+      footer button::before,
+      footer button::after,
+      .sidebar button::before,
+      .sidebar button::after,
+      button[class*="rounded-"]::before,
+      button[class*="rounded-"]::after {
+        display: none !important;
+        content: none !important;
+      }
+      
+      footer button:hover,
+      .sidebar button:hover {
+        background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #F97316 100%) !important;
+        color: white !important;
+        border-color: white !important;
+        border-radius: 8px !important;
+      }
+      
+      footer button:hover *,
+      .sidebar button:hover *,
+      footer button:hover span,
+      .sidebar button:hover span {
+        color: white !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: inline !important;
+      }
+      
+      footer button,
+      .sidebar button {
+        transform: none !important;
+        -webkit-mask: none !important;
+        mask: none !important;
+        clip-path: none !important;
+      }
+    </style>
+    <!-- Tailwind CSS compilé dans le build -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+      
+      /* Mobile-specific optimizations */
+      * {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+      }
+      
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overscroll-behavior: none;
+      }
+      
+      html.dark body {
+        background: #121212;
+      }
+      
+      /* Prevent zoom on input focus on iOS */
+      input, textarea, select {
+        font-size: 16px !important;
+      }
+      
+      /* Improved scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #121212;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #535353;
+        border-radius: 4px;
+      }
+      html.dark ::-webkit-scrollbar-thumb {
+        background: #535353;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #b3b3b3;
+      }
+      html.dark ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #8B5CF6, #EC4899, #F97316);
+      }
+
+      /* Custom scrollbar for chat panel */
+      .scrollbar-custom::-webkit-scrollbar {
+        width: 6px;
+      }
+      .scrollbar-custom::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .scrollbar-custom::-webkit-scrollbar-thumb {
+        background: #535353;
+        border-radius: 10px;
+      }
+      .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #8B5CF6, #EC4899, #F97316);
+      }
+      .scrollbar-custom {
+        scrollbar-width: thin;
+        scrollbar-color: #535353 transparent;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease-in-out forwards;
+      }
+
+      @keyframes fadeInSlideUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInSlideUp {
+        animation: fadeInSlideUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+
+      /* Card Spotlight Effect */
+      .spotlight-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        background: radial-gradient(450px circle at var(--mouse-x) var(--mouse-y), rgba(139, 92, 246, 0.15), transparent 80%);
+        pointer-events: none;
+      }
+
+      .spotlight-card:hover::before {
+        opacity: 1;
+      }
+
+      /* Refined Shimmer for Skeletons */
+      @keyframes shimmer {
+        100% { transform: translateX(100%); }
+      }
+
+      .shimmer-bg {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .shimmer-bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+        animation: shimmer 1.5s infinite;
+      }
+
+      .glass-pane::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuODUiIG51bU9jdGF2ZXM9IjEwIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29tcG9zaXRlIG9wZXJhdG9yPSJpbiIgaW4yPSJTb3VyY2VBbHBoYSIgcmVzdWx0PSJub2lzZSIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWx0ZXI9InVybCgjbm9pc2UpIiBvcGFjaXR5PSIwLjUiLz48L3N2Zz4=');
+        opacity: 0.025;
+        pointer-events: none;
+      }
+
+      /* Mobile-specific improvements */
+      @media (max-width: 768px) {
+        .spotlight-card::before {
+          background: radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(139, 92, 246, 0.15), transparent 60%);
+        }
+      }
+
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "uuid": "https://esm.sh/uuid@^11.1.0",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0",
+    "react-syntax-highlighter": "https://esm.sh/react-syntax-highlighter@^15.5.0",
+    "react-syntax-highlighter/dist/esm/styles/prism": "https://esm.sh/react-syntax-highlighter@15.5.0/dist/esm/styles/prism",
+    "react-syntax-highlighter/": "https://esm.sh/react-syntax-highlighter@^15.6.1/",
+    "react-motion": "https://esm.sh/react-motion@^0.5.2",
+    "mammoth": "https://esm.sh/mammoth@1.8.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "ollama": "https://esm.sh/ollama@^0.5.16"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="/justicia-styles.css">
+</head>
+  <body>
+    <div class="fixed top-0 left-0 w-full h-full -z-10 animate-move-gradient" style="background: linear-gradient(-45deg, hsl(0, 0%, 12%), hsl(0, 0%, 8%), hsl(0, 0%, 5%), hsl(0, 0%, 10%)); background-size: 400% 400%;"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

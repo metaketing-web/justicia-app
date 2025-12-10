@@ -1,0 +1,199 @@
+/* ========================================
+   FORMATAGE AMÉLIORÉ POUR L'ANALYSE
+   ======================================== */
+
+/* Titres principaux avec dégradé Justicia */
+.analysis-content h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #9B59B6, #E91E63, #FF6B35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    /* Renforcer le gras avec une ombre */
+    filter: drop-shadow(0 0 0.5px rgba(155, 89, 182, 0.5));
+}
+
+/* Sous-titres */
+.analysis-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #E91E63;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraphes avec espacement */
+.analysis-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    color: #D1D5DB;
+}
+
+/* Listes à puces stylisées */
+.analysis-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.analysis-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.analysis-content ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #FF6B35;
+    font-weight: bold;
+}
+
+/* Listes numérotées */
+.analysis-content ol {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.analysis-content ol li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+    counter-increment: item;
+}
+
+.analysis-content ol li::before {
+    content: counter(item) ".";
+    position: absolute;
+    left: 0;
+    color: #9B59B6;
+    font-weight: bold;
+}
+
+/* Citations en italique avec bordure */
+.analysis-content blockquote {
+    border-left: 4px solid #E91E63;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #9CA3AF;
+    background: rgba(233, 30, 99, 0.05);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Texte en gras */
+.analysis-content strong {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Texte en italique */
+.analysis-content em {
+    font-style: italic;
+    color: #E91E63;
+}
+
+/* Code inline */
+.analysis-content code {
+    background: rgba(155, 89, 182, 0.2);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', monospace;
+    color: #9B59B6;
+}
+
+/* Séparateurs */
+.analysis-content hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #9B59B6, #E91E63, #FF6B35);
+    margin: 2rem 0;
+    opacity: 0.3;
+}
+
+/* Tables */
+.analysis-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.analysis-content th {
+    background: linear-gradient(to right, #9B59B6, #E91E63);
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.analysis-content td {
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.analysis-content tr:hover {
+    background: rgba(155, 89, 182, 0.1);
+}
+
+/* Liens */
+.analysis-content a {
+    color: #FF6B35;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.analysis-content a:hover {
+    color: #E91E63;
+}
+
+/* Badges de sévérité */
+.severity-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.severity-elevé,
+.severity-élevé {
+    background: linear-gradient(to right, #DC2626, #EF4444);
+    color: white;
+}
+
+.severity-moyen {
+    background: linear-gradient(to right, #F59E0B, #FBBF24);
+    color: white;
+}
+
+.severity-faible {
+    background: linear-gradient(to right, #10B981, #34D399);
+    color: white;
+}
+
+/* Animation d'apparition */
+.analysis-content {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,79 @@
+{"time":"2025-12-01T07:39:09.447860675-05:00","level":"INFO","msg":"Sentry initialized","dsn":"https://962d173a894d***","environment":"PROD","release":"6.2.10","sandbox_id":"iqgpp8xf40z68l7t4nb54"}
+{"time":"2025-12-01T07:39:09.448787419-05:00","level":"INFO","msg":"Sentry initialized successfully"}
+{"time":"2025-12-01T07:39:09.448796414-05:00","level":"INFO","msg":"State sync service starting","log_file":"/home/ubuntu/.logs/state-sync/state-sync.log"}
+{"time":"2025-12-01T07:39:09.448967225-05:00","level":"INFO","msg":"Starting state sync service"}
+{"time":"2025-12-01T07:39:09.448988919-05:00","level":"INFO","msg":"Pulling initial state from S3"}
+{"time":"2025-12-01T07:39:09.63826218-05:00","level":"INFO","msg":"Successfully pulled initial state","etag":"\"b3391591544a28df3c942a61fdda0eb6\"","cookie_domains":32,"localStorage_domains":29}
+{"time":"2025-12-01T07:39:09.638394193-05:00","level":"INFO","msg":"Connecting to browser","port":"9222"}
+{"time":"2025-12-01T07:39:09.644118515-05:00","level":"INFO","msg":"Found chrome://newtab/ to reuse","target_id":"622A30C49BD3262C18957220C7C84A9E"}
+{"time":"2025-12-01T07:39:09.644162393-05:00","level":"INFO","msg":"Reusing existing target for cookie sync","target_id":"622A30C49BD3262C18957220C7C84A9E"}
+{"time":"2025-12-01T07:39:09.644174284-05:00","level":"INFO","msg":"Successfully connected to browser"}
+{"time":"2025-12-01T07:39:09.644178044-05:00","level":"INFO","msg":"Syncing state to browser"}
+{"time":"2025-12-01T07:39:09.644185322-05:00","level":"INFO","msg":"Syncing cookies to browser","cookie_count":107}
+{"time":"2025-12-01T07:39:09.717732441-05:00","level":"INFO","msg":"Successfully synced cookies to browser"}
+{"time":"2025-12-01T07:39:09.717757037-05:00","level":"INFO","msg":"Successfully synced state to browser"}
+{"time":"2025-12-01T07:39:09.717760989-05:00","level":"INFO","msg":"Setting up state watchers"}
+{"time":"2025-12-01T07:39:09.717768332-05:00","level":"INFO","msg":"Starting CDP watcher"}
+{"time":"2025-12-01T07:39:09.730215982-05:00","level":"INFO","msg":"Created hidden monitoring target","target_id":"44164BE83AD33CEC18EBBDDE9A537C6C"}
+{"time":"2025-12-01T07:39:09.730258097-05:00","level":"INFO","msg":"Using hidden target for monitoring (should not be visible)"}
+{"time":"2025-12-01T07:39:09.730267303-05:00","level":"INFO","msg":"State watchers setup complete"}
+{"time":"2025-12-01T07:39:09.730271467-05:00","level":"INFO","msg":"Waiting for browser to stabilize after cookie sync","delay":5000000000}
+{"time":"2025-12-01T07:39:09.73028628-05:00","level":"INFO","msg":"Starting target monitoring"}
+{"time":"2025-12-01T07:39:09.764036183-05:00","level":"INFO","msg":"Handling target","target_id":"622A30C49BD3262C18957220C7C84A9E","url":"chrome://newtab/"}
+{"time":"2025-12-01T07:39:14.73050681-05:00","level":"INFO","msg":"Browser stabilization complete, cookie polling started with current state as baseline"}
+{"time":"2025-12-01T07:39:14.730633033-05:00","level":"INFO","msg":"Starting cookie polling","interval":1000000000}
+{"time":"2025-12-01T07:39:14.730764034-05:00","level":"INFO","msg":"Wrote sync ready marker","path":"/home/ubuntu/.config/state-sync/.sync-ready"}
+{"time":"2025-12-01T07:39:14.730792778-05:00","level":"INFO","msg":"State sync service started successfully"}
+{"time":"2025-12-01T07:39:14.730810835-05:00","level":"INFO","msg":"Started watching config file","path":"/home/ubuntu/.config/state-sync/state-sync-config.yaml"}
+{"time":"2025-12-01T07:54:17.577695476-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T07:54:19.398011171-05:00","level":"INFO","msg":"Handling target","target_id":"622A30C49BD3262C18957220C7C84A9E","url":"chrome://newtab/"}
+{"time":"2025-12-01T07:54:19.40107051-05:00","level":"ERROR","msg":"Failed to enable DOM storage events","target_id":"622A30C49BD3262C18957220C7C84A9E","error":"No target with given id found (-32602)"}
+{"time":"2025-12-01T07:54:19.785002356-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"461c923db3b91516fd869f40f62c2bae\""}
+{"time":"2025-12-01T07:56:52.084719483-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T07:56:52.114685519-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":2}
+{"time":"2025-12-01T07:56:53.792884218-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"c9e214c2e2b0eb46c459d9e9ad696579\""}
+{"time":"2025-12-01T08:03:32.363465539-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T08:03:32.424229862-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T08:03:34.365593744-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"c9e214c2e2b0eb46c459d9e9ad696579\""}
+{"time":"2025-12-01T08:10:37.069252334-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T08:10:37.112968116-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T08:10:38.942899746-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"c9e214c2e2b0eb46c459d9e9ad696579\""}
+{"time":"2025-12-01T08:10:57.042668343-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"6e6c573a7b44bafd2578463da7c7b56f\""}
+{"time":"2025-12-01T08:11:00.281143788-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"51bc3e06cf99daa278727fd264b42ddc\""}
+{"time":"2025-12-01T08:11:39.227718451-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"f35116b3357b5d2798029e94b6b7d84b\""}
+{"time":"2025-12-01T08:11:44.100373469-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T08:17:26.581054074-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T08:17:26.813880129-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T08:17:28.66040587-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T08:33:38.282241659-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T08:33:38.427968498-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T08:33:40.413634746-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T09:38:07.172818802-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T09:38:07.227644248-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T09:38:08.94099471-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T09:38:45.510474398-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/?nocache=1"}
+{"time":"2025-12-01T09:38:45.547168713-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T09:38:46.962871562-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T09:42:12.7818261-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/?v=2"}
+{"time":"2025-12-01T09:42:12.83909898-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T09:42:14.443838881-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T09:44:19.896105437-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/?v=3"}
+{"time":"2025-12-01T09:44:20.166514731-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T09:44:21.349242892-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T09:49:45.571442286-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/?v=final"}
+{"time":"2025-12-01T09:49:45.704135042-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T09:49:47.711423828-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T11:20:32.076774411-05:00","level":"INFO","msg":"Config file changed, reloading","path":"/home/ubuntu/.config/state-sync/state-sync-config.yaml","operation":"CREATE"}
+{"time":"2025-12-01T11:44:58.818371652-05:00","level":"INFO","msg":"Config file changed, reloading","path":"/home/ubuntu/.config/state-sync/state-sync-config.yaml","operation":"CREATE"}
+{"time":"2025-12-01T12:10:50.164581872-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T12:10:50.23062542-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T12:10:52.996624384-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T12:13:31.659804412-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T12:13:31.723853569-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T12:13:33.889739704-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-01T12:26:19.700660124-05:00","level":"INFO","msg":"Handling target","target_id":"497C5E50CCF6820D652FA8E0D25F8547","url":"https://3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer/"}
+{"time":"2025-12-01T12:26:20.330501939-05:00","level":"INFO","msg":"Injected localStorage items","domain":"3001-iqgpp8xf40z68l7t4nb54-4a65fdab.manusvm.computer","item_count":3}
+{"time":"2025-12-01T12:26:21.832368621-05:00","level":"INFO","msg":"Successfully pushed state to S3","etag":"\"09aed6071e49a0aec182c86a4ee4314c\""}
+{"time":"2025-12-02T03:10:43.859785541-05:00","level":"INFO","msg":"Config file changed, reloading","path":"/home/ubuntu/.config/state-sync/state-sync-config.yaml","operation":"CREATE"}
+{"time":"2025-12-03T05:08:18.881353044-05:00","level":"INFO","msg":"Config file changed, reloading","path":"/home/ubuntu/.config/state-sync/state-sync-config.yaml","operation":"CREATE"}
+{"time":"2025-12-03T06:45:23.475724827-05:00","level":"INFO","msg":"Config file changed, reloading","path":"/home/ubuntu/.config/state-sync/state-sync-config.yaml","operation":"CREATE"}
