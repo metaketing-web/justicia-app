@@ -140,6 +140,44 @@ const DocumentHistory: React.FC<DocumentHistoryProps> = ({ onClose, onCreateBlan
     }
   };
 
+  const handleEdit = async (doc: DocumentHistoryItem) => {
+    try {
+      // Récupérer le contenu depuis l'API
+      const documentId = (doc.metadata as any)?.documentId;
+      if (!documentId) {
+        alert('ID du document introuvable');
+        return;
+      }
+      
+      const docResponse = await fetch(`/api/documents/${documentId}`);
+      if (!docResponse.ok) throw new Error('Erreur récupération document');
+      
+      const docData = await docResponse.json();
+      const content = docData.document?.content || '';
+      
+      if (!content) {
+        alert('Le document est vide');
+        return;
+      }
+
+      // Émettre un événement personnalisé pour ouvrir l'éditeur collaboratif
+      const event = new CustomEvent('openCollaborativeEditor', {
+        detail: {
+          documentId: documentId,
+          title: doc.title,
+          content: content
+        }
+      });
+      window.dispatchEvent(event);
+      
+      // Fermer la modal
+      onClose();
+    } catch (error) {
+      console.error('Erreur édition:', error);
+      alert('Erreur lors de l\'ouverture du document');
+    }
+  };
+
   const getTypeIcon = (type: DocumentHistoryItem['type']) => {
     switch (type) {
       case 'template':
@@ -328,7 +366,7 @@ const DocumentHistory: React.FC<DocumentHistoryProps> = ({ onClose, onCreateBlan
                     {getTypeIcon(doc.type)}
                     <div className="flex gap-1">
                       <button
-                        onClick={() => alert('Fonctionnalité édition en cours de développement')}
+                        onClick={() => handleEdit(doc)}
                         className="p-1.5 text-gray-400 hover:text-green-400 hover:bg-green-400/10 rounded transition-colors"
                         title="Modifier"
                       >
