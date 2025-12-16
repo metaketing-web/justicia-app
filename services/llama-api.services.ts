@@ -256,22 +256,22 @@ STRUCTURE EXACTE (ne modifie pas les clés) :
     }
   ],
   "riskAssessment": {
-    "overallSummary": "Résumé global de l'évaluation des risques en markdown. Minimum 150 mots.",
+    "overallSummary": "ÉVALUATION DES RISQUES: Analyse critique des DANGERS, MENACES et POINTS FAIBLES du document. Focus sur ce qui POURRAIT MAL SE PASSER (risques juridiques, financiers, opérationnels, de conformité). Ton: Prudent et analytique. Minimum 150 mots.",
     "risks": [
       {
-        "area": "Domaine",
-        "assessment": "Évaluation",
+        "area": "Domaine de risque (ex: Sécurité des données, Conformité réglementaire, Intégration SI, Adoption utilisateur)",
+        "assessment": "Évaluation détaillée du risque et de son impact potentiel",
         "score": 5
       }
     ]
   },
   "aiInsights": {
-    "overallSummary": "Analyse approfondie en markdown. Minimum 200 mots.",
+    "overallSummary": "ANALYSE IA STRATÉGIQUE: Vision globale du document avec focus sur les OPPORTUNITÉS, FORCES et POTENTIEL. Analyse de la VALEUR AJOUTÉE, des INNOVATIONS et des PERSPECTIVES POSITIVES. Ton: Constructif et prospectif. Minimum 200 mots. DOIT ÊTRE COMPLÈTEMENT DIFFÉRENT de riskAssessment.",
     "recommendations": [
       {
         "id": "rec1",
-        "recommendation": "Titre de la recommandation",
-        "justification": "Justification détaillée"
+        "recommendation": "Titre de la recommandation stratégique ou opportunité à saisir",
+        "justification": "Justification détaillée expliquant pourquoi cette recommandation apporte de la valeur"
       }
     ]
   }
@@ -285,7 +285,9 @@ RÈGLES STRICTES :
 5. Minimum 3 flags, maximum 10
 6. Minimum 3 risks, maximum 8
 7. Minimum 3 recommendations dans aiInsights
-8. riskAssessment.overallSummary et aiInsights.overallSummary doivent être DIFFÉRENTS`;
+8. riskAssessment.overallSummary DOIT analyser les RISQUES/DANGERS/MENACES (ton prudent)
+9. aiInsights.overallSummary DOIT analyser les OPPORTUNITÉS/FORCES/POTENTIEL (ton constructif)
+10. Ces deux sections doivent être COMPLÈTEMENT DIFFÉRENTES dans leur contenu et leur angle d'analyse`;
 }
 
 // Ancien prompt (conservé en backup)
