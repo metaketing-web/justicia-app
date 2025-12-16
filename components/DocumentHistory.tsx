@@ -29,9 +29,35 @@ const DocumentHistory: React.FC<DocumentHistoryProps> = ({ onClose, onCreateBlan
     applyFilters();
   }, [documents, searchQuery, selectedType, sortBy]);
 
-  const loadDocuments = () => {
-    const history = getDocumentHistory();
-    setDocuments(history);
+  const loadDocuments = async () => {
+    try {
+      // Charger depuis l'API au lieu de localStorage
+      const response = await fetch('/api/documents');
+      if (!response.ok) throw new Error('Erreur chargement documents');
+      
+      const data = await response.json();
+      if (data.success && data.documents) {
+        // Convertir le format API vers le format DocumentHistoryItem
+        const apiDocs: DocumentHistoryItem[] = data.documents.map((doc: any) => ({
+          id: doc.id,
+          type: 'template' as const,
+          title: doc.title,
+          description: doc.content.substring(0, 100) + '...',
+          fileName: `${doc.title}.docx`,
+          fileUrl: '', // Sera généré à la demande
+          createdAt: new Date(doc.created_at),
+          metadata: {
+            documentId: doc.id
+          } as any
+        }));
+        setDocuments(apiDocs);
+      }
+    } catch (error) {
+      console.error('Erreur chargement documents:', error);
+      // Fallback vers localStorage en cas d'erreur
+      const history = getDocumentHistory();
+      setDocuments(history);
+    }
   };
 
   const applyFilters = () => {
@@ -71,14 +97,46 @@ const DocumentHistory: React.FC<DocumentHistoryProps> = ({ onClose, onCreateBlan
     }
   };
 
-  const handleDownload = (doc: DocumentHistoryItem) => {
-    if (doc.fileUrl) {
+  const handleDownload = async (doc: DocumentHistoryItem) => {
+    try {
+      // Récupérer le contenu depuis l'API
+      const documentId = (doc.metadata as any)?.documentId;
+      if (!documentId) {
+        alert('ID du document introuvable');
+        return;
+      }
+      
+      const docResponse = await fetch(`/api/documents/${documentId}`);
+      if (!docResponse.ok) throw new Error('Erreur récupération document');
+      
+      const docData = await docResponse.json();
+      const content = docData.document?.content || '';
+      
+      if (!content) {
+        alert('Le document est vide');
+        return;
+      }
+
+      const response = await fetch('/api/word', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content })
+      });
+      
+      if (!response.ok) throw new Error('Erreur génération');
+      
+      const blob = await response.blob();
+      const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = doc.fileUrl;
+      a.href = url;
       a.download = doc.fileName || 'document.docx';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Erreur téléchargement:', error);
+      alert('Erreur lors du téléchargement');
     }
   };
 
@@ -269,15 +327,20 @@ const DocumentHistory: React.FC<DocumentHistoryProps> = ({ onClose, onCreateBlan
                   <div className="flex items-start justify-between mb-3">
                     {getTypeIcon(doc.type)}
                     <div className="flex gap-1">
-                      {doc.fileUrl && (
-                        <button
-                          onClick={() => handleDownload(doc)}
-                          className="p-1.5 text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 rounded transition-colors"
-                          title="Télécharger"
-                        >
-                          <Download className="w-4 h-4" />
-                        </button>
-                      )}
+                      <button
+                        onClick={() => alert('Fonctionnalité édition en cours de développement')}
+                        className="p-1.5 text-gray-400 hover:text-green-400 hover:bg-green-400/10 rounded transition-colors"
+                        title="Modifier"
+                      >
+                        <Edit className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => handleDownload(doc)}
+                        className="p-1.5 text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 rounded transition-colors"
+                        title="Télécharger"
+                      >
+                        <Download className="w-4 h-4" />
+                      </button>
                       <button
                         onClick={() => handleDelete(doc.id)}
                         className="p-1.5 text-gray-400 hover:text-red-400 hover:bg-red-400/10 rounded transition-colors"

@@ -3,6 +3,7 @@ const API_KEY = 'sk-iGPVRafgVXnXXrRALaVsRh';
 const BASE_URL = 'https://api.manus.im/api/llm-proxy/v1';
 
 // Prompt d'analyse de documents (inline pour éviter les problèmes d'import)
+import { searchKnowledgeBase } from './rag-knowledge-base';
 
 export interface AIAnalysisData {
   plainLanguageSummary: string;
@@ -15,14 +16,21 @@ export interface AIAnalysisData {
     suggestedRewrite: string;
   }>;
   riskAssessment: {
-    overallRiskScore: number;
+    overallSummary: string;
     risks: Array<{
       area: string;
       assessment: string;
       score: number;
     }>;
   };
-  aiInsights: string;
+  aiInsights: {
+    overallSummary: string;
+    recommendations: Array<{
+      id: string;
+      recommendation: string;
+      justification: string;
+    }>;
+  };
 }
 
 /**
@@ -204,7 +212,7 @@ function parseJSONResponse(content: string): any {
         }
       ],
       riskAssessment: {
-        overallRiskScore: 5,
+        overallSummary: '## Évaluation des Risques\n\nAnalyse automatique non disponible pour ce document.',
         risks: [
           {
             area: 'Analyse',
@@ -213,7 +221,16 @@ function parseJSONResponse(content: string): any {
           }
         ]
       },
-      aiInsights: `## Document Indexé\n\nLe document a été indexé avec succès dans la base de connaissances. Vous pouvez maintenant poser des questions à son sujet dans le chat.`
+      aiInsights: {
+        overallSummary: '## Document Indexé\n\nLe document a été indexé avec succès dans la base de connaissances. Vous pouvez maintenant poser des questions à son sujet dans le chat.',
+        recommendations: [
+          {
+            id: 'rec1',
+            recommendation: 'Poser des questions',
+            justification: 'Le document est disponible dans la base de connaissances pour répondre à vos questions.'
+          }
+        ]
+      }
     };
   }
 }
@@ -239,7 +256,7 @@ STRUCTURE EXACTE (ne modifie pas les clés) :
     }
   ],
   "riskAssessment": {
-    "overallRiskScore": 5,
+    "overallSummary": "Résumé global de l'évaluation des risques en markdown. Minimum 150 mots.",
     "risks": [
       {
         "area": "Domaine",
@@ -248,7 +265,16 @@ STRUCTURE EXACTE (ne modifie pas les clés) :
       }
     ]
   },
-  "aiInsights": "Analyse approfondie en markdown. Minimum 200 mots."
+  "aiInsights": {
+    "overallSummary": "Analyse approfondie en markdown. Minimum 200 mots.",
+    "recommendations": [
+      {
+        "id": "rec1",
+        "recommendation": "Titre de la recommandation",
+        "justification": "Justification détaillée"
+      }
+    ]
+  }
 }
 
 RÈGLES STRICTES :
@@ -257,7 +283,9 @@ RÈGLES STRICTES :
 3. severity doit être exactement : Faible, Moyen, ou Élevé
 4. Les scores sont des nombres entre 0 et 10
 5. Minimum 3 flags, maximum 10
-6. Minimum 3 risks, maximum 8`;
+6. Minimum 3 risks, maximum 8
+7. Minimum 3 recommendations dans aiInsights
+8. riskAssessment.overallSummary et aiInsights.overallSummary doivent être DIFFÉRENTS`;
 }
 
 // Ancien prompt (conservé en backup)
@@ -414,12 +442,31 @@ export async function streamChatResponse(
     // L'accès aux documents uploadés est maintenant géré par la recherche RAG permanente.
     
     // Rechercher dans la base de connaissances
+    let ragContext = '';
     try {
-      const { searchRAG } = await import('./ragService.enhanced');
-      // CORRECTION: Augmenter à 30 résultats pour accès complet au document
-      const ragContext = await searchRAG(lastUserMessage, 30);
+      // 1. Rechercher dans le nouveau RAG IndexedDB
+      const relevantDocs = await searchKnowledgeBase(lastUserMessage);
       
-      if (ragContext && !ragContext.includes('Aucun document pertinent')) {
+      if (relevantDocs.length > 0) {
+        ragContext = '\n\n📚 DOCUMENTS PERTINENTS DE LA BASE DE CONNAISSANCES:\n\n';
+        relevantDocs.slice(0, 3).forEach((doc, index) => {
+          ragContext += `--- Document ${index + 1}: ${doc.title} ---\n`;
+          ragContext += doc.content.substring(0, 2000) + '...\n\n';
+        });
+      }
+      
+      // 2. Aussi essayer l'ancien service RAG pour compatibilité
+      try {
+        const { searchRAG } = await import('./ragService.enhanced');
+        const oldRagContext = await searchRAG(lastUserMessage, 30);
+        if (oldRagContext && !oldRagContext.includes('Aucun document pertinent')) {
+          ragContext += '\n' + oldRagContext;
+        }
+      } catch (oldRagError) {
+        console.log('Ancien RAG non disponible:', oldRagError);
+      }
+      
+      if (ragContext) {
         // Ajouter le contexte RAG au message système
         const systemMessage = {
           role: 'system',

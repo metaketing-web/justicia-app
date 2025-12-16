@@ -12,6 +12,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { generateTitleFromMessage, streamChatResponse, generateDocumentAnalysis, generateContractTemplate } from './services/llama-api.services';
 import { readExcelFile, excelToText } from './services/excelService';
 import { addDocumentToRAG } from './services/ragService.enhanced';
+import { addDocumentToKnowledgeBase } from './services/rag-knowledge-base';
 import { initializeRAGWithCodeTravail } from './services/ragInitializer';
 import { smartExtractText } from './services/ocr.service';
 import { storageService } from './services/storageService';
@@ -471,12 +472,12 @@ const App: React.FC = () => {
                 plainLanguageSummary: analysisData.plainLanguageSummary,
                 flags: analysisData.flags,
                 riskAssessment: {
-                    overallSummary: analysisData.aiInsights,
+                    overallSummary: analysisData.riskAssessment.overallSummary,
                     risks: analysisData.riskAssessment.risks
                 },
                 aiInsights: {
-                    overallSummary: analysisData.aiInsights,
-                    recommendations: []
+                    overallSummary: analysisData.aiInsights.overallSummary,
+                    recommendations: analysisData.aiInsights.recommendations
                 }
             };
 
@@ -780,28 +781,64 @@ const App: React.FC = () => {
         setShowCollaborativeEditor(true);
     }, []);
 
-    const handleSaveCollaborativeWork = useCallback((content: string, title?: string) => {
-        const document = {
-            id: uuidv4(),
-            title: title || editorTitle,
-            content,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString()
-        };
+    const handleSaveCollaborativeWork = useCallback(async (content: string, title?: string) => {
+        const documentTitle = title || editorTitle;
         
-        setCollaborativeDocuments(prev => [...prev, document]);
-        
-        // Sauvegarder dans le stockage local
         try {
-            const existingDocs = JSON.parse(localStorage.getItem('collaborative_documents') || '[]');
-            existingDocs.push(document);
-            localStorage.setItem('collaborative_documents', JSON.stringify(existingDocs));
+            // 1. Sauvegarder dans SQLite via l'API
+            const response = await fetch('/api/documents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    title: documentTitle,
+                    content: content,
+                    document_type: 'collaborative'
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error('Erreur sauvegarde SQLite');
+            }
+            
+            const result = await response.json();
+            const documentId = result.documentId;
+            
+            // 2. Ajouter au RAG IndexedDB
+            if (documentId) {
+                try {
+                    await addDocumentToKnowledgeBase({
+                        id: documentId.toString(),
+                        title: documentTitle,
+                        content: content,
+                        type: 'document',
+                        timestamp: Date.now(),
+                        metadata: {
+                            documentType: 'collaborative',
+                            createdAt: new Date().toISOString()
+                        }
+                    });
+                    console.log('✅ Document ajouté à la base de connaissances RAG');
+                } catch (ragError) {
+                    console.error('⚠️ Erreur ajout RAG (non bloquant):', ragError);
+                }
+            }
+            
+            // 3. Mettre à jour l'état local
+            const document = {
+                id: documentId.toString(),
+                title: documentTitle,
+                content,
+                createdAt: new Date().toISOString(),
+                updatedAt: new Date().toISOString()
+            };
+            setCollaborativeDocuments(prev => [...prev, document]);
+            
+            setShowCollaborativeEditor(false);
+            setToastMessage(`✅ Document sauvegardé et ajouté à la base de connaissances!`);
         } catch (error) {
-            console.error('Erreur lors de la sauvegarde:', error);
+            console.error('❌ Erreur lors de la sauvegarde:', error);
+            setToastMessage('❌ Erreur lors de la sauvegarde du document');
         }
-        
-        setShowCollaborativeEditor(false);
-        setToastMessage(`Document collaboratif sauvegardé avec succès! Total: ${collaborativeDocuments.length + 1} documents`);
     }, [editorTitle]);
 
     const handleProcessingDone = useCallback(() => {
@@ -1299,30 +1336,41 @@ const App: React.FC = () => {
 
                             if (!response.ok) throw new Error('Erreur génération');
 
-                            const blob = await response.blob();
-                            const url = window.URL.createObjectURL(blob);
-                            const a = document.createElement('a');
-                            a.href = url;
-                            a.download = `${title.replace(/[^a-z0-9]/gi, '_')}.docx`;
-                            document.body.appendChild(a);
-                            a.click();
-                            document.body.removeChild(a);
-                            window.URL.revokeObjectURL(url);
+                            // Ne pas télécharger automatiquement - le document est déjà sauvegardé dans "Mes Documents"
+                            // const blob = await response.blob();
+                            // const url = window.URL.createObjectURL(blob);
+                            // const a = document.createElement('a');
+                            // a.href = url;
+                            // a.download = `${title.replace(/[^a-z0-9]/gi, '_')}.docx`;
+                            // document.body.appendChild(a);
+                            // a.click();
+                            // document.body.removeChild(a);
+                            // window.URL.revokeObjectURL(url);
 
-                            // Ajouter à l'historique
-                            addDocumentToHistory({
-                                type: 'template',
-                                title: title,
-                                description: 'Document vierge avec en-tête Porteo',
-                                fileName: `${title}.docx`,
-                                fileUrl: url,
-                                metadata: {
-                                    templateName: 'Document vierge'
-                                }
-                            });
+                            // Le document est déjà sauvegardé dans la base de données par le backend
+                            
+                            // Ajouter à la base de connaissances RAG (IndexedDB)
+                            try {
+                                const { indexedDBService } = await import('./services/indexedDBService');
+                                await indexedDBService.saveDocument({
+                                    id: `doc_${Date.now()}`,
+                                    name: title,
+                                    content: content,
+                                    chunks: [content], // Sera rechunké par le service RAG si nécessaire
+                                    uploadDate: new Date().toISOString(),
+                                    type: 'document_vierge',
+                                    metadata: {
+                                        wordCount: content.split(/\s+/).length,
+                                        charCount: content.length
+                                    }
+                                });
+                                console.log('[RAG] Document ajouté à la base de connaissances');
+                            } catch (error) {
+                                console.error('[RAG] Erreur ajout base de connaissances:', error);
+                            }
 
                             setShowBlankDocumentEditor(false);
-                            setToastMessage('Document généré avec succès !');
+                            setToastMessage('Document généré et ajouté à la base de connaissances !');
                         } catch (error) {
                             console.error('Erreur:', error);
                             alert('Erreur lors de la génération du document');
