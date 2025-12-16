@@ -240,7 +240,8 @@ function parseJSONResponse(content: string): any {
  * Importé depuis le fichier dédié pour plus de clarté
  */
 function getDocumentAnalysisPrompt(_docType: string): string {
-  return `Tu es un assistant juridique expert. Analyse ce document et retourne UNIQUEMENT un objet JSON valide.
+  return `Tu es un assistant juridique expert. Analyse ce document et retourne UNIQUEMENT un objet JSON STRICTEMENT VALIDE (standard JSON).
+AUCUN texte hors JSON. Pas de bloc \`\`\` ni de commentaire.
 
 STRUCTURE EXACTE (ne modifie pas les clés) :
 {
@@ -277,17 +278,25 @@ STRUCTURE EXACTE (ne modifie pas les clés) :
   }
 }
 
-RÈGLES STRICTES :
+RÈGLES STRICTES JSON (CRITIQUE) :
 1. Retourne UNIQUEMENT le JSON, rien avant ni après
-2. Utilise des apostrophes (') au lieu de guillemets (") dans les valeurs texte
-3. severity doit être exactement : Faible, Moyen, ou Élevé
-4. Les scores sont des nombres entre 0 et 10
-5. Minimum 3 flags, maximum 10
-6. Minimum 3 risks, maximum 8
-7. Minimum 3 recommendations dans aiInsights
-8. riskAssessment.overallSummary DOIT analyser les RISQUES/DANGERS/MENACES (ton prudent)
-9. aiInsights.overallSummary DOIT analyser les OPPORTUNITÉS/FORCES/POTENTIEL (ton constructif)
-10. Ces deux sections doivent être COMPLÈTEMENT DIFFÉRENTES dans leur contenu et leur angle d'analyse`;
+2. Utilise des guillemets doubles (") pour les clés ET les valeurs texte (standard JSON)
+3. Dans les valeurs texte :
+   - N'insère JAMAIS de guillemet double non échappé. Si nécessaire, écris \\"
+   - N'insère JAMAIS de backslash isolé. Si nécessaire, écris \\\\
+   - N'insère JAMAIS de retour à la ligne brut : utilise \\n
+4. Pas de virgule finale (no trailing commas)
+5. severity doit être exactement : Faible, Moyen, ou Élevé
+6. Les scores sont des nombres entre 0 et 10
+7. Minimum 3 flags, maximum 10
+8. Minimum 3 risks, maximum 8
+9. Minimum 3 recommendations dans aiInsights
+10. riskAssessment.overallSummary = RISQUES/DANGERS/MENACES (ton prudent)
+11. aiInsights.overallSummary = OPPORTUNITÉS/FORCES/POTENTIEL (ton constructif)
+12. Ces deux sections doivent être COMPLÈTEMENT DIFFÉRENTES dans leur contenu et leur angle d'analyse.
+
+RAPPEL : Si tu cites une phrase contenant des guillemets ", remplace-les par des guillemets français « » ou échappe-les avec \\"
+afin de préserver un JSON valide.`;
 }
 
 // Ancien prompt (conservé en backup)
