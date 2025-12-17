@@ -157,6 +157,7 @@ export class OpenAIRealtimeService {
       });
       
       this.audioContext = new AudioContext({ sampleRate: 24000 });
+      console.log(`[MIC] Taux d'échantillonnage réel: ${this.audioContext.sampleRate} Hz`);
       const source = this.audioContext.createMediaStreamSource(this.mediaStream);
       
       // Créer un processeur audio pour envoyer les données
@@ -171,12 +172,12 @@ export class OpenAIRealtimeService {
         // Envoyer l'audio au serveur
         this.send({
           type: 'input_audio_buffer.append',
-          audio: this.arrayBufferToBase64(pcm16.buffer)
+          audio: this.arrayBufferToBase64(pcm16.buffer as ArrayBuffer)
         });
       };
       
       source.connect(processor);
-      processor.connect(this.audioContext.destination);
+      // processor.connect(this.audioContext.destination); // Commenté pour éviter l'écho
       
       console.log('[MIC] Capture audio démarrée');
     } catch (error) {
