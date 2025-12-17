@@ -1,29 +1,7 @@
 // Configuration pour l'API (utilise les variables d'environnement automatiquement)
 const API_KEY = 'sk-iGPVRafgVXnXXrRALaVsRh';
+import { AIAnalysisData } from '../types';
 const BASE_URL = 'https://api.manus.im/api/llm-proxy/v1';
-
-// Prompt d'analyse de documents (inline pour éviter les problèmes d'import)
-
-export interface AIAnalysisData {
-  plainLanguageSummary: string;
-  flags: Array<{
-    id: string;
-    title: string;
-    clause: string;
-    explanation: string;
-    severity: 'Faible' | 'Moyen' | 'Élevé';
-    suggestedRewrite: string;
-  }>;
-  riskAssessment: {
-    overallRiskScore: number;
-    risks: Array<{
-      area: string;
-      assessment: string;
-      score: number;
-    }>;
-  };
-  aiInsights: string;
-}
 
 /**
  * Fait un appel à l'API OpenAI

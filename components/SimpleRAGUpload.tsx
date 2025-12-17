@@ -152,12 +152,12 @@ export const SimpleRAGUpload: React.FC<SimpleRAGUploadProps> = ({ onAnalysisComp
                     plainLanguageSummary: cleanAnalysisText(analysisData.plainLanguageSummary),
                     flags: analysisData.flags,
                     riskAssessment: {
-                        overallSummary: cleanAnalysisText(analysisData.aiInsights),
+                        overallSummary: cleanAnalysisText(analysisData.riskAssessment.overallSummary),
                         risks: analysisData.riskAssessment.risks
                     },
                     aiInsights: {
-                        overallSummary: cleanAnalysisText(analysisData.aiInsights),
-                        recommendations: []
+                        overallSummary: cleanAnalysisText(analysisData.aiInsights.overallSummary),
+                        recommendations: analysisData.aiInsights.recommendations
                     }
                 };
                 

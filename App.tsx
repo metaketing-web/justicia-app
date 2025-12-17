@@ -470,14 +470,8 @@ const App: React.FC = () => {
                 stats,
                 plainLanguageSummary: analysisData.plainLanguageSummary,
                 flags: analysisData.flags,
-                riskAssessment: {
-                    overallSummary: analysisData.aiInsights,
-                    risks: analysisData.riskAssessment.risks
-                },
-                aiInsights: {
-                    overallSummary: analysisData.aiInsights,
-                    recommendations: []
-                }
+                riskAssessment: analysisData.riskAssessment,
+                aiInsights: analysisData.aiInsights,
             };
 
             // Ajouter le document au système RAG permanent
