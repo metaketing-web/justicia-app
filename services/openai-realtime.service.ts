@@ -23,7 +23,8 @@ export class OpenAIRealtimeService {
   private isConnected = false;
   private messageHandlers: Map<string, (data: any) => void> = new Map();
   private currentAudioSources: AudioBufferSourceNode[] = [];
-  private nextStartTime = 0;
+	private nextStartTime = 0;
+	private readonly targetSampleRate = 24000; // Taux d'échantillonnage requis par OpenAI
 
   constructor(config: RealtimeConfig) {
     this.config = {
@@ -146,7 +147,19 @@ export class OpenAIRealtimeService {
   /**
    * Démarre la capture audio du microphone
    */
-  async startAudioCapture(): Promise<void> {
+	  async startAudioCapture(): Promise<void> {
+	    // Vérifier si le contexte audio est déjà créé (pour le playAudio)
+	    if (!this.audioContext) {
+	      this.audioContext = new AudioContext(); // Laisser le navigateur choisir le taux par défaut
+	    }
+	    
+	    // S'assurer que le taux d'échantillonnage est connu avant de continuer
+	    const actualSampleRate = this.audioContext.sampleRate;
+	    if (actualSampleRate !== this.targetSampleRate) {
+	      console.warn(`[MIC] Taux d'échantillonnage du système (${actualSampleRate} Hz) différent du taux cible (${this.targetSampleRate} Hz). Rééchantillonnage nécessaire.`);
+	    }
+	    
+	    try {
     try {
       this.mediaStream = await navigator.mediaDevices.getUserMedia({ 
         audio: {
@@ -154,26 +167,33 @@ export class OpenAIRealtimeService {
           noiseSuppression: true,
           autoGainControl: true
         } 
-      });
-      
-      this.audioContext = new AudioContext({ sampleRate: 24000 });
-      console.log(`[MIC] Taux d'échantillonnage réel: ${this.audioContext.sampleRate} Hz`);
-      const source = this.audioContext.createMediaStreamSource(this.mediaStream);
+	      });
+	      
+	      const source = this.audioContext.createMediaStreamSource(this.mediaStream);
       
       // Créer un processeur audio pour envoyer les données
       const processor = this.audioContext.createScriptProcessor(4096, 1, 1);
       
       processor.onaudioprocess = (e) => {
-        if (!this.isConnected) return;
-        
-        const inputData = e.inputBuffer.getChannelData(0);
-        const pcm16 = this.floatTo16BitPCM(inputData);
-        
-        // Envoyer l'audio au serveur
-        this.send({
-          type: 'input_audio_buffer.append',
-          audio: this.arrayBufferToBase64(pcm16.buffer as ArrayBuffer)
-        });
+	        if (!this.isConnected) return;
+	        
+	        const inputData = e.inputBuffer.getChannelData(0);
+	        
+	        // 1. Rééchantillonner si nécessaire
+	        const resampledData = this.resample(
+	          inputData, 
+	          this.audioContext!.sampleRate, 
+	          this.targetSampleRate
+	        );
+	        
+	        // 2. Convertir en PCM 16 bits
+	        const pcm16 = this.floatTo16BitPCM(resampledData);
+	        
+	        // 3. Envoyer l'audio au serveur
+	        this.send({
+	          type: 'input_audio_buffer.append',
+	          audio: this.arrayBufferToBase64(pcm16.buffer as ArrayBuffer)
+	        });
       };
       
       source.connect(processor);
@@ -226,17 +246,18 @@ export class OpenAIRealtimeService {
   /**
    * Joue l'audio reçu de manière fluide
    */
-  async playAudio(base64Audio: string): Promise<void> {
-    if (!this.audioContext) {
-      this.audioContext = new AudioContext({ sampleRate: 24000 });
-      this.nextStartTime = this.audioContext.currentTime;
-    }
+	  async playAudio(base64Audio: string): Promise<void> {
+	    if (!this.audioContext) {
+	      // Utiliser le taux cible pour la lecture
+	      this.audioContext = new AudioContext({ sampleRate: this.targetSampleRate }); 
+	      this.nextStartTime = this.audioContext.currentTime;
+	    }
     
     const audioData = this.base64ToArrayBuffer(base64Audio);
     const pcm16 = new Int16Array(audioData);
-    const float32 = this.pcm16ToFloat(pcm16);
-    
-    const audioBuffer = this.audioContext.createBuffer(1, float32.length, 24000);
+	    const float32 = this.pcm16ToFloat(pcm16);
+	    
+	    const audioBuffer = this.audioContext.createBuffer(1, float32.length, this.targetSampleRate);
     audioBuffer.getChannelData(0).set(float32);
     
     const source = this.audioContext.createBufferSource();
@@ -264,7 +285,47 @@ export class OpenAIRealtimeService {
   /**
    * Convertit Float32 en PCM16
    */
-  private floatTo16BitPCM(float32Array: Float32Array): Int16Array {
+	  /**
+	   * Rééchantillonne un buffer Float32Array à un nouveau taux d'échantillonnage.
+	   * Utilise une méthode de moyenne simple pour le downsampling.
+	   */
+	  private resample(buffer: Float32Array, originalSampleRate: number, targetSampleRate: number): Float32Array {
+	    if (targetSampleRate === originalSampleRate) {
+	      return buffer;
+	    }
+	    if (targetSampleRate > originalSampleRate) {
+	      // L'upsampling est plus complexe et n'est pas nécessaire ici (on veut 24kHz)
+	      console.warn('Upsampling non supporté par cette fonction simple.');
+	      return buffer;
+	    }
+	
+	    const sampleRateRatio = originalSampleRate / targetSampleRate;
+	    const newLength = Math.round(buffer.length / sampleRateRatio);
+	    const result = new Float32Array(newLength);
+	    let offsetResult = 0;
+	    let offsetBuffer = 0;
+	
+	    while (offsetResult < result.length) {
+	      const nextOffsetBuffer = Math.round((offsetResult + 1) * sampleRateRatio);
+	      let accum = 0;
+	      let count = 0;
+	      for (let i = offsetBuffer; i < nextOffsetBuffer && i < buffer.length; i++) {
+	        accum += buffer[i];
+	        count++;
+	      }
+	      
+	      // Utiliser la moyenne des échantillons pour le rééchantillonnage
+	      result[offsetResult] = accum / count; 
+	      offsetResult++;
+	      offsetBuffer = nextOffsetBuffer;
+	    }
+	    return result;
+	  }
+	
+	  /**
+	   * Convertit Float32 en PCM16
+	   */
+	  private floatTo16BitPCM(float32Array: Float32Array): Int16Array {
     const pcm16 = new Int16Array(float32Array.length);
     for (let i = 0; i < float32Array.length; i++) {
       const s = Math.max(-1, Math.min(1, float32Array[i]));
