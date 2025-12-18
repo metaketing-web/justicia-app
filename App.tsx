@@ -34,6 +34,10 @@ import { DocumentTemplate } from './config/documentTemplates';
 import { addDocumentToHistory } from './services/documentHistory.service';
 import AccountSettings from './components/AccountSettings';
 import AppSettingsComponent from './components/AppSettings';
+import { useSettings } from './hooks/useSettings';
+import { useTranslation, i18n } from './services/i18n';
+import { useNotifications } from './services/notificationService';
+import './theme.css';
 
 // PDF.js worker configuration - disable worker to use main thread
 (pdfjsLib as any).GlobalWorkerOptions.workerSrc = '/pdf.worker.js';
@@ -93,6 +97,11 @@ const Toast: React.FC<{ message: string; onDismiss: () => void; }> = ({ message,
 };
 
 const App: React.FC = () => {
+    // Hooks pour les paramètres, traductions et notifications
+    const { settings: appSettings, updateSettings, isLoading: settingsLoading } = useSettings();
+    const { t, changeLanguage } = useTranslation();
+    const { hasPermission, requestPermission, success: notifySuccess, error: notifyError } = useNotifications();
+    
     const [currentUser, setCurrentUser] = useState<User | null>(null);
     const [isLoadingAuth, setIsLoadingAuth] = useState(true);
     const [sessions, setSessions] = useState<ChatSession[]>([]);
@@ -131,16 +140,6 @@ const App: React.FC = () => {
     const [historyOpen, setHistoryOpen] = useState(false);
     const [showAccountSettings, setShowAccountSettings] = useState(false);
     const [showAppSettings, setShowAppSettings] = useState(false);
-    const [appSettings, setAppSettings] = useState({
-        language: 'fr',
-        theme: 'dark' as 'light' | 'dark' | 'system',
-        receiveExclusiveContent: true,
-        emailOnTaskStart: true,
-        autoSaveDocuments: true,
-        showAnalysisSummary: true,
-        enableVoiceChat: true,
-        dataRetention: 90
-    });
 
     const contractTypes = [
         'Contrat de Freelance',
@@ -304,6 +303,17 @@ const App: React.FC = () => {
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
+
+    // Initialiser les paramètres (langue, notifications)
+    useEffect(() => {
+        // Appliquer la langue des paramètres
+        changeLanguage(appSettings.language as any);
+        
+        // Demander la permission pour les notifications si activé
+        if (appSettings.emailOnTaskStart && !hasPermission) {
+            requestPermission();
+        }
+    }, [appSettings.language, appSettings.emailOnTaskStart]);
 
     // Initialiser la base RAG avec le Code du Travail au démarrage
     useEffect(() => {
@@ -1746,10 +1756,13 @@ const App: React.FC = () => {
                 <AppSettingsComponent
                     currentSettings={appSettings}
                     onClose={() => setShowAppSettings(false)}
-                    onUpdateSettings={(newSettings) => {
-                        setAppSettings(newSettings);
-                        // Sauvegarder dans localStorage
-                        localStorage.setItem('justiciaAppSettings', JSON.stringify(newSettings));
+                    onUpdateSettings={async (newSettings) => {
+                        await updateSettings(newSettings);
+                        // Appliquer la langue si elle a changé
+                        if (newSettings.language !== appSettings.language) {
+                            changeLanguage(newSettings.language as any);
+                        }
+                        notifySuccess('Paramètres enregistrés', 'Vos paramètres ont été sauvegardés avec succès.');
                     }}
                 />
             )}
