@@ -3,11 +3,19 @@
  * Permet des conversations vocales en temps réel avec l'IA
  */
 
+export interface RealtimeTool {
+  name: string;
+  description: string;
+  parameters: any;
+}
+
 export interface RealtimeConfig {
   apiKey: string;
   model?: string;
-  voice?: 'alloy' | 'echo' | 'fable' | 'onyx' | 'nova' | 'shimmer' | 'ash' | 'ballad' | 'coral' | 'sage' | 'verse' | 'cedar';
+  voice?: 'alloy' | 'echo' | 'fable' | 'onyx' | 'nova' | 'shimmer' | 'ash' | 'ballad' | 'coral' | 'sage' | 'verse';
   instructions?: string;
+  tools?: RealtimeTool[];
+  onToolCall?: (toolName: string, args: any) => Promise<any>;
 }
 
 export interface RealtimeMessage {
@@ -27,8 +35,8 @@ export class OpenAIRealtimeService {
 
   constructor(config: RealtimeConfig) {
     this.config = {
-      model: 'gpt-realtime',
-      voice: 'cedar',
+      model: 'gpt-4o-realtime-preview',
+      voice: 'coral',
       ...config
     };
   }
@@ -52,25 +60,37 @@ export class OpenAIRealtimeService {
           console.log('[OK] Connecte a l API Realtime');
           this.isConnected = true;
           
-          // Configurer la session
+          // Configurer la session avec les outils
+          const sessionConfig: any = {
+            modalities: ['text', 'audio'],
+            instructions: this.config.instructions || 'Tu es Justicia, un assistant juridique expert. Tu aides à créer, modifier et analyser des documents juridiques. Tu peux modifier directement le contenu des documents en utilisant les outils à ta disposition. Tu es professionnelle, précise et tu parles d\'une voix claire et posée.',
+            voice: this.config.voice,
+            input_audio_format: 'pcm16',
+            output_audio_format: 'pcm16',
+            input_audio_transcription: {
+              model: 'whisper-1'
+            },
+            turn_detection: {
+              type: 'server_vad',
+              threshold: 0.5,
+              prefix_padding_ms: 300,
+              silence_duration_ms: 500
+            }
+          };
+          
+          // Ajouter les outils si fournis
+          if (this.config.tools && this.config.tools.length > 0) {
+            sessionConfig.tools = this.config.tools.map(tool => ({
+              type: 'function',
+              name: tool.name,
+              description: tool.description,
+              parameters: tool.parameters
+            }));
+          }
+          
           this.send({
             type: 'session.update',
-            session: {
-              modalities: ['text', 'audio'],
-              instructions: this.config.instructions || 'Vous êtes un assistant juridique expert qui aide à analyser des documents.',
-              voice: this.config.voice,
-              input_audio_format: 'pcm16',
-              output_audio_format: 'pcm16',
-              input_audio_transcription: {
-                model: 'whisper-1'
-              },
-              turn_detection: {
-                type: 'server_vad',
-                threshold: 0.5,
-                prefix_padding_ms: 300,
-                silence_duration_ms: 500
-              }
-            }
+            session: sessionConfig
           });
           
           resolve();
@@ -122,13 +142,16 @@ export class OpenAIRealtimeService {
       handler(message);
     }
     
-    // Gestion des événements spécifiques
+    // Géstion des événements spécifiques
     switch (message.type) {
       case 'session.created':
         console.log('[OK] Session créée');
         break;
       case 'session.updated':
         console.log('[OK] Session mise à jour');
+        break;
+      case 'response.function_call_arguments.done':
+        this.handleFunctionCall(message);
         break;
       case 'error':
         console.error('[ERREUR] Erreur:', message.error);
@@ -166,7 +189,11 @@ export class OpenAIRealtimeService {
         if (!this.isConnected) return;
         
         const inputData = e.inputBuffer.getChannelData(0);
-        const pcm16 = this.floatTo16BitPCM(inputData);
+        const sourceSampleRate = this.audioContext!.sampleRate;
+        
+        // Rééchantillonner à 24kHz si nécessaire
+        const resampled = this.resample(inputData, sourceSampleRate, 24000);
+        const pcm16 = this.floatTo16BitPCM(resampled);
         
         // Envoyer l'audio au serveur
         this.send({
@@ -305,6 +332,86 @@ export class OpenAIRealtimeService {
       bytes[i] = binaryString.charCodeAt(i);
     }
     return bytes.buffer;
+  }
+
+  /**
+   * Gère les appels de fonction de l'IA
+   */
+  private async handleFunctionCall(message: any): Promise<void> {
+    const { call_id, name, arguments: argsString } = message;
+    
+    console.log(`[TOOL] Appel de fonction: ${name}`);
+    
+    try {
+      const args = JSON.parse(argsString);
+      
+      // Exécuter le callback si fourni
+      let result: any;
+      if (this.config.onToolCall) {
+        result = await this.config.onToolCall(name, args);
+      } else {
+        result = { success: false, message: 'Aucun gestionnaire de fonction configuré' };
+      }
+      
+      // Envoyer le résultat au serveur
+      this.send({
+        type: 'conversation.item.create',
+        item: {
+          type: 'function_call_output',
+          call_id,
+          output: JSON.stringify(result)
+        }
+      });
+      
+      // Demander une réponse
+      this.send({
+        type: 'response.create'
+      });
+      
+    } catch (error) {
+      console.error('[TOOL] Erreur lors de l\'exécution de la fonction:', error);
+      
+      // Envoyer une erreur au serveur
+      this.send({
+        type: 'conversation.item.create',
+        item: {
+          type: 'function_call_output',
+          call_id,
+          output: JSON.stringify({ 
+            success: false, 
+            error: error instanceof Error ? error.message : 'Erreur inconnue' 
+          })
+        }
+      });
+    }
+  }
+
+  /**
+   * Rééchantillonne l'audio du taux source vers le taux cible
+   */
+  private resample(audioData: Float32Array, sourceSampleRate: number, targetSampleRate: number): Float32Array {
+    if (sourceSampleRate === targetSampleRate) {
+      return audioData;
+    }
+    
+    const ratio = sourceSampleRate / targetSampleRate;
+    const newLength = Math.round(audioData.length / ratio);
+    const result = new Float32Array(newLength);
+    
+    for (let i = 0; i < newLength; i++) {
+      const sourceIndex = i * ratio;
+      const index = Math.floor(sourceIndex);
+      const fraction = sourceIndex - index;
+      
+      if (index + 1 < audioData.length) {
+        // Interpolation linéaire
+        result[i] = audioData[index] * (1 - fraction) + audioData[index + 1] * fraction;
+      } else {
+        result[i] = audioData[index];
+      }
+    }
+    
+    return result;
   }
 
   /**
