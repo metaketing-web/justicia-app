@@ -6,6 +6,7 @@ import { documentsRouter } from "./routers/documents";
 import { settingsRouter } from "./routers/settings";
 import { permissionsRouter } from "./routers/permissions";
 import { ragRouter } from "./routers/rag";
+import { notificationsRouter } from "./routers/notifications";
 
 export const appRouter = router({
   system: systemRouter,
@@ -30,6 +31,9 @@ export const appRouter = router({
   
   // RAG (Retrieval-Augmented Generation)
   rag: ragRouter,
+  
+  // Notifications
+  notifications: notificationsRouter,
 });
 
 export type AppRouter = typeof appRouter;
