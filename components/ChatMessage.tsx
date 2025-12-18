@@ -140,23 +140,15 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isLoading = false, c
 
     const handleDownloadWord = async (content: string) => {
         try {
-            const response = await fetch('/api/word', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ content })
-            });
+            // Importer le service de génération Word
+            const { generateChatSummaryDocument } = await import('../services/wordDocumentService');
             
-            if (!response.ok) throw new Error('Erreur lors de la génération');
-            
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `document_porteo_${new Date().getTime()}.docx`;
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            document.body.removeChild(a);
+            // Générer et télécharger le document Word avec en-tête Justicia
+            await generateChatSummaryDocument(
+                'Synthèse de conversation',
+                content,
+                `synthese_justicia_${new Date().getTime()}.docx`
+            );
         } catch (error) {
             console.error('Erreur:', error);
             alert('Erreur lors de la génération du document Word');

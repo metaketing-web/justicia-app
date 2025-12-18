@@ -345,31 +345,8 @@ const AnalysisResultsView: React.FC<AnalysisResultsViewProps> = ({ results, full
     const handleDownloadDOCX = async () => {
         setIsDownloading(true);
         try {
-            // Importer html2canvas dynamiquement
-            const html2canvas = (await import('html2canvas')).default;
-            
-            // Capturer les graphiques en images
-            const charts: { [key: string]: string } = {};
-            
-            // Chercher tous les graphiques dans DocumentInfographics
-            const chartsContainer = document.querySelector('[data-charts-container]');
-            if (chartsContainer) {
-                const chartElements = chartsContainer.querySelectorAll('[data-chart-type]');
-                for (const chartEl of Array.from(chartElements)) {
-                    const chartType = chartEl.getAttribute('data-chart-type');
-                    if (chartType) {
-                        try {
-                            const canvas = await html2canvas(chartEl as HTMLElement, {
-                                backgroundColor: '#1a1a1a',
-                                scale: 2
-                            });
-                            charts[chartType] = canvas.toDataURL('image/png');
-                        } catch (err) {
-                            console.error(`Erreur capture ${chartType}:`, err);
-                        }
-                    }
-                }
-            }
+            // Importer le service de génération Word
+            const { generateAnalysisDocument } = await import('../services/wordDocumentService');
             
             // Construire le contenu Markdown de l'analyse
             let content = `# ${detectedType}\n\n`;
@@ -398,23 +375,12 @@ const AnalysisResultsView: React.FC<AnalysisResultsViewProps> = ({ results, full
                 });
             }
             
-            // Utiliser l'endpoint /api/generate-docx pour générer le document avec Justicia
-            const response = await fetch('/api/generate-docx', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ content, charts, headerType: 'justicia' })
-            });
-            
-            if (!response.ok) throw new Error('Erreur lors de la génération');
-            
-            const blob = await response.blob();
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = `rapport_justicia_${Date.now()}.docx`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(link.href);
+            // Générer et télécharger le document Word avec en-tête Justicia
+            await generateAnalysisDocument(
+                `Analyse - ${detectedType}`,
+                content,
+                `rapport_justicia_${Date.now()}.docx`
+            );
         } catch (error) {
             console.error('Erreur:', error);
             alert('Erreur lors de la génération du document Word');
