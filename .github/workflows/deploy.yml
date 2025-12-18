@@ -1,0 +1,56 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main
+      - feature/build-fix-and-typescript-corrections
+  workflow_dispatch:  # Permet de déclencher manuellement
+
+jobs:
+  deploy:
+    name: Deploy to AWS EC2
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Deploy to AWS EC2
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.AWS_HOST }}
+          username: ${{ secrets.AWS_USERNAME }}
+          key: ${{ secrets.AWS_SSH_KEY }}
+          port: 22
+          script: |
+            cd ~/justicia-app
+            git pull origin ${{ github.ref_name }}
+            
+            # Installer les dépendances si nécessaire
+            npm install --production
+            
+            # Redémarrer le serveur
+            pkill -f "node server.cjs" || true
+            nohup node server.cjs > server.log 2>&1 &
+            
+            # Attendre que le serveur démarre
+            sleep 3
+            
+            # Vérifier que le serveur tourne
+            if pgrep -f "node server.cjs" > /dev/null; then
+              echo "✅ Serveur démarré avec succès"
+            else
+              echo "❌ Erreur: Le serveur n'a pas démarré"
+              exit 1
+            fi
+            
+      - name: Notification de succès
+        if: success()
+        run: |
+          echo "🚀 Déploiement réussi sur https://app.justicia.ci"
+          
+      - name: Notification d'échec
+        if: failure()
+        run: |
+          echo "❌ Échec du déploiement"
