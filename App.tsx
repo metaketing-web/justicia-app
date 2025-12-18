@@ -28,7 +28,8 @@ import KnowledgeBaseManager from './components/KnowledgeBaseManager';
 import TemplateGallery from './components/TemplateGallery';
 import DocumentTemplateSelector from './components/DocumentTemplateSelector';
 import DocumentGenerationForm from './components/DocumentGenerationForm';
-import DocumentHistory from './components/DocumentHistory';
+import DocumentsListNew from './components/DocumentsListNew';
+import DocumentEditorFromDB from './components/DocumentEditorFromDB';
 import BlankDocumentEditor from './components/BlankDocumentEditor';
 import { DocumentTemplate } from './config/documentTemplates';
 import { addDocumentToHistory } from './services/documentHistory.service';
@@ -122,6 +123,7 @@ const App: React.FC = () => {
     const [showDocumentTemplateSelector, setShowDocumentTemplateSelector] = useState(false);
     const [selectedTemplate, setSelectedTemplate] = useState<DocumentTemplate | null>(null);
     const [showDocumentHistory, setShowDocumentHistory] = useState(false);
+    const [editingDocumentId, setEditingDocumentId] = useState<number | null>(null);
     const [showBlankDocumentEditor, setShowBlankDocumentEditor] = useState(false);
     const [templateType, setTemplateType] = useState('Contrat de Freelance');
     const [isGeneratingTemplate, setIsGeneratingTemplate] = useState(false);
@@ -1262,15 +1264,11 @@ const App: React.FC = () => {
             />
 
             {showDocumentHistory && (
-                <DocumentHistory
+                <DocumentsListNew
                     onClose={() => setShowDocumentHistory(false)}
-                    onCreateBlank={() => {
+                    onOpenDocument={(documentId) => {
                         setShowDocumentHistory(false);
-                        setShowBlankDocumentEditor(true);
-                    }}
-                    onSelectTemplate={() => {
-                        setShowDocumentHistory(false);
-                        setShowDocumentTemplateSelector(true);
+                        setEditingDocumentId(documentId);
                     }}
                 />
             )}
@@ -1354,11 +1352,21 @@ const App: React.FC = () => {
                             console.log('[Document] Créé avec succès:', document.id);
 
                             setShowBlankDocumentEditor(false);
-                            setToastMessage('Document créé et enregistré avec succès !');
                         } catch (error) {
-                            console.error('Erreur création document:', error);
-                            alert('Erreur lors de la création du document');
+                            console.error('[Document] Erreur lors de la création:', error);
+                            alert('Erreur lors de la sauvegarde du document');
                         }
+                    }}
+                />
+            )}
+
+            {editingDocumentId && (
+                <DocumentEditorFromDB
+                    documentId={editingDocumentId}
+                    onClose={() => setEditingDocumentId(null)}
+                    onSave={() => {
+                        // Optionnel: recharger la liste des documents
+                        console.log('[App] Document sauvegardé');
                     }}
                 />
             )}
