@@ -600,7 +600,78 @@ app.post('/api/transcribe', upload.single('audio'), async (req, res) => {
     }
 });
 
+/**
+ * POST /api/create-from-template
+ * Crée un document à partir d'un modèle en remplissant les variables
+ */
+app.post('/api/create-from-template', async (req, res) => {
+    try {
+        const { templateName, variables, title } = req.body;
+        
+        if (!templateName || !variables) {
+            return res.status(400).json({ 
+                error: 'templateName et variables sont requis' 
+            });
+        }
+        
+        console.log(`[CREATE_FROM_TEMPLATE] Création depuis modèle: ${templateName}`);
+        
+        // Charger le modèle depuis le fichier JSON
+        const templatesPath = path.join(__dirname, 'data', 'templates.json');
+        let templates = [];
+        
+        if (fs.existsSync(templatesPath)) {
+            const templatesData = await readFileAsync(templatesPath, 'utf-8');
+            templates = JSON.parse(templatesData);
+        }
+        
+        // Trouver le modèle par nom
+        const template = templates.find(t => 
+            t.title.toLowerCase().includes(templateName.toLowerCase())
+        );
+        
+        if (!template) {
+            return res.status(404).json({ 
+                error: `Modèle "${templateName}" non trouvé`,
+                availableTemplates: templates.map(t => t.title)
+            });
+        }
+        
+        // Remplacer les variables dans le contenu
+        let content = template.content || '';
+        for (const [key, value] of Object.entries(variables)) {
+            const regex = new RegExp(`\\{\\{\\s*${key}\\s*\\}\\}`, 'g');
+            content = content.replace(regex, String(value));
+        }
+        
+        // Générer le titre
+        const docTitle = title || `${template.title} - ${new Date().toLocaleDateString('fr-FR')}`;
+        
+        // Créer le document
+        const document = {
+            id: Date.now(),
+            title: docTitle,
+            content,
+            type: 'created',
+            templateId: template.id,
+            templateName: template.title,
+            variables,
+            createdAt: new Date().toISOString()
+        };
+        
+        console.log(`[CREATE_FROM_TEMPLATE] Document créé: ${docTitle}`);
+        res.json(document);
+        
+    } catch (error) {
+        console.error('[CREATE_FROM_TEMPLATE] Erreur:', error);
+        res.status(500).json({ 
+            error: 'Erreur lors de la création depuis le modèle',
+            details: error.message 
+        });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`[SERVER] API de génération de documents Word démarrée sur le port ${PORT}`);
-    console.log(`[SERVER] Endpoints: /api/word, /api/generate-docx, /api/tts, /api/chat, /api/brave-search, /api/generate-report, /api/transcribe, /api/fill-template, /api/generate-blank-document`);
+    console.log(`[SERVER] Endpoints: /api/word, /api/generate-docx, /api/tts, /api/chat, /api/brave-search, /api/generate-report, /api/transcribe, /api/fill-template, /api/generate-blank-document, /api/create-from-template`);
 });
