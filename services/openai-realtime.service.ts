@@ -3,11 +3,19 @@
  * Permet des conversations vocales en temps réel avec l'IA
  */
 
+export interface RealtimeTool {
+  name: string;
+  description: string;
+  parameters: any;
+}
+
 export interface RealtimeConfig {
   apiKey: string;
   model?: string;
-  voice?: 'alloy' | 'echo' | 'fable' | 'onyx' | 'nova' | 'shimmer' | 'ash' | 'ballad' | 'coral' | 'sage' | 'verse' | 'cedar';
+  voice?: 'alloy' | 'echo' | 'fable' | 'onyx' | 'nova' | 'shimmer' | 'ash' | 'ballad' | 'coral' | 'sage' | 'verse';
   instructions?: string;
+  tools?: RealtimeTool[];
+  onToolCall?: (toolName: string, args: any) => Promise<any>;
 }
 
 export interface RealtimeMessage {
@@ -23,13 +31,12 @@ export class OpenAIRealtimeService {
   private isConnected = false;
   private messageHandlers: Map<string, (data: any) => void> = new Map();
   private currentAudioSources: AudioBufferSourceNode[] = [];
-	private nextStartTime = 0;
-	private readonly targetSampleRate = 24000; // Taux d'échantillonnage requis par OpenAI
+  private nextStartTime = 0;
 
   constructor(config: RealtimeConfig) {
     this.config = {
-      model: 'gpt-realtime',
-      voice: 'cedar',
+      model: 'gpt-4o-realtime-preview',
+      voice: 'coral',
       ...config
     };
   }
@@ -53,25 +60,37 @@ export class OpenAIRealtimeService {
           console.log('[OK] Connecte a l API Realtime');
           this.isConnected = true;
           
-          // Configurer la session
+          // Configurer la session avec les outils
+          const sessionConfig: any = {
+            modalities: ['text', 'audio'],
+            instructions: this.config.instructions || 'Tu es Justicia, un assistant juridique expert. Tu aides à créer, modifier et analyser des documents juridiques. Tu peux modifier directement le contenu des documents en utilisant les outils à ta disposition. Tu es professionnelle, précise et tu parles d\'une voix claire et posée.',
+            voice: this.config.voice,
+            input_audio_format: 'pcm16',
+            output_audio_format: 'pcm16',
+            input_audio_transcription: {
+              model: 'whisper-1'
+            },
+            turn_detection: {
+              type: 'server_vad',
+              threshold: 0.5,
+              prefix_padding_ms: 300,
+              silence_duration_ms: 500
+            }
+          };
+          
+          // Ajouter les outils si fournis
+          if (this.config.tools && this.config.tools.length > 0) {
+            sessionConfig.tools = this.config.tools.map(tool => ({
+              type: 'function',
+              name: tool.name,
+              description: tool.description,
+              parameters: tool.parameters
+            }));
+          }
+          
           this.send({
             type: 'session.update',
-            session: {
-              modalities: ['text', 'audio'],
-              instructions: this.config.instructions || 'Vous êtes un assistant juridique expert qui aide à analyser des documents.',
-              voice: this.config.voice,
-              input_audio_format: 'pcm16',
-              output_audio_format: 'pcm16',
-              input_audio_transcription: {
-                model: 'whisper-1'
-              },
-              turn_detection: {
-                type: 'server_vad',
-                threshold: 0.5,
-                prefix_padding_ms: 300,
-                silence_duration_ms: 500
-              }
-            }
+            session: sessionConfig
           });
           
           resolve();
@@ -123,13 +142,16 @@ export class OpenAIRealtimeService {
       handler(message);
     }
     
-    // Gestion des événements spécifiques
+    // Géstion des événements spécifiques
     switch (message.type) {
       case 'session.created':
         console.log('[OK] Session créée');
         break;
       case 'session.updated':
         console.log('[OK] Session mise à jour');
+        break;
+      case 'response.function_call_arguments.done':
+        this.handleFunctionCall(message);
         break;
       case 'error':
         console.error('[ERREUR] Erreur:', message.error);
@@ -147,19 +169,7 @@ export class OpenAIRealtimeService {
   /**
    * Démarre la capture audio du microphone
    */
-	  async startAudioCapture(): Promise<void> {
-	    // Vérifier si le contexte audio est déjà créé (pour le playAudio)
-	    if (!this.audioContext) {
-	      this.audioContext = new AudioContext(); // Laisser le navigateur choisir le taux par défaut
-	    }
-	    
-	    // S'assurer que le taux d'échantillonnage est connu avant de continuer
-	    const actualSampleRate = this.audioContext.sampleRate;
-	    if (actualSampleRate !== this.targetSampleRate) {
-	      console.warn(`[MIC] Taux d'échantillonnage du système (${actualSampleRate} Hz) différent du taux cible (${this.targetSampleRate} Hz). Rééchantillonnage nécessaire.`);
-	    }
-	    
-	    try {
+  async startAudioCapture(): Promise<void> {
     try {
       this.mediaStream = await navigator.mediaDevices.getUserMedia({ 
         audio: {
@@ -167,37 +177,33 @@ export class OpenAIRealtimeService {
           noiseSuppression: true,
           autoGainControl: true
         } 
-	      });
-	      
-	      const source = this.audioContext.createMediaStreamSource(this.mediaStream);
+      });
+      
+      this.audioContext = new AudioContext({ sampleRate: 24000 });
+      const source = this.audioContext.createMediaStreamSource(this.mediaStream);
       
       // Créer un processeur audio pour envoyer les données
       const processor = this.audioContext.createScriptProcessor(4096, 1, 1);
       
       processor.onaudioprocess = (e) => {
-	        if (!this.isConnected) return;
-	        
-	        const inputData = e.inputBuffer.getChannelData(0);
-	        
-	        // 1. Rééchantillonner si nécessaire
-	        const resampledData = this.resample(
-	          inputData, 
-	          this.audioContext!.sampleRate, 
-	          this.targetSampleRate
-	        );
-	        
-	        // 2. Convertir en PCM 16 bits
-	        const pcm16 = this.floatTo16BitPCM(resampledData);
-	        
-	        // 3. Envoyer l'audio au serveur
-	        this.send({
-	          type: 'input_audio_buffer.append',
-	          audio: this.arrayBufferToBase64(pcm16.buffer as ArrayBuffer)
-	        });
+        if (!this.isConnected) return;
+        
+        const inputData = e.inputBuffer.getChannelData(0);
+        const sourceSampleRate = this.audioContext!.sampleRate;
+        
+        // Rééchantillonner à 24kHz si nécessaire
+        const resampled = this.resample(inputData, sourceSampleRate, 24000);
+        const pcm16 = this.floatTo16BitPCM(resampled);
+        
+        // Envoyer l'audio au serveur
+        this.send({
+          type: 'input_audio_buffer.append',
+          audio: this.arrayBufferToBase64(pcm16.buffer)
+        });
       };
       
       source.connect(processor);
-      // processor.connect(this.audioContext.destination); // Commenté pour éviter l'écho
+      processor.connect(this.audioContext.destination);
       
       console.log('[MIC] Capture audio démarrée');
     } catch (error) {
@@ -246,18 +252,17 @@ export class OpenAIRealtimeService {
   /**
    * Joue l'audio reçu de manière fluide
    */
-	  async playAudio(base64Audio: string): Promise<void> {
-	    if (!this.audioContext) {
-	      // Utiliser le taux cible pour la lecture
-	      this.audioContext = new AudioContext({ sampleRate: this.targetSampleRate }); 
-	      this.nextStartTime = this.audioContext.currentTime;
-	    }
+  async playAudio(base64Audio: string): Promise<void> {
+    if (!this.audioContext) {
+      this.audioContext = new AudioContext({ sampleRate: 24000 });
+      this.nextStartTime = this.audioContext.currentTime;
+    }
     
     const audioData = this.base64ToArrayBuffer(base64Audio);
     const pcm16 = new Int16Array(audioData);
-	    const float32 = this.pcm16ToFloat(pcm16);
-	    
-	    const audioBuffer = this.audioContext.createBuffer(1, float32.length, this.targetSampleRate);
+    const float32 = this.pcm16ToFloat(pcm16);
+    
+    const audioBuffer = this.audioContext.createBuffer(1, float32.length, 24000);
     audioBuffer.getChannelData(0).set(float32);
     
     const source = this.audioContext.createBufferSource();
@@ -285,47 +290,7 @@ export class OpenAIRealtimeService {
   /**
    * Convertit Float32 en PCM16
    */
-	  /**
-	   * Rééchantillonne un buffer Float32Array à un nouveau taux d'échantillonnage.
-	   * Utilise une méthode de moyenne simple pour le downsampling.
-	   */
-	  private resample(buffer: Float32Array, originalSampleRate: number, targetSampleRate: number): Float32Array {
-	    if (targetSampleRate === originalSampleRate) {
-	      return buffer;
-	    }
-	    if (targetSampleRate > originalSampleRate) {
-	      // L'upsampling est plus complexe et n'est pas nécessaire ici (on veut 24kHz)
-	      console.warn('Upsampling non supporté par cette fonction simple.');
-	      return buffer;
-	    }
-	
-	    const sampleRateRatio = originalSampleRate / targetSampleRate;
-	    const newLength = Math.round(buffer.length / sampleRateRatio);
-	    const result = new Float32Array(newLength);
-	    let offsetResult = 0;
-	    let offsetBuffer = 0;
-	
-	    while (offsetResult < result.length) {
-	      const nextOffsetBuffer = Math.round((offsetResult + 1) * sampleRateRatio);
-	      let accum = 0;
-	      let count = 0;
-	      for (let i = offsetBuffer; i < nextOffsetBuffer && i < buffer.length; i++) {
-	        accum += buffer[i];
-	        count++;
-	      }
-	      
-	      // Utiliser la moyenne des échantillons pour le rééchantillonnage
-	      result[offsetResult] = accum / count; 
-	      offsetResult++;
-	      offsetBuffer = nextOffsetBuffer;
-	    }
-	    return result;
-	  }
-	
-	  /**
-	   * Convertit Float32 en PCM16
-	   */
-	  private floatTo16BitPCM(float32Array: Float32Array): Int16Array {
+  private floatTo16BitPCM(float32Array: Float32Array): Int16Array {
     const pcm16 = new Int16Array(float32Array.length);
     for (let i = 0; i < float32Array.length; i++) {
       const s = Math.max(-1, Math.min(1, float32Array[i]));
@@ -367,6 +332,86 @@ export class OpenAIRealtimeService {
       bytes[i] = binaryString.charCodeAt(i);
     }
     return bytes.buffer;
+  }
+
+  /**
+   * Gère les appels de fonction de l'IA
+   */
+  private async handleFunctionCall(message: any): Promise<void> {
+    const { call_id, name, arguments: argsString } = message;
+    
+    console.log(`[TOOL] Appel de fonction: ${name}`);
+    
+    try {
+      const args = JSON.parse(argsString);
+      
+      // Exécuter le callback si fourni
+      let result: any;
+      if (this.config.onToolCall) {
+        result = await this.config.onToolCall(name, args);
+      } else {
+        result = { success: false, message: 'Aucun gestionnaire de fonction configuré' };
+      }
+      
+      // Envoyer le résultat au serveur
+      this.send({
+        type: 'conversation.item.create',
+        item: {
+          type: 'function_call_output',
+          call_id,
+          output: JSON.stringify(result)
+        }
+      });
+      
+      // Demander une réponse
+      this.send({
+        type: 'response.create'
+      });
+      
+    } catch (error) {
+      console.error('[TOOL] Erreur lors de l\'exécution de la fonction:', error);
+      
+      // Envoyer une erreur au serveur
+      this.send({
+        type: 'conversation.item.create',
+        item: {
+          type: 'function_call_output',
+          call_id,
+          output: JSON.stringify({ 
+            success: false, 
+            error: error instanceof Error ? error.message : 'Erreur inconnue' 
+          })
+        }
+      });
+    }
+  }
+
+  /**
+   * Rééchantillonne l'audio du taux source vers le taux cible
+   */
+  private resample(audioData: Float32Array, sourceSampleRate: number, targetSampleRate: number): Float32Array {
+    if (sourceSampleRate === targetSampleRate) {
+      return audioData;
+    }
+    
+    const ratio = sourceSampleRate / targetSampleRate;
+    const newLength = Math.round(audioData.length / ratio);
+    const result = new Float32Array(newLength);
+    
+    for (let i = 0; i < newLength; i++) {
+      const sourceIndex = i * ratio;
+      const index = Math.floor(sourceIndex);
+      const fraction = sourceIndex - index;
+      
+      if (index + 1 < audioData.length) {
+        // Interpolation linéaire
+        result[i] = audioData[index] * (1 - fraction) + audioData[index + 1] * fraction;
+      } else {
+        result[i] = audioData[index];
+      }
+    }
+    
+    return result;
   }
 
   /**
