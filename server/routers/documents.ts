@@ -12,6 +12,7 @@ import {
 } from "../db";
 import { storagePut, storageGet } from "../storage";
 import { nanoid } from "nanoid";
+import { processDocumentForRAG } from "../services/rag";
 
 export const documentsRouter = router({
   // List all documents for current user
@@ -77,6 +78,68 @@ export const documentsRouter = router({
       }
 
       return doc;
+    }),
+
+  // Create document with content (text) - auto-saves to S3 and indexes in RAG
+  createWithContent: protectedProcedure
+    .input(z.object({
+      title: z.string().min(1).max(500),
+      content: z.string().min(1),
+      type: z.enum(["imported", "created", "template"]).default("created"),
+      description: z.string().optional(),
+      visibility: z.enum(["private", "shared", "public"]).default("private"),
+      metadata: z.record(z.string(), z.any()).optional(),
+    }))
+    .mutation(async ({ ctx, input }) => {
+      // 1. Create document metadata
+      const doc = await createDocument({
+        userId: ctx.user.id,
+        title: input.title,
+        type: input.type,
+        description: input.description || null,
+        fileType: "txt",
+        visibility: input.visibility,
+        metadata: input.metadata || null,
+        isProcessed: "pending",
+      });
+
+      if (!doc) {
+        throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Failed to create document" });
+      }
+
+      try {
+        // 2. Save content to S3
+        const fileKey = `documents/${ctx.user.id}/${doc.id}/${nanoid()}-${input.title.replace(/[^a-z0-9]/gi, '_')}.txt`;
+        const contentBuffer = Buffer.from(input.content, "utf-8");
+        const { url } = await storagePut(fileKey, contentBuffer, "text/plain");
+
+        // 3. Update document with file info
+        await updateDocument(doc.id, {
+          fileKey,
+          fileUrl: url,
+          fileSize: contentBuffer.length,
+          mimeType: "text/plain",
+          fileType: "txt",
+          isProcessed: "processing",
+        });
+
+        // 4. Index in RAG (async, don't wait)
+        processDocumentForRAG(doc.id, input.content).catch(err => {
+          console.error(`[RAG] Failed to index document ${doc.id}:`, err);
+        });
+
+        // 5. Mark as processed
+        await updateDocument(doc.id, { isProcessed: "completed" });
+
+        return { ...doc, fileUrl: url, fileKey };
+      } catch (error) {
+        // Cleanup: delete document if file upload failed
+        await deleteDocument(doc.id);
+        throw new TRPCError({ 
+          code: "INTERNAL_SERVER_ERROR", 
+          message: error instanceof Error ? error.message : "Failed to save document content" 
+        });
+      }
     }),
 
   // Upload file for a document

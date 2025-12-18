@@ -37,6 +37,7 @@ import AppSettingsComponent from './components/AppSettings';
 import { useSettings } from './hooks/useSettings';
 import { useTranslation, i18n } from './services/i18n';
 import { useNotifications } from './services/notificationService';
+import { trpc } from './lib/trpc';
 import './theme.css';
 
 // PDF.js worker configuration - disable worker to use main thread
@@ -1338,52 +1339,25 @@ const App: React.FC = () => {
                     onBack={() => setShowBlankDocumentEditor(false)}
                     onGenerate={async (title, content) => {
                         try {
-                            const response = await fetch('/api/generate-blank-document', {
-                                method: 'POST',
-                                headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ title, content })
+                            // Créer le document via tRPC (sauvegarde DB + S3 + RAG)
+                            const document = await trpc.documents.createWithContent.mutate({
+                                title,
+                                content,
+                                type: 'created',
+                                metadata: {
+                                    wordCount: content.split(/\s+/).length,
+                                    charCount: content.length,
+                                    source: 'blank_editor'
+                                }
                             });
 
-                            if (!response.ok) throw new Error('Erreur génération');
-
-                            // Ne pas télécharger automatiquement - le document est déjà sauvegardé dans "Mes Documents"
-                            // const blob = await response.blob();
-                            // const url = window.URL.createObjectURL(blob);
-                            // const a = document.createElement('a');
-                            // a.href = url;
-                            // a.download = `${title.replace(/[^a-z0-9]/gi, '_')}.docx`;
-                            // document.body.appendChild(a);
-                            // a.click();
-                            // document.body.removeChild(a);
-                            // window.URL.revokeObjectURL(url);
-
-                            // Le document est déjà sauvegardé dans la base de données par le backend
-                            
-                            // Ajouter à la base de connaissances RAG (IndexedDB)
-                            try {
-                                const { indexedDBService } = await import('./services/indexedDBService');
-                                await indexedDBService.saveDocument({
-                                    id: `doc_${Date.now()}`,
-                                    name: title,
-                                    content: content,
-                                    chunks: [content], // Sera rechunké par le service RAG si nécessaire
-                                    uploadDate: new Date().toISOString(),
-                                    type: 'document_vierge',
-                                    metadata: {
-                                        wordCount: content.split(/\s+/).length,
-                                        charCount: content.length
-                                    }
-                                });
-                                console.log('[RAG] Document ajouté à la base de connaissances');
-                            } catch (error) {
-                                console.error('[RAG] Erreur ajout base de connaissances:', error);
-                            }
+                            console.log('[Document] Créé avec succès:', document.id);
 
                             setShowBlankDocumentEditor(false);
-                            setToastMessage('Document généré et ajouté à la base de connaissances !');
+                            setToastMessage('Document créé et enregistré avec succès !');
                         } catch (error) {
-                            console.error('Erreur:', error);
-                            alert('Erreur lors de la génération du document');
+                            console.error('Erreur création document:', error);
+                            alert('Erreur lors de la création du document');
                         }
                     }}
                 />

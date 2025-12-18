@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { X, Mic, MicOff, Loader2, FileText, AlertCircle } from 'lucide-react';
 import { OpenAIRealtimeService, RealtimeTool } from '../services/openai-realtime.service';
+import { trpc } from '../lib/trpc';
 
 interface RealtimeVoiceChatProps {
     onClose: () => void;
@@ -42,21 +43,38 @@ const RealtimeVoiceChat: React.FC<RealtimeVoiceChatProps> = ({
             
             switch (toolName) {
                 case 'create_blank_document':
-                    if (onCreateDocument) {
-                        result = await onCreateDocument(args.title, args.content, args.type);
+                    try {
+                        // Créer via tRPC (DB + S3 + RAG)
+                        const document = await trpc.documents.createWithContent.mutate({
+                            title: args.title,
+                            content: args.content,
+                            type: args.type || 'created',
+                            metadata: {
+                                source: 'realtime_voice',
+                                createdVia: 'voice_command'
+                            }
+                        });
+                        
                         setToolCalls(prev => [...prev, { 
                             tool: 'create_blank_document', 
                             args, 
-                            result: { success: true, document: result },
+                            result: { success: true, document },
                             timestamp 
                         }]);
+                        
+                        // Appeler le callback si fourni
+                        if (onCreateDocument) {
+                            await onCreateDocument(args.title, args.content, args.type);
+                        }
+                        
                         return { 
                             success: true, 
                             message: `Document "${args.title}" créé avec succès`,
-                            documentId: result?.id 
+                            documentId: document.id 
                         };
+                    } catch (error: any) {
+                        return { success: false, message: `Erreur: ${error.message}` };
                     }
-                    return { success: false, message: 'Fonction de création de document non disponible' };
                 
                 case 'create_document_from_template':
                     if (onCreateFromTemplate) {
