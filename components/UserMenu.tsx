@@ -60,7 +60,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
         {
             icon: HelpCircle,
             label: "Obtenir de l'aide",
-            onClick: () => window.open('https://help.justicia.ai', '_blank'),
+            onClick: () => window.open('https://justicia.ci', '_blank'),
             external: true,
             visible: true
         }

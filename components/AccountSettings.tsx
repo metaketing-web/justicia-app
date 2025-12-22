@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Upload, Copy, Check, Save } from 'lucide-react';
 import { User } from '../types';
+import ChangePasswordModal from './ChangePasswordModal';
 
 interface AccountSettingsProps {
     user: User;
@@ -24,6 +25,7 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({
     const [avatarPreview, setAvatarPreview] = useState(user.avatarUrl || '');
     const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
     const [isSaving, setIsSaving] = useState(false);
+    const [showChangePassword, setShowChangePassword] = useState(false);
     const fileInputRef = React.useRef<HTMLInputElement>(null);
 
     const handleSaveName = () => {
@@ -238,7 +240,10 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({
                             <div className="flex-1 px-4 py-2.5 bg-neutral-800/50 border border-neutral-700 rounded-lg text-gray-400">
                                 ••••••••••
                             </div>
-                            <button className="px-4 py-2.5 bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-white rounded-lg transition-colors text-sm font-medium">
+                            <button 
+                                onClick={() => setShowChangePassword(true)}
+                                className="px-4 py-2.5 bg-neutral-800 hover:bg-neutral-700 border border-neutral-700 text-white rounded-lg transition-colors text-sm font-medium"
+                            >
                                 Mettre à jour le mot de passe
                             </button>
                         </div>
@@ -300,6 +305,19 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({
                     </div>
                 </div>
             </div>
+
+            {/* Change Password Modal */}
+            {showChangePassword && (
+                <ChangePasswordModal
+                    onClose={() => setShowChangePassword(false)}
+                    onChangePassword={async (oldPassword, newPassword) => {
+                        // TODO: Implémenter l'appel API pour changer le mot de passe
+                        // Pour l'instant, on simule un succès
+                        await new Promise(resolve => setTimeout(resolve, 1000));
+                        console.log('Password change requested:', { oldPassword: '***', newPassword: '***' });
+                    }}
+                />
+            )}
         </div>
     );
 };
