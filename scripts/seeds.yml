@@ -1,0 +1,49 @@
+seeds:
+  - name: ohada_official
+    start_urls:
+      - "https://www.ohada.org/actes-uniformes/"
+      - "https://www.ohada.org/droit-de-larbitrage/"
+    allowed_domains:
+      - "www.ohada.org"
+      - "biblio.ohada.org"
+
+  - name: ohada_aggregator
+    start_urls:
+      - "https://www.ohada.com/textes-ohada/actes-uniformes.html"
+    allowed_domains:
+      - "www.ohada.com"
+
+  - name: bceao_reglementations
+    start_urls:
+      - "https://downloads.bceao.int/fr/reglementations"
+      - "https://www.bceao.int/fr/reglementations"
+    allowed_domains:
+      - "downloads.bceao.int"
+      - "www.bceao.int"
+
+  - name: brvm_crepmf
+    start_urls:
+      - "https://www.brvm.org/fr/instruction-ndeg49-crepmf"
+      - "https://www.brvm.org/fr/instruction-ndeg502016-crepmf"
+      - "https://www.brvm.org/fr/instruction-ndeg512016-crepmf"
+    allowed_domains:
+      - "www.brvm.org"
+
+  - name: africanlii_ci
+    start_urls:
+      - "https://agp.africanlii.org/en/akn/ci/act/2016/1110/fra@2023-07-06"
+      - "https://agp.africanlii.org/en/akn/ci/act/1975/352/fra@2023-11-23"
+    allowed_domains:
+      - "agp.africanlii.org"
+
+  - name: jorci_library
+    start_urls:
+      - "https://alegre.ci/library"
+    allowed_domains:
+      - "alegre.ci"
+
+  - name: uemoa_edocucenter
+    start_urls:
+      - "https://e-docucenter.uemoa.int/fr/telecharger-documents"
+    allowed_domains:
+      - "e-docucenter.uemoa.int"

@@ -4,6 +4,7 @@ const BASE_URL = 'https://api.manus.im/api/llm-proxy/v1';
 
 // Prompt d'analyse de documents (inline pour éviter les problèmes d'import)
 import { searchKnowledgeBase } from './rag-knowledge-base';
+import { getLegalCitationSystemPrompt, enhanceResponseWithCitations } from './legalCitationService';
 
 export interface AIAnalysisData {
   plainLanguageSummary: string;
@@ -454,9 +455,11 @@ export async function streamChatResponse(
     
     // Rechercher dans la base de connaissances
     let ragContext = '';
+    let ragResults: any[] = [];
     try {
       // 1. Rechercher dans le nouveau RAG IndexedDB
       const relevantDocs = await searchKnowledgeBase(lastUserMessage);
+      ragResults = relevantDocs; // Sauvegarder pour les citations
       
       if (relevantDocs.length > 0) {
         ragContext = '\n\n📚 DOCUMENTS PERTINENTS DE LA BASE DE CONNAISSANCES:\n\n';
@@ -478,10 +481,13 @@ export async function streamChatResponse(
       }
       
       if (ragContext) {
-        // Ajouter le contexte RAG au message système
+        // Ajouter le contexte RAG au message système avec instructions de citation
+        const legalCitationPrompt = getLegalCitationSystemPrompt();
         const systemMessage = {
           role: 'system',
           content: `Vous êtes **JUSTICIA**, un assistant juridique expert spécialisé en droit ivoirien, conçu pour fournir des analyses juridiques précises, claires et actionables.
+
+${legalCitationPrompt}
 
 # CONTEXTE DISPONIBLE
 
