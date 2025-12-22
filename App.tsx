@@ -1288,26 +1288,33 @@ const App: React.FC = () => {
                     onBack={() => setSelectedTemplate(null)}
                     onGenerate={async (data) => {
                         try {
-                            const response = await fetch('/api/fill-template', {
+                            // Charger le contenu du template en markdown
+                            const response = await fetch('/api/template-to-markdown', {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify({
-                                    templateFilename: selectedTemplate.filename,
-                                    data
+                                    templateFilename: selectedTemplate.filename
                                 })
                             });
 
-                            if (!response.ok) throw new Error('Erreur génération');
+                            if (!response.ok) throw new Error('Erreur chargement template');
 
-                            const blob = await response.blob();
-                            const url = window.URL.createObjectURL(blob);
-                            const a = document.createElement('a');
-                            a.href = url;
-                            a.download = selectedTemplate.filename.replace('.docx', '_rempli.docx');
-                            document.body.appendChild(a);
-                            a.click();
-                            document.body.removeChild(a);
-                            window.URL.revokeObjectURL(url);
+                            const { markdown } = await response.json();
+                            
+                            // Remplacer les placeholders avec les données du formulaire
+                            let filledContent = markdown;
+                            Object.entries(data).forEach(([key, value]) => {
+                                const placeholder = new RegExp(`\\[${key}\\]`, 'gi');
+                                filledContent = filledContent.replace(placeholder, String(value));
+                            });
+                            
+                            // Ouvrir Canvas avec le contenu
+                            setEditorContent(filledContent);
+                            setEditorTitle(selectedTemplate.name);
+                            setShowCollaborativeEditor(true);
+                            setShowTemplateModal(false);
+                            
+                            console.log('Template chargé dans Canvas:', selectedTemplate.name);
 
                             // Ajouter à l'historique
                             addDocumentToHistory({
