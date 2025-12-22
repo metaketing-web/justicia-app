@@ -23,44 +23,40 @@ const AIWebSearch: React.FC<AIWebSearchProps> = ({ query, onResultsFound }) => {
     setError(null);
 
     try {
-      // Simulation de recherche web - À remplacer par une vraie API (Google Custom Search, Bing, etc.)
-      // Pour l'instant, on simule des résultats pour les lois ivoiriennes
+      console.log('[AIWebSearch] Recherche:', searchQuery);
       
-      const simulatedResults: SearchResult[] = [
-        {
-          title: "CCAG - Cahier des Clauses Administratives Générales",
-          url: "https://loidici.biz/ccag",
-          snippet: "Le CCAG définit les clauses administratives générales applicables aux marchés publics en Côte d'Ivoire. L'article 39 traite des conditions de résiliation...",
-          source: "loidici.biz"
-        },
-        {
-          title: "Code des Marchés Publics de Côte d'Ivoire",
-          url: "https://www.droit-afrique.com/upload/doc/cote-divoire/RCI-Code-2009-marches-publics.pdf",
-          snippet: "Le Code des marchés publics régit l'ensemble des procédures de passation et d'exécution des marchés publics...",
-          source: "droit-afrique.com"
-        },
-        {
-          title: "Droit des Affaires - OHADA",
-          url: "https://loidici.biz/2023/07/07/droit-des-affaires/cotedroit/44390/naty/",
-          snippet: "Textes de lois et décrets relatifs au droit des affaires en Côte d'Ivoire, incluant les sociétés commerciales, le droit commercial général, les sûretés...",
-          source: "loidici.biz"
-        }
-      ];
+      // Appel à l'API Brave Search via le backend
+      const response = await fetch('/api/brave-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: searchQuery })
+      });
 
-      // Filtrer les résultats en fonction de la requête
-      const filteredResults = simulatedResults.filter(result => 
-        result.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        result.snippet.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+      if (!response.ok) {
+        throw new Error(`Erreur API: ${response.status}`);
+      }
 
-      setResults(filteredResults.length > 0 ? filteredResults : simulatedResults);
+      const data = await response.json();
+      console.log('[AIWebSearch] Résultats reçus:', data);
+
+      // Transformer les résultats de Brave au format SearchResult
+      const searchResults: SearchResult[] = (data.results || []).map((r: any) => ({
+        title: r.title || 'Sans titre',
+        url: r.url || '#',
+        snippet: r.description || r.snippet || 'Pas de description disponible',
+        source: r.url ? new URL(r.url).hostname : 'source inconnue'
+      })).slice(0, 5); // Limiter à 5 résultats
+
+      setResults(searchResults);
       
       if (onResultsFound) {
-        onResultsFound(filteredResults.length > 0 ? filteredResults : simulatedResults);
+        onResultsFound(searchResults);
       }
+
+      console.log('[AIWebSearch] Recherche terminée:', searchResults.length, 'résultats');
     } catch (err) {
+      console.error('[AIWebSearch] Erreur:', err);
       setError("Erreur lors de la recherche internet. Veuillez réessayer.");
-      console.error("Web search error:", err);
     } finally {
       setIsSearching(false);
     }

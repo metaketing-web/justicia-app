@@ -600,6 +600,73 @@ app.post('/api/transcribe', upload.single('audio'), async (req, res) => {
     }
 });
 
+// ========== TEMPLATE TO MARKDOWN ENDPOINT ==========
+const mammoth = require('mammoth');
+
+app.post('/api/template-to-markdown', async (req, res) => {
+  try {
+    const { templateName, variables = {} } = req.body;
+    
+    console.log('[Template] Converting:', templateName);
+    console.log('[Template] Variables:', variables);
+    
+    if (!templateName) {
+      return res.status(400).json({ error: 'Template name is required' });
+    }
+
+    const templatePath = path.join(__dirname, 'templates', `${templateName}.docx`);
+    console.log('[Template] Path:', templatePath);
+    
+    try {
+      await fs.promises.access(templatePath);
+    } catch {
+      console.error('[Template] File not found:', templatePath);
+      return res.status(404).json({ error: `Template not found: ${templateName}` });
+    }
+
+    const buffer = await fs.promises.readFile(templatePath);
+    const result = await mammoth.convertToHtml({ buffer });
+    
+    console.log('[Template] Conversion messages:', result.messages);
+    
+    let markdown = result.value
+      .replace(/<h1[^>]*>(.*?)<\/h1>/gi, '# $1\n\n')
+      .replace(/<h2[^>]*>(.*?)<\/h2>/gi, '## $1\n\n')
+      .replace(/<h3[^>]*>(.*?)<\/h3>/gi, '### $1\n\n')
+      .replace(/<strong[^>]*>(.*?)<\/strong>/gi, '**$1**')
+      .replace(/<b[^>]*>(.*?)<\/b>/gi, '**$1**')
+      .replace(/<em[^>]*>(.*?)<\/em>/gi, '*$1*')
+      .replace(/<i[^>]*>(.*?)<\/i>/gi, '*$1*')
+      .replace(/<p[^>]*>(.*?)<\/p>/gi, '$1\n\n')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim();
+
+    for (const [key, value] of Object.entries(variables)) {
+      const regex = new RegExp(`{{${key}}}`, 'g');
+      markdown = markdown.replace(regex, value || `[${key}]`);
+    }
+
+    console.log('[Template] Markdown length:', markdown.length);
+
+    res.json({
+      success: true,
+      markdown,
+      templateName,
+      variablesReplaced: Object.keys(variables).length
+    });
+
+  } catch (error) {
+    console.error('[Template] Error:', error);
+    res.status(500).json({ 
+      error: 'Failed to convert template',
+      details: error.message 
+    });
+  }
+});
+// ========== END TEMPLATE TO MARKDOWN ==========
+
 app.listen(PORT, () => {
     console.log(`[SERVER] API de génération de documents Word démarrée sur le port ${PORT}`);
     console.log(`[SERVER] Endpoints: /api/word, /api/generate-docx, /api/tts, /api/chat, /api/brave-search, /api/generate-report, /api/transcribe, /api/fill-template, /api/generate-blank-document`);
