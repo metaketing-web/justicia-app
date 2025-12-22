@@ -311,10 +311,28 @@ const AccountSettings: React.FC<AccountSettingsProps> = ({
                 <ChangePasswordModal
                     onClose={() => setShowChangePassword(false)}
                     onChangePassword={async (oldPassword, newPassword) => {
-                        // TODO: Implémenter l'appel API pour changer le mot de passe
-                        // Pour l'instant, on simule un succès
-                        await new Promise(resolve => setTimeout(resolve, 1000));
-                        console.log('Password change requested:', { oldPassword: '***', newPassword: '***' });
+                        try {
+                            const response = await fetch('/api/auth/change-password', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({
+                                    userId: user.id,
+                                    oldPassword,
+                                    newPassword
+                                })
+                            });
+
+                            const data = await response.json();
+
+                            if (!response.ok) {
+                                throw new Error(data.error || 'Erreur lors du changement de mot de passe');
+                            }
+
+                            console.log('[AccountSettings] Mot de passe changé avec succès');
+                        } catch (error) {
+                            console.error('[AccountSettings] Erreur changement mot de passe:', error);
+                            throw error;
+                        }
                     }}
                 />
             )}
