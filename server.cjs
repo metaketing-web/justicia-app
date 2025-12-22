@@ -669,7 +669,12 @@ app.post('/api/template-to-markdown', async (req, res) => {
 });
 // ========== END TEMPLATE TO MARKDOWN ==========
 
+// ========== LOGIN ENDPOINT ==========
+const { handleLogin } = require('./login-endpoint.cjs');
+app.post('/api/auth/login', handleLogin);
+// ========== END LOGIN ENDPOINT ==========
+
 app.listen(PORT, () => {
     console.log(`[SERVER] API de génération de documents Word démarrée sur le port ${PORT}`);
-    console.log(`[SERVER] Endpoints: /api/word, /api/generate-docx, /api/tts, /api/chat, /api/brave-search, /api/generate-report, /api/transcribe, /api/fill-template, /api/generate-blank-document`);
+    console.log(`[SERVER] Endpoints: /api/word, /api/generate-docx, /api/tts, /api/chat, /api/brave-search, /api/generate-report, /api/transcribe, /api/fill-template, /api/generate-blank-document, /api/auth/login`);
 });
