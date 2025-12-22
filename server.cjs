@@ -44,7 +44,8 @@ app.use((req, res, next) => {
 
 /**
  * POST /api/generate-docx et /api/word
- * Génère un document Word avec papier à en-tête PORTEO
+ * Génère un document Word avec papier à en-tête PORTEO ou JUSTICIA
+ * headerType: 'porteo' (défaut) ou 'justicia'
  */
 const generateDocxHandler = async (req, res) => {
     const { content, headerType = 'porteo' } = req.body;
@@ -74,11 +75,12 @@ const generateDocxHandler = async (req, res) => {
         // Écrire les données JSON
         await writeFileAsync(tempJsonPath, JSON.stringify(documentData));
         
-        // Exécuter le script Python
+        // Exécuter le script Python avec le bon template
         const scriptPath = path.join(__dirname, 'scripts', 'generate_word_with_header.py');
+        const templateType = headerType === 'justicia' ? 'justicia' : 'porteo';
         const command = `python3 "${scriptPath}" "${tempJsonPath}" "${outputPath}" "${templateType}"`;
         
-        console.log('[API/WORD] Exécution du script');
+        console.log(`[API/WORD] Exécution du script avec template ${templateType}`);
         await execAsync(command);
 
         // Lire le fichier généré

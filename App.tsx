@@ -1073,21 +1073,14 @@ const App: React.FC = () => {
             }
 
             console.log('[SUMMARY] Synthèse générée, création du document Word...');
-
-            // Générer le document Word avec en-tête Justicia
-            const reportResponse = await fetch('/api/generate-report', {
+            
+            // Générer le document Word avec papier en-tête Justicia
+            const reportResponse = await fetch('/api/generate-docx', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    data: {
-                        title: 'Synthèse de Conversation',
-                        date: new Date().toLocaleDateString('fr-FR'),
-                        sections: [{
-                            title: 'Synthèse',
-                            content: summaryContent
-                        }]
-                    },
-                    headerType: 'justicia'
+                body: JSON.stringify({ 
+                    content: summaryContent,
+                    headerType: 'justicia' // Utiliser le papier en-tête Justicia pour les synthèses
                 })
             });
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FileText, Search, ChevronRight } from 'lucide-react';
+import { FileText, Search, ChevronRight, Edit3 } from 'lucide-react';
 import { DOCUMENT_TEMPLATES, DOCUMENT_CATEGORIES, DocumentTemplate } from '../config/documentTemplates';
+import { CanvasEditor } from './CanvasEditor';
 
 interface DocumentTemplateSelectorProps {
   onSelectTemplate: (template: DocumentTemplate) => void;
@@ -10,6 +11,8 @@ interface DocumentTemplateSelectorProps {
 const DocumentTemplateSelector: React.FC<DocumentTemplateSelectorProps> = ({ onSelectTemplate, onClose }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [canvasTemplate, setCanvasTemplate] = useState<DocumentTemplate | null>(null);
+  const [canvasMarkdown, setCanvasMarkdown] = useState('');
 
   // Filtrer les templates
   const filteredTemplates = DOCUMENT_TEMPLATES.filter(template => {
@@ -103,27 +106,59 @@ const DocumentTemplateSelector: React.FC<DocumentTemplateSelectorProps> = ({ onS
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {category.templates.map(template => (
-                      <button
+                      <div
                         key={template.id}
-                        onClick={() => onSelectTemplate(template)}
-                        className="group bg-neutral-800 hover:bg-neutral-750 border border-neutral-700 hover:border-purple-500 rounded-xl p-4 text-left transition-all hover:shadow-lg hover:shadow-purple-500/20"
+                        className="group bg-neutral-800 border border-neutral-700 hover:border-purple-500 rounded-xl p-4 transition-all hover:shadow-lg hover:shadow-purple-500/20"
                       >
                         <div className="flex items-start justify-between mb-2">
                           <FileText className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                          <ChevronRight className="w-4 h-4 text-gray-500 group-hover:text-purple-400 transition-colors" />
                         </div>
-                        <h4 className="text-white font-medium mb-1 group-hover:text-purple-300 transition-colors">
+                        <h4 className="text-white font-medium mb-1">
                           {template.name}
                         </h4>
-                        <p className="text-gray-400 text-sm line-clamp-2">
+                        <p className="text-gray-400 text-sm line-clamp-2 mb-3">
                           {template.description}
                         </p>
-                        <div className="mt-3 flex items-center gap-2">
+                        <div className="flex items-center gap-2 mb-3">
                           <span className="text-xs text-gray-500">
                             {template.fields.length} champ{template.fields.length > 1 ? 's' : ''}
                           </span>
                         </div>
-                      </button>
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => onSelectTemplate(template)}
+                            className="flex-1 px-3 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm rounded-lg transition-colors flex items-center justify-center gap-2"
+                          >
+                            <ChevronRight className="w-4 h-4" />
+                            Générer
+                          </button>
+                          <button
+                            onClick={async () => {
+                              try {
+                                const response = await fetch('/api/template-to-markdown', {
+                                  method: 'POST',
+                                  headers: { 'Content-Type': 'application/json' },
+                                  body: JSON.stringify({ templateName: template.id })
+                                });
+                                const data = await response.json();
+                                if (data.success) {
+                                  setCanvasMarkdown(data.markdown);
+                                  setCanvasTemplate(template);
+                                } else {
+                                  alert('Erreur lors de la conversion');
+                                }
+                              } catch (error) {
+                                console.error('Error:', error);
+                                alert('Erreur lors de la conversion');
+                              }
+                            }}
+                            className="px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors flex items-center justify-center gap-2"
+                            title="Éditer dans Canvas"
+                          >
+                            <Edit3 className="w-4 h-4" />
+                          </button>
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -139,6 +174,18 @@ const DocumentTemplateSelector: React.FC<DocumentTemplateSelectorProps> = ({ onS
           </p>
         </div>
       </div>
+
+      {/* Canvas Editor */}
+      {canvasTemplate && (
+        <CanvasEditor
+          initialMarkdown={canvasMarkdown}
+          title={canvasTemplate.name}
+          onClose={() => {
+            setCanvasTemplate(null);
+            setCanvasMarkdown('');
+          }}
+        />
+      )}
     </div>
   );
 };
